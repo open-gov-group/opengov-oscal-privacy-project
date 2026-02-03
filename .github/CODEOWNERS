@@ -1,0 +1,41 @@
+# CODEOWNERS - Automatische Review-Zuweisung
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# =============================================================================
+# GLOBAL - Architecture Team ist Owner für alles in diesem Repository
+# =============================================================================
+*                                   @open-gov-group/architecture-team
+
+# =============================================================================
+# ARCHITEKTUR-DOKUMENTATION
+# =============================================================================
+/docs/architecture/                 @open-gov-group/architecture-team
+/docs/architecture/MASTER_BLUEPRINT.md    @open-gov-group/architecture-team @open-gov-group/tech-leads
+/docs/architecture/VISION_AND_CONCEPT.md  @open-gov-group/architecture-team @open-gov-group/product-owner
+/docs/architecture/ROADMAP.md       @open-gov-group/architecture-team @open-gov-group/product-owner
+/docs/architecture/GOVERNANCE.md    @open-gov-group/architecture-team @open-gov-group/steering-committee
+
+# ADRs benötigen Architecture Team Review
+/docs/architecture/decisions/       @open-gov-group/architecture-team
+
+# API-Spezifikation benötigt Backend-Team Review
+/docs/architecture/api/             @open-gov-group/architecture-team @open-gov-group/backend-team
+
+# =============================================================================
+# COMPLIANCE & STANDARDS
+# =============================================================================
+/docs/related-informations/         @open-gov-group/compliance-team @open-gov-group/architecture-team
+
+# =============================================================================
+# GUIDES
+# =============================================================================
+/docs/guides/SECURITY.md            @open-gov-group/security-team @open-gov-group/architecture-team
+/docs/guides/DEPLOYMENT.md          @open-gov-group/operations-team @open-gov-group/architecture-team
+/docs/guides/IMPLEMENTATION.md      @open-gov-group/backend-team @open-gov-group/frontend-team
+
+# =============================================================================
+# PROJEKT-KONFIGURATION
+# =============================================================================
+/.github/                           @open-gov-group/architecture-team @open-gov-group/devops-team
+/CONTRIBUTING.md                    @open-gov-group/architecture-team
+/README.md                          @open-gov-group/architecture-team @open-gov-group/product-owner

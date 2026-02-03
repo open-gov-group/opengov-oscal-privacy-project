@@ -1,0 +1,11 @@
+# CODEOWNERS für {REPO_NAME}
+# Siehe: https://github.com/open-gov-group/opengov-oscal-privacy-project/blob/main/TEAMS.md
+
+# Globaler Owner - Verantwortliches Team
+*                           @open-gov-group/{PRIMARY_TEAM}
+
+# Architecture Review für kritische Änderungen
+/docs/                      @open-gov-group/{PRIMARY_TEAM} @open-gov-group/architecture-team
+/.github/                   @open-gov-group/{PRIMARY_TEAM} @open-gov-group/architecture-team
+
+# {ADDITIONAL_CODEOWNERS}

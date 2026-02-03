@@ -53,6 +53,12 @@ Dieses Repository ist das **zentrale Architektur- und Koordinations-Hub** für d
 - Die SDM-Dreischicht-Betrachtung (Prozess/Applikation/Infrastruktur)
 - Die sieben Gewährleistungsziele
 
+### Für alle Teams
+
+- **[TEAMS.md](TEAMS.md)** - Wer ist für was verantwortlich? (RACI-Matrix, GitHub Teams)
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Wie trage ich bei?
+- **[Governance](docs/architecture/GOVERNANCE.md)** - Kommunikation und Prozesse
+
 ### Für Architekten & Projektleiter
 
 1. **[Vision & Konzept](docs/architecture/VISION_AND_CONCEPT.md)** - Das "Warum" und "Was"
