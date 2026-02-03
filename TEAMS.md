@@ -1,395 +1,209 @@
 # Teams & Verantwortlichkeiten
 
-**Version**: 1.0.0
+**Version**: 1.1.0
 **Stand**: 2026-02-03
+**Phase**: 🚀 Startphase (User-Account)
 
 ---
 
-## Übersicht
+## Aktuelle Projektphase
+
+> **Hinweis:** Das Projekt befindet sich in der **Startphase** und läuft unter einem GitHub User-Account (`open-gov-group`). Nach erfolgreicher Stakeholder-Abstimmung (geplant Q2/Q3 2026) erfolgt die Migration zu einer GitHub Organisation mit vollständiger Team-Struktur.
+>
+> Siehe: [Migrations-Plan](docs/guides/MIGRATION_TO_ORG.md)
+
+---
+
+## 1. Übersicht Startphase
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                         TEAM-STRUKTUR                                       │
+│                    TEAM-STRUKTUR (Startphase)                               │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
-│                    ┌─────────────────────────┐                              │
-│                    │   STEERING COMMITTEE    │                              │
-│                    │   (Strategie & Budget)  │                              │
-│                    └───────────┬─────────────┘                              │
-│                                │                                            │
-│            ┌───────────────────┼───────────────────┐                        │
-│            │                   │                   │                        │
-│            ▼                   ▼                   ▼                        │
-│   ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐              │
-│   │  ARCHITECTURE   │ │  PRODUCT OWNER  │ │    COMPLIANCE   │              │
-│   │     TEAM        │ │                 │ │      TEAM       │              │
-│   └────────┬────────┘ └────────┬────────┘ └────────┬────────┘              │
-│            │                   │                   │                        │
-│            └───────────────────┼───────────────────┘                        │
-│                                │                                            │
-│         ┌──────────────────────┼──────────────────────┐                     │
-│         │                      │                      │                     │
-│         ▼                      ▼                      ▼                     │
-│ ┌───────────────┐    ┌───────────────┐    ┌───────────────┐                │
-│ │   FRONTEND    │    │   BACKEND     │    │  OPERATIONS   │                │
-│ │     TEAM      │    │    TEAM       │    │    TEAM       │                │
-│ └───────────────┘    └───────────────┘    └───────────────┘                │
+│                         ┌─────────────────────┐                             │
+│                         │   PROJEKT-OWNER     │                             │
+│                         │   @open-gov-group   │                             │
+│                         └──────────┬──────────┘                             │
+│                                    │                                        │
+│         ┌──────────────────────────┼──────────────────────────┐             │
+│         │                          │                          │             │
+│         ▼                          ▼                          ▼             │
+│  ┌─────────────┐          ┌─────────────┐          ┌─────────────┐         │
+│  │  ARCHITEKTUR │          │  ENTWICKLUNG │          │  COMPLIANCE  │         │
+│  │  & Konzept   │          │  & Code      │          │  & Kataloge  │         │
+│  └─────────────┘          └─────────────┘          └─────────────┘         │
+│                                                                             │
+│  Koordination über:                                                         │
+│  • GitHub Issues mit Labels                                                 │
+│  • Repository Project Boards                                                │
+│  • Direkte Kommunikation                                                    │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 1. Repository-Verantwortlichkeits-Matrix (RACI)
+## 2. Repository-Verantwortlichkeiten
 
-| Repository | Frontend | Backend | Compliance | Operations | Architecture |
-|------------|:--------:|:-------:|:----------:|:----------:|:------------:|
-| **privacy-oscal** | I | I | **R/A** | I | C |
-| **security-oscal** | I | I | **R/A** | I | C |
-| **privacy-mappings** | I | C | **R/A** | I | C |
-| **privacy-viewer** | **R/A** | C | I | C | C |
-| **privacy-app** | **R** | **R** | C | C | **A** |
-| **oscal-workbench** | **R/A** | C | C | C | C |
-| **privacy-gateway** | I | **R/A** | I | C | C |
-| **oscal-pyprivacy** | I | **R/A** | C | I | C |
-| **pylegal-utils** | I | **R/A** | C | I | C |
-| **privacy-data** | I | **R** | C | **A** | C |
-| **privacy-project** (dieses Repo) | I | I | C | I | **R/A** |
+### 2.1 Verantwortlichkeits-Matrix
 
-**Legende:**
-- **R** = Responsible (führt aus)
-- **A** = Accountable (verantwortlich/genehmigt)
-- **C** = Consulted (wird befragt)
-- **I** = Informed (wird informiert)
+| Repository | Hauptverantwortung | Fokus |
+|------------|-------------------|-------|
+| **opengov-oscal-privacy-project** | Architektur | Koordination, Dokumentation |
+| **opengov-privacy-oscal** | Compliance | DSGVO/SDM Kataloge |
+| **opengov-security-oscal** | Compliance | NIST/BSI/ISO Kataloge |
+| **opengov-privacy-mappings** | Compliance | Framework-Mappings |
+| **opengov-oscal-privacy-viewer** | Entwicklung | React Frontend |
+| **opengov-privacy-app** | Entwicklung | RoPA Manager (MVP) |
+| **opengov-oscal-workbench** | Entwicklung | Authoring Tool |
+| **opengov-privacy-gateway** | Entwicklung | REST API |
+| **opengov-oscal-pyprivacy** | Entwicklung | Python Library |
+| **opengov-pylegal-utils** | Entwicklung | Legal Text Processing |
+| **opengov-privacy-data** | Operations | Operative Daten |
+
+### 2.2 Issue Labels für Zuständigkeiten
+
+Verwenden Sie Labels um Verantwortlichkeiten zuzuweisen:
+
+| Label | Farbe | Beschreibung |
+|-------|-------|--------------|
+| `area:architecture` | 🟣 purple | Architektur & Konzept |
+| `area:frontend` | 🔵 blue | React/TypeScript |
+| `area:backend` | 🟢 green | Python/FastAPI |
+| `area:compliance` | 🟠 orange | Kataloge & Standards |
+| `area:operations` | ⚫ gray | DevOps & Deployment |
+| `area:security` | 🔴 red | Security-relevant |
 
 ---
 
-## 2. GitHub Teams einrichten
+## 3. Koordination in der Startphase
 
-### Benötigte Teams in der GitHub Organisation
+### 3.1 Kommunikationskanäle
 
-```bash
-# Teams in open-gov-group Organisation erstellen
-# (manuell in GitHub Settings > Teams)
+| Kanal | Zweck |
+|-------|-------|
+| **GitHub Issues** | Aufgaben, Bugs, Feature Requests |
+| **GitHub Discussions** | Architektur-Fragen, RFCs |
+| **GitHub Projects** | Sprint-Planung (Repository-Level) |
+| **E-Mail/Chat** | Direkte Abstimmung |
 
-@open-gov-group/steering-committee    # Strategie
-@open-gov-group/architecture-team     # Technische Architektur
-@open-gov-group/product-owner         # Fachliche Priorisierung
-@open-gov-group/compliance-team       # Kataloge & Standards
-@open-gov-group/frontend-team         # React/TypeScript
-@open-gov-group/backend-team          # Python/FastAPI
-@open-gov-group/operations-team       # DevOps/Deployment
-@open-gov-group/security-team         # Security Review
-@open-gov-group/tech-leads            # Alle Team Leads
-@open-gov-group/devops-team           # CI/CD
+### 3.2 Review-Prozess
+
+Da keine GitHub Teams verfügbar sind:
+
+1. **CODEOWNERS** weist `@open-gov-group` als Reviewer zu
+2. **Manuelle Zuweisung** von zusätzlichen Reviewern bei Bedarf
+3. **Labels** kennzeichnen den Fachbereich
+
+### 3.3 Project Boards (Repository-Level)
+
+Für jedes aktive Repository ein Project Board einrichten:
+
+```
+Spalten:
+📥 Backlog | 📋 To Do | 🔄 In Progress | 👀 Review | ✅ Done
 ```
 
-### Team-Berechtigungen pro Repository
-
-| Repository | Admin | Maintain | Write | Triage | Read |
-|------------|-------|----------|-------|--------|------|
-| privacy-oscal | arch | compliance | compliance | - | all |
-| privacy-viewer | arch | frontend | frontend | - | all |
-| privacy-app | arch | tech-leads | frontend, backend | - | all |
-| privacy-gateway | arch | backend | backend | - | all |
-| oscal-pyprivacy | arch | backend | backend | - | all |
-| privacy-project | arch | arch | tech-leads | compliance | all |
-
 ---
 
-## 3. Synchronisations-Mechanismen
+## 4. Entscheidungsprozesse
 
-### 3.1 Zentrale Informationsquellen
+### 4.1 In der Startphase
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                    SINGLE SOURCE OF TRUTH                                   │
+│                    ENTSCHEIDUNGSPROZESS (Startphase)                        │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
-│   ┌─────────────────────────────────────────────────────────────────────┐   │
-│   │                    privacy-project Repository                        │   │
-│   │                    (Dieses Repository)                               │   │
-│   │                                                                     │   │
-│   │   • MASTER_BLUEPRINT.md    → Gesamtarchitektur                      │   │
-│   │   • ROADMAP.md             → Zeitplan alle Repos                    │   │
-│   │   • TEAMS.md               → Verantwortlichkeiten                   │   │
-│   │   • GOVERNANCE.md          → Prozesse                               │   │
-│   │   • ADRs                   → Architektur-Entscheidungen             │   │
-│   │                                                                     │   │
-│   └─────────────────────────────────────────────────────────────────────┘   │
-│                                     │                                       │
-│                                     ▼                                       │
-│   ┌─────────────────────────────────────────────────────────────────────┐   │
-│   │                    GitHub Organization Projects                      │   │
-│   │                                                                     │   │
-│   │   • Ecosystem Roadmap Board    → Cross-Repo Planung                 │   │
-│   │   • Sprint Board               → Aktuelle Arbeiten                  │   │
-│   │   • Dependency Tracker         → Repo-Abhängigkeiten                │   │
-│   │                                                                     │   │
-│   └─────────────────────────────────────────────────────────────────────┘   │
+│  1. VORSCHLAG                                                               │
+│     └─> GitHub Issue oder Discussion erstellen                              │
+│                                                                             │
+│  2. DISKUSSION                                                              │
+│     └─> Kommentare sammeln                                                  │
+│     └─> Bei Bedarf: Stakeholder einbeziehen                                 │
+│                                                                             │
+│  3. ENTSCHEIDUNG                                                            │
+│     └─> Projekt-Owner (@open-gov-group) entscheidet                         │
+│     └─> Bei größeren Änderungen: ADR dokumentieren                          │
+│                                                                             │
+│  4. UMSETZUNG                                                               │
+│     └─> Pull Request mit Referenz zur Entscheidung                          │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 3.2 Kommunikations-Rhythmus
+### 4.2 ADR-Prozess bleibt bestehen
 
-| Meeting | Frequenz | Teilnehmer | Inhalt |
-|---------|----------|------------|--------|
-| **Daily Standup** | Täglich | Team | Blocker, Status |
-| **Cross-Team Sync** | 2x/Woche | Tech Leads | Abhängigkeiten |
-| **Architecture Review** | Wöchentlich | Arch Team | ADRs, Design |
-| **Sprint Planning** | 2-wöchentlich | Alle Teams | Koordination |
-| **Stakeholder Demo** | Monatlich | Alle + Stakeholder | Fortschritt |
-
-### 3.3 Benachrichtigungen einrichten
-
-Jedes Team sollte folgende GitHub-Benachrichtigungen aktivieren:
-
-```yaml
-# Empfohlene Watch-Einstellungen pro Team
-
-Frontend-Team:
-  - privacy-viewer: All Activity
-  - privacy-app: All Activity
-  - oscal-workbench: All Activity
-  - privacy-project: Releases + Discussions
-
-Backend-Team:
-  - privacy-gateway: All Activity
-  - oscal-pyprivacy: All Activity
-  - pylegal-utils: All Activity
-  - privacy-project: Releases + Discussions
-
-Compliance-Team:
-  - privacy-oscal: All Activity
-  - security-oscal: All Activity
-  - privacy-mappings: All Activity
-  - privacy-project: All Activity
-
-Architecture-Team:
-  - Alle Repos: All Activity
-```
+Architektur-Entscheidungen werden weiterhin als ADRs dokumentiert:
+- Speicherort: `docs/architecture/decisions/`
+- Format: Siehe bestehende ADRs
 
 ---
 
-## 4. GitHub Projects Board-Struktur
+## 5. Onboarding (Startphase)
 
-### 4.1 Organisation-Level Project: "Ecosystem Roadmap"
-
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                         ECOSYSTEM ROADMAP BOARD                             │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                             │
-│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐           │
-│  │ Backlog │  │ Phase 1 │  │ Phase 2 │  │ Phase 3 │  │  Done   │           │
-│  │         │  │ Q1-Q2   │  │ Q2-Q3   │  │ Q3-Q4   │  │         │           │
-│  ├─────────┤  ├─────────┤  ├─────────┤  ├─────────┤  ├─────────┤           │
-│  │         │  │         │  │         │  │         │  │         │           │
-│  │ [Idea]  │  │[Viewer] │  │[Gateway]│  │[Workb.] │  │[Catalog]│           │
-│  │ [Idea]  │  │[App]    │  │[Mapping]│  │[Sec-OSC]│  │         │           │
-│  │         │  │[pypri.] │  │         │  │         │  │         │           │
-│  │         │  │         │  │         │  │         │  │         │           │
-│  └─────────┘  └─────────┘  └─────────┘  └─────────┘  └─────────┘           │
-│                                                                             │
-│  Custom Fields:                                                             │
-│  • Repository (dropdown)                                                    │
-│  • Team (dropdown)                                                          │
-│  • Priority (P0-P3)                                                         │
-│  • Dependencies (linked issues)                                             │
-│  • Phase (dropdown)                                                         │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
-
-### 4.2 Cross-Repository Issue Linking
-
-Bei Abhängigkeiten zwischen Repos:
+### 5.1 Für neue Mitwirkende
 
 ```markdown
-# In Issue-Beschreibung:
+## Schnellstart
 
-## Abhängigkeiten
-- [ ] Blocked by: open-gov-group/oscal-pyprivacy#42
-- [ ] Blocks: open-gov-group/privacy-gateway#15
-- [ ] Related: open-gov-group/privacy-oscal#8
-
-## Betroffene Teams
-- @open-gov-group/backend-team (primary)
-- @open-gov-group/compliance-team (review)
+1. [ ] README.md lesen
+2. [ ] VISION_AND_CONCEPT.md durcharbeiten
+3. [ ] CONTRIBUTING.md beachten
+4. [ ] Relevantes Repository forken
+5. [ ] Issue auswählen oder erstellen
+6. [ ] Pull Request einreichen
 ```
+
+### 5.2 Kontakt
+
+- **Projekt-Owner**: @open-gov-group
+- **Issues**: https://github.com/open-gov-group/opengov-oscal-privacy-project/issues
+- **Discussions**: https://github.com/open-gov-group/opengov-oscal-privacy-project/discussions
 
 ---
 
-## 5. Vermeidung von Doppelarbeit
+## 6. Geplante Professionalisierung (Q2/Q3 2026)
 
-### 5.1 Vor Arbeitsbeginn prüfen
+Nach erfolgreicher Stakeholder-Abstimmung:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                    CHECKLISTE VOR ARBEITSBEGINN                             │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                             │
-│  □ 1. Existiert bereits ein Issue/PR für diese Aufgabe?                     │
-│       → GitHub Search: org:open-gov-group "keyword"                         │
-│                                                                             │
-│  □ 2. Ist die Aufgabe im richtigen Repository?                              │
-│       → Siehe RACI-Matrix oben                                              │
-│                                                                             │
-│  □ 3. Gibt es Abhängigkeiten zu anderen Repos?                              │
-│       → Check Ecosystem Board                                               │
-│                                                                             │
-│  □ 4. Ist das zuständige Team informiert?                                   │
-│       → @mention im Issue                                                   │
-│                                                                             │
-│  □ 5. Gibt es bereits ähnliche Implementierungen?                           │
-│       → Check oscal-pyprivacy für Backend-Utils                             │
-│       → Check privacy-viewer für Frontend-Komponenten                       │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+### 6.1 Migration zu GitHub Organisation
 
-### 5.2 Shared Libraries & Components
+- [ ] Custom Domain einrichten (vor Migration)
+- [ ] Neue Organisation erstellen
+- [ ] Repositories transferieren
+- [ ] GitHub Teams einrichten
+- [ ] Organization Project Board erstellen
 
-| Typ | Repository | Beschreibung | Nutzer |
-|-----|------------|--------------|--------|
-| **Python OSCAL Utilities** | oscal-pyprivacy | OSCAL parsing, validation | gateway, app |
-| **Legal Text Processing** | pylegal-utils | NLP für Rechtstexte | pyprivacy, app |
-| **React OSCAL Components** | privacy-viewer | Wiederverwendbare UI | app, workbench |
-| **OSCAL Schemas** | privacy-oscal | JSON Schemas | alle |
+### 6.2 Zukünftige Team-Struktur
 
-### 5.3 RFC-Prozess für neue Features
+| Team | Repositories |
+|------|--------------|
+| `@org/architecture-team` | privacy-project, alle (review) |
+| `@org/frontend-team` | privacy-viewer, oscal-workbench, privacy-app |
+| `@org/backend-team` | privacy-gateway, oscal-pyprivacy, pylegal-utils |
+| `@org/compliance-team` | privacy-oscal, security-oscal, privacy-mappings |
+| `@org/operations-team` | privacy-data, deployment |
 
-Für Features, die mehrere Repos betreffen:
+### 6.3 Vorbereitete Ressourcen
 
-1. **RFC erstellen** in privacy-project/discussions
-2. **Betroffene Teams taggen**
-3. **2 Wochen Diskussion**
-4. **Architecture Review**
-5. **ADR dokumentieren** (wenn genehmigt)
-6. **Issues in jeweiligen Repos erstellen**
+Die folgenden Dateien sind bereits vorbereitet:
+- `scripts/setup-github-org.ps1` - Automatisches Setup-Script
+- `scripts/setup-github-org.sh` - Bash-Version
+- `docs/guides/GITHUB_SETUP.md` - Manuelle Anleitung
+- `templates/` - Repository-Templates
 
 ---
 
-## 6. Onboarding neuer Teammitglieder
+## 7. Änderungshistorie
 
-### 6.1 Onboarding-Checkliste
-
-```markdown
-## Woche 1: Orientierung
-
-- [ ] GitHub Organisation beitreten
-- [ ] Dem richtigen Team zugewiesen werden
-- [ ] README.md und VISION_AND_CONCEPT.md lesen
-- [ ] MASTER_BLUEPRINT.md durcharbeiten
-- [ ] Alle ADRs lesen
-- [ ] Watch-Einstellungen für relevante Repos setzen
-
-## Woche 2: Einarbeitung
-
-- [ ] Lokales Development Setup
-- [ ] "Good First Issue" bearbeiten
-- [ ] An Daily Standups teilnehmen
-- [ ] Buddy-Gespräch mit Team Lead
-
-## Woche 3+: Produktiv
-
-- [ ] Eigenständig Issues bearbeiten
-- [ ] Code Reviews durchführen
-- [ ] An Sprint Planning teilnehmen
-```
-
-### 6.2 Buddy-System
-
-Jedes neue Teammitglied bekommt einen Buddy aus dem gleichen Team:
-
-| Neues Mitglied in | Buddy aus |
-|-------------------|-----------|
-| Frontend-Team | Frontend-Team (Senior) |
-| Backend-Team | Backend-Team (Senior) |
-| Compliance-Team | Architecture-Team |
+| Version | Datum | Änderung |
+|---------|-------|----------|
+| 1.1.0 | 2026-02-03 | Anpassung für Startphase (User-Account) |
+| 1.0.0 | 2026-02-03 | Initiale Version (Organisation geplant) |
 
 ---
 
-## 7. Eskalationspfade
-
-```
-Problem in einem Repository
-         │
-         ▼
-┌─────────────────────┐
-│ Team Lead des Repos │
-└─────────┬───────────┘
-          │ Nicht lösbar
-          ▼
-┌─────────────────────┐
-│ Cross-Team Sync     │
-│ (Tech Leads)        │
-└─────────┬───────────┘
-          │ Architektur-Entscheidung nötig
-          ▼
-┌─────────────────────┐
-│ Architecture Team   │
-└─────────┬───────────┘
-          │ Strategische Entscheidung
-          ▼
-┌─────────────────────┐
-│ Steering Committee  │
-└─────────────────────┘
-```
-
----
-
-## 8. Tools & Automatisierung
-
-### 8.1 Empfohlene GitHub Apps
-
-| App | Zweck |
-|-----|-------|
-| **Renovate** | Automatische Dependency Updates |
-| **CodeQL** | Security Scanning |
-| **Mergify** | Auto-Merge wenn CI grün |
-| **Stale** | Alte Issues markieren |
-
-### 8.2 Cross-Repo Automatisierung
-
-```yaml
-# Beispiel: Workflow der bei Release in pyprivacy
-# automatisch Issues in abhängigen Repos erstellt
-
-name: Notify Dependents
-on:
-  release:
-    types: [published]
-jobs:
-  notify:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Create update issues
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const dependents = ['privacy-gateway', 'privacy-app'];
-            for (const repo of dependents) {
-              await github.rest.issues.create({
-                owner: 'open-gov-group',
-                repo: repo,
-                title: `Update oscal-pyprivacy to ${context.payload.release.tag_name}`,
-                labels: ['dependencies']
-              });
-            }
-```
-
----
-
-**Nächste Schritte:**
-
-1. GitHub Teams in der Organisation erstellen
-2. CODEOWNERS in alle Repos kopieren
-3. Organization Project Board einrichten
-4. Team-Meetings in Kalender eintragen
-
----
-
-**Letzte Aktualisierung**: 2026-02-03
-**Verantwortlich**: Architecture Team
+**Nächste Review**: Nach Stakeholder-Abstimmung
+**Verantwortlich**: @open-gov-group
