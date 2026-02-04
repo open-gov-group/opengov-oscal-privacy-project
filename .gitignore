@@ -246,6 +246,9 @@ test-reports/
 # *.resolved.json
 # *.validated.json
 
+#Lokal zu verarbeitende Daten
+docs/related-informations
+
 # Lokale Testdaten
 testdata/
 fixtures/local/
