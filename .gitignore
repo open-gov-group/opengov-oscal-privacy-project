@@ -247,7 +247,7 @@ test-reports/
 # *.validated.json
 
 #Lokal zu verarbeitende Daten
-docs/related-informations
+docs/related-informations/vs-nfd/
 
 # Lokale Testdaten
 testdata/
