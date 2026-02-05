@@ -61,10 +61,11 @@ Dieses Repository ist das **zentrale Architektur- und Koordinations-Hub** für d
 
 ### Für Architekten & Projektleiter
 
-1. **[Vision & Konzept](docs/architecture/VISION_AND_CONCEPT.md)** - Das "Warum" und "Was"
-2. **[Master Blueprint](docs/architecture/MASTER_BLUEPRINT.md)** - Das "Wie" der Architektur
-3. **[Roadmap](docs/architecture/ROADMAP.md)** - Das "Wann" der Umsetzung
-4. **[ADR-Übersicht](docs/architecture/decisions/README.md)** - Architektur-Entscheidungen
+1. **[Management Summary](docs/architecture/MANAGEMENT_SUMMARY.md)** - Executive Summary (Ziel, Umfang, Stand)
+2. **[Vision & Konzept](docs/architecture/VISION_AND_CONCEPT.md)** - Das "Warum" und "Was"
+3. **[Master Blueprint](docs/architecture/MASTER_BLUEPRINT.md)** - Das "Wie" der Architektur
+4. **[Roadmap](docs/architecture/ROADMAP.md)** - Das "Wann" der Umsetzung
+5. **[ADR-Übersicht](docs/architecture/decisions/README.md)** - Architektur-Entscheidungen
 
 ### Für Entwickler
 
@@ -76,7 +77,15 @@ Dieses Repository ist das **zentrale Architektur- und Koordinations-Hub** für d
 
 1. **[Project Overview](docs/related-informations/PROJECT_OVERVIEW.md)** - Fachliche Projektübersicht
 2. **[OSCAL-Konzept](docs/architecture/decisions/ADR-001-oscal-als-basis-standard.md)** - Warum OSCAL?
-3. **[Dokumenten-Index](docs/related-informations/DOCUMENTS_INDEX.md)** - Alle Hintergrunddokumente
+3. **[BSI Grundschutz++ Mapping](docs/architecture/MAPPING_PRIVACY_TO_BSI_GRUNDSCHUTZ.md)** - Privacy ↔ Security Mapping
+4. **[Dokumenten-Index](docs/related-informations/DOCUMENTS_INDEX.md)** - Alle Hintergrunddokumente
+
+### Für Katalog-Entwickler
+
+1. **[OSCAL Privacy Catalogs](docs/architecture/OSCAL_PRIVACY_CATALOGS.md)** - OPC-Spezifikation (10 Gruppen)
+2. **[SDM Catalog Structure](docs/architecture/SDM_CATALOG_STRUCTURE.md)** - SDM-Gliederung v1.0
+3. **[Catalog Integration](docs/architecture/CATALOG_INTEGRATION.md)** - Integration Workflow
+4. **[Group Mapping Analysis](docs/architecture/GROUP_MAPPING_ANALYSIS.md)** - OPC ↔ SDM ↔ BSI ↔ ISO
 
 ---
 
@@ -87,15 +96,11 @@ opengov-oscal-privacy-project/
 │
 ├── docs/
 │   ├── architecture/
+│   │   ├── MANAGEMENT_SUMMARY.md    # Executive Summary für Stakeholder
 │   │   ├── MASTER_BLUEPRINT.md      # Zentrale Architektur-Dokumentation
-│   │   ├── ARCHITECTURE.md          # Technische Architektur
+│   │   ├── ROADMAP.md               # Phasen und Meilensteine
 │   │   ├── decisions/               # Architecture Decision Records (ADRs)
-│   │   │   ├── ADR-001-oscal-als-basis-standard.md
-│   │   │   ├── ADR-002-multi-repository-architektur.md
-│   │   │   ├── ADR-003-client-side-viewer.md
-│   │   │   └── ADR-004-python-backend-libraries.md
 │   │   ├── diagrams/                # Visuelle Diagramme
-│   │   │   └── ECOSYSTEM_OVERVIEW.md
 │   │   └── api/                     # API-Spezifikationen
 │   │
 │   ├── guides/                      # Anleitungen
@@ -104,11 +109,13 @@ opengov-oscal-privacy-project/
 │   │   └── IMPLEMENTATION.md
 │   │
 │   ├── related-informations/        # Hintergrunddokumente
-│   │   ├── PROJECT_OVERVIEW.md      # Fachliche Übersicht
-│   │   ├── DOCUMENTS_INDEX.md       # Dokumenten-Index
-│   │   └── *.rtf                    # Quelldokumente
 │   │
 │   └── team-knowledge/              # Team-spezifisches Wissen
+│
+├── oscal/                           # OSCAL-Artefakte
+│   ├── catalog/                     # Privacy-Kataloge (OPC)
+│   ├── mappings/                    # Framework-Mappings (BSI, ISO)
+│   └── profiles/                    # Integrierte Profile
 │
 └── README.md                        # Dieses Dokument
 ```
@@ -194,10 +201,15 @@ opengov-oscal-privacy-project/
 
 | Phase | Fokus | Status |
 |-------|-------|--------|
-| **Phase 1** | MVP Foundation (privacy-oscal, viewer, app) | In Arbeit |
-| **Phase 2** | Integration (mappings, gateway) | Geplant |
+| **Phase 1** | MVP Foundation (privacy-oscal, viewer, app) | 70% ✓ |
+| **Phase 2** | Integration (mappings, gateway) | Vorgezogen (BSI-Mapping ✓) |
 | **Phase 3** | Erweiterung (workbench, security-oscal) | Geplant |
 | **Phase 4** | Enterprise (SSP, Audit-Integration) | Zukunft |
+
+**Highlights Q1 2026:**
+- BSI Grundschutz++ Mapping abgeschlossen (10 OPC-Gruppen → BSI-Bausteine)
+- SDM-Katalogstruktur v1.0 festgeschrieben
+- OSCAL-Artefakte (Kataloge, Mappings, Profile) in diesem Repository
 
 Siehe [ROADMAP.md](docs/architecture/ROADMAP.md) für Details.
 
@@ -216,4 +228,4 @@ MIT License - siehe [LICENSE](LICENSE) für Details.
 
 ---
 
-**Letzte Aktualisierung**: 2026-02-02
+**Letzte Aktualisierung**: 2026-02-05
