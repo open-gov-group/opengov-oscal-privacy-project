@@ -1,0 +1,861 @@
+{
+  "catalog": {
+    "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "metadata": {
+      "title": "SDM Privacy Catalog - Maßnahmenkatalog",
+      "version": "2.0.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2026-02-05T16:00:00Z",
+      "published": "2026-02-05T16:00:00Z",
+      "remarks": "Technisch-organisatorischer Maßnahmenkatalog basierend auf SDM-Gewährleistungszielen. Konsolidiert Maßnahmen aus ISO 27701:2025, ISO 27001:2022 und BSI IT-Grundschutz mit Datenschutz-Perspektive.",
+      "props": [
+        {"name": "catalog-type", "value": "privacy-measures", "ns": "https://open-gov-group.org/oscal/sdm"},
+        {"name": "sdm-version", "value": "3.1"},
+        {"name": "methodology", "value": "reverse-engineering from ISO/BSI"}
+      ],
+      "links": [
+        {"href": "https://www.datenschutzzentrum.de/sdm/", "rel": "canonical", "text": "SDM Referenz"},
+        {"href": "open_privacy_catalog_risk_v0.7.0.json", "rel": "related", "text": "OPC - Anforderungskatalog"}
+      ]
+    },
+    "groups": [
+      {
+        "id": "SDM-TRA",
+        "class": "transparency",
+        "title": "SDM-TRA - Transparenz",
+        "props": [
+          {"name": "assurance-goal", "value": "transparency", "ns": "https://open-gov-group.org/oscal/sdm"},
+          {"name": "gdpr-reference", "value": "Art. 5(1)a, 12-14, 30"}
+        ],
+        "controls": [
+          {
+            "id": "SDM-TRA-41",
+            "class": "organizational",
+            "title": "Planen und Spezifizieren",
+            "props": [
+              {"name": "original-sdm-id", "value": "B41"},
+              {"name": "dp-risk-impact", "value": "moderate"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "tra-41-stmt", "name": "statement", "prose": "Die Organisation plant und spezifiziert Verarbeitungstätigkeiten vor deren Beginn. Zweck, Rechtsgrundlage, Kategorien betroffener Personen und Daten sowie Empfänger werden vorab festgelegt."},
+              {"id": "tra-41-priv", "name": "privacy-rationale", "prose": "Planung vor Verarbeitungsbeginn stellt sicher, dass Datenschutz-Anforderungen von Anfang an berücksichtigt werden (Privacy by Design). Betroffene profitieren von durchdachten, zweckgebundenen Verarbeitungen."},
+              {"id": "tra-41-impl", "name": "implementation-levels", "parts": [
+                {"id": "tra-41-base", "name": "baseline", "props": [{"name": "level", "value": "1"}], "prose": "Formlose Dokumentation neuer Verarbeitungen vor Start. Grundlegende Prüfung auf Rechtsgrundlage."},
+                {"id": "tra-41-std", "name": "standard", "props": [{"name": "level", "value": "2"}], "prose": "Strukturierter Freigabeprozess mit Checkliste. DSB-Beteiligung bei neuen Verarbeitungen. Dokumentation im VVT vor Go-Live."},
+                {"id": "tra-41-enh", "name": "enhanced", "props": [{"name": "level", "value": "3"}], "prose": "Integrierter Privacy-by-Design-Prozess in Projektmethodik. Automatische Workflows mit DSB-Gate. DSFA-Schwellwertprüfung für alle neuen Verarbeitungen."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#GOV-01", "rel": "implements", "text": "OPC: Datenschutzorganisation"},
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#DPIA-01", "rel": "implements", "text": "OPC: DSFA-Prüfung"}
+            ]
+          },
+          {
+            "id": "SDM-TRA-42",
+            "class": "organizational",
+            "title": "Dokumentieren",
+            "props": [
+              {"name": "original-sdm-id", "value": "B42"},
+              {"name": "iso27701-mapping", "value": "A.3.14"},
+              {"name": "iso27001-mapping", "value": "A.5.33, A.5.37"},
+              {"name": "bsi-mapping", "value": "ORP.1"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "tra-42-stmt", "name": "statement", "prose": "Die Organisation dokumentiert alle datenschutzrelevanten Verarbeitungstätigkeiten, Maßnahmen und Entscheidungen nachvollziehbar und revisionssicher."},
+              {"id": "tra-42-priv", "name": "privacy-rationale", "prose": "Dokumentation ist Grundlage der Rechenschaftspflicht (Art. 5 Abs. 2 DSGVO). Sie ermöglicht Betroffenen, Aufsichtsbehörden und Verantwortlichen die Nachvollziehbarkeit aller Verarbeitungen."},
+              {"id": "tra-42-impl", "name": "implementation-levels", "parts": [
+                {"id": "tra-42-base", "name": "baseline", "prose": "Verarbeitungsverzeichnis nach Art. 30 DSGVO. Grundlegende Dokumentation von TOMs. Aufbewahrung relevanter Verträge."},
+                {"id": "tra-42-std", "name": "standard", "prose": "Strukturiertes Dokumentenmanagementsystem. Versionierung und Änderungshistorie. Verknüpfung VVT mit TOMs und Verträgen. Regelmäßige Aktualisierung."},
+                {"id": "tra-42-enh", "name": "enhanced", "prose": "Integriertes DSMS mit automatischer Dokumentation. Workflow-gestützte Aktualisierung. Audit-Trail für alle Änderungen. Digitale Signatur kritischer Dokumente."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#ACC-01", "rel": "implements", "text": "OPC: Dokumentation"},
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#REG-01", "rel": "implements", "text": "OPC: Verarbeitungsverzeichnis"}
+            ]
+          },
+          {
+            "id": "SDM-TRA-43",
+            "class": "technical",
+            "title": "Protokollieren",
+            "props": [
+              {"name": "original-sdm-id", "value": "B43"},
+              {"name": "iso27701-mapping", "value": "A.3.25"},
+              {"name": "iso27001-mapping", "value": "A.8.15, A.8.16"},
+              {"name": "bsi-mapping", "value": "OPS.1.1.5"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "tra-43-stmt", "name": "statement", "prose": "Die Organisation protokolliert sicherheits- und datenschutzrelevante Ereignisse bei der Verarbeitung personenbezogener Daten manipulationssicher."},
+              {"id": "tra-43-priv", "name": "privacy-rationale", "prose": "Protokollierung ermöglicht die Nachvollziehbarkeit von Zugriffen und Änderungen an personenbezogenen Daten. Sie dient der Aufklärung bei Datenschutzvorfällen und dem Nachweis der Rechtmäßigkeit."},
+              {"id": "tra-43-impl", "name": "implementation-levels", "parts": [
+                {"id": "tra-43-base", "name": "baseline", "prose": "Protokollierung von Anmeldungen und fehlgeschlagenen Zugriffsversuchen. Aufbewahrung mind. 6 Monate. Grundlegender Zugriffsschutz auf Logs."},
+                {"id": "tra-43-std", "name": "standard", "prose": "Zentrale Log-Aggregation (SIEM). Protokollierung von CRUD-Operationen auf PII. Zeitsynchronisation. Aufbewahrung 1-3 Jahre. Regelmäßige Log-Auswertung."},
+                {"id": "tra-43-enh", "name": "enhanced", "prose": "Manipulationssichere Logs (Write-Once, Blockchain-Ansätze). Echtzeit-Alerting bei Anomalien. Automatische Korrelation. Forensik-ready. Audit-konforme Aufbewahrung."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#ACC-02", "rel": "implements", "text": "OPC: Nachweisfähigkeit"},
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#INC-01", "rel": "related", "text": "OPC: Vorfallserkennung"}
+            ]
+          },
+          {
+            "id": "SDM-TRA-44",
+            "class": "organizational",
+            "title": "Klassifizieren und Kennzeichnen",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.3.5, A.3.6"},
+              {"name": "iso27001-mapping", "value": "A.5.12, A.5.13"},
+              {"name": "dp-risk-impact", "value": "moderate"},
+              {"name": "moscow", "value": "should"}
+            ],
+            "parts": [
+              {"id": "tra-44-stmt", "name": "statement", "prose": "Die Organisation klassifiziert personenbezogene Daten nach Sensitivität und kennzeichnet sie entsprechend, um angemessene Schutzmaßnahmen sicherzustellen."},
+              {"id": "tra-44-priv", "name": "privacy-rationale", "prose": "Klassifizierung ermöglicht risikoadäquaten Schutz. Besondere Kategorien (Art. 9) und Daten mit hohem Risiko erhalten stärkere Schutzmaßnahmen. Kennzeichnung verhindert versehentliche Fehlbehandlung."},
+              {"id": "tra-44-impl", "name": "implementation-levels", "parts": [
+                {"id": "tra-44-base", "name": "baseline", "prose": "Unterscheidung: normale PII vs. besondere Kategorien (Art. 9). Grundlegende Kennzeichnung in Dokumenten (z.B. 'Vertraulich')."},
+                {"id": "tra-44-std", "name": "standard", "prose": "Dreistufiges Klassifizierungsschema (normal/erhöht/hoch). Automatische Kennzeichnung in Systemen. Data-Discovery für PII. Schulung der Mitarbeiter."},
+                {"id": "tra-44-enh", "name": "enhanced", "prose": "Data Loss Prevention (DLP) mit automatischer Klassifizierung. Content-Inspection. Metadaten-basierte Kennzeichnung. Integration in IAM für automatische Zugriffssteuerung."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#TOM-01", "rel": "implements", "text": "OPC: Technische Maßnahmen"}
+            ]
+          },
+          {
+            "id": "SDM-TRA-45",
+            "class": "organizational",
+            "title": "Schulen und Sensibilisieren",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.3.17"},
+              {"name": "iso27001-mapping", "value": "A.6.3"},
+              {"name": "bsi-mapping", "value": "ORP.2, ORP.3"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "tra-45-stmt", "name": "statement", "prose": "Die Organisation schult alle Beschäftigten, die personenbezogene Daten verarbeiten, regelmäßig zu Datenschutz und Informationssicherheit."},
+              {"id": "tra-45-priv", "name": "privacy-rationale", "prose": "Geschulte Mitarbeiter sind die erste Verteidigungslinie. Sie erkennen Datenschutzrisiken, vermeiden Fehler und melden Vorfälle rechtzeitig. Dies schützt die Rechte der Betroffenen."},
+              {"id": "tra-45-impl", "name": "implementation-levels", "parts": [
+                {"id": "tra-45-base", "name": "baseline", "prose": "Einführungsschulung bei Einstellung. Jährliche Pflichtschulung Datenschutz-Grundlagen. Dokumentation der Teilnahme."},
+                {"id": "tra-45-std", "name": "standard", "prose": "Rollenspezifische Schulungen (Führungskräfte, IT, HR). E-Learning-Plattform. Phishing-Simulationen. Regelmäßige Awareness-Kampagnen. Erfolgskontrolle."},
+                {"id": "tra-45-enh", "name": "enhanced", "prose": "Kontinuierliches Awareness-Programm. Gamification. Zertifizierungen für Schlüsselrollen. Privacy-Champions in Fachabteilungen. Messung der Verhaltensänderung."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#TRAIN-01", "rel": "implements", "text": "OPC: Schulungsprogramm"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SDM-ITV",
+        "class": "intervenability",
+        "title": "SDM-ITV - Intervenierbarkeit",
+        "props": [
+          {"name": "assurance-goal", "value": "intervenability", "ns": "https://open-gov-group.org/oscal/sdm"},
+          {"name": "gdpr-reference", "value": "Art. 15-22"}
+        ],
+        "controls": [
+          {
+            "id": "SDM-ITV-60",
+            "class": "technical",
+            "title": "Löschen und Vernichten",
+            "props": [
+              {"name": "original-sdm-id", "value": "B60"},
+              {"name": "iso27701-mapping", "value": "A.1.4.6, A.1.4.7, A.1.4.9, A.3.21"},
+              {"name": "iso27001-mapping", "value": "A.8.10"},
+              {"name": "bsi-mapping", "value": "CON.6"},
+              {"name": "secondary-goals", "value": "non-linkability, data-minimization, integrity, confidentiality"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "itv-60-stmt", "name": "statement", "prose": "Die Organisation löscht personenbezogene Daten sicher und unwiederbringlich, wenn der Verarbeitungszweck erfüllt ist, die Aufbewahrungsfrist abläuft oder ein Löschantrag vorliegt."},
+              {"id": "itv-60-priv", "name": "privacy-rationale", "prose": "Das Recht auf Löschung (Art. 17 DSGVO) ist ein zentrales Betroffenenrecht. Sichere Löschung verhindert unbefugten Zugriff auf nicht mehr benötigte Daten und minimiert Risiken bei Datenpannen."},
+              {"id": "itv-60-impl", "name": "implementation-levels", "parts": [
+                {"id": "itv-60-base", "name": "baseline", "prose": "Löschkonzept mit definierten Fristen pro Datenkategorie. Manuelle Löschung auf Antrag. Löschung = Entfernen aus Produktivsystemen."},
+                {"id": "itv-60-std", "name": "standard", "prose": "Automatisierte Löschroutinen nach Fristablauf. Löschung in allen Systemen inkl. Backups (zeitversetzt). Löschprotokolle. Sichere Löschverfahren (Überschreiben)."},
+                {"id": "itv-60-enh", "name": "enhanced", "prose": "Kryptographische Löschung (Crypto-Shredding). Automatische Propagation an Auftragsverarbeiter. Verifizierung der Löschung. Forensisch sichere Vernichtung von Datenträgern (DIN 66399)."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#DSR-03", "rel": "implements", "text": "OPC: Löschung"},
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#LAW-05", "rel": "implements", "text": "OPC: Speicherbegrenzung"}
+            ]
+          },
+          {
+            "id": "SDM-ITV-61",
+            "class": "technical",
+            "title": "Berichtigen",
+            "props": [
+              {"name": "original-sdm-id", "value": "B61"},
+              {"name": "iso27701-mapping", "value": "A.1.4.4"},
+              {"name": "secondary-goals", "value": "integrity"},
+              {"name": "dp-risk-impact", "value": "moderate"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "itv-61-stmt", "name": "statement", "prose": "Die Organisation ermöglicht die Berichtigung unrichtiger personenbezogener Daten und die Vervollständigung unvollständiger Daten auf Antrag des Betroffenen."},
+              {"id": "itv-61-priv", "name": "privacy-rationale", "prose": "Das Recht auf Berichtigung (Art. 16 DSGVO) sichert die Datenqualität. Unrichtige Daten können zu Fehlentscheidungen führen, die den Betroffenen benachteiligen."},
+              {"id": "itv-61-impl", "name": "implementation-levels", "parts": [
+                {"id": "itv-61-base", "name": "baseline", "prose": "Prozess zur Entgegennahme von Berichtigungsanträgen. Manuelle Korrektur in Systemen. Bestätigung an Betroffene."},
+                {"id": "itv-61-std", "name": "standard", "prose": "Self-Service-Portal für Stammdaten-Korrektur. Propagation an verbundene Systeme. Benachrichtigung von Empfängern (Art. 19). Protokollierung von Änderungen."},
+                {"id": "itv-61-enh", "name": "enhanced", "prose": "Automatische Datenqualitätsprüfungen. Master Data Management mit goldener Quelle. Automatische Synchronisation. Audit-Trail aller Änderungen. Plausibilitätsprüfungen."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#DSR-03", "rel": "implements", "text": "OPC: Berichtigung"}
+            ]
+          },
+          {
+            "id": "SDM-ITV-62",
+            "class": "technical",
+            "title": "Einschränken der Verarbeitung",
+            "props": [
+              {"name": "original-sdm-id", "value": "B62"},
+              {"name": "secondary-goals", "value": "non-linkability, data-minimization, integrity, confidentiality"},
+              {"name": "dp-risk-impact", "value": "moderate"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "itv-62-stmt", "name": "statement", "prose": "Die Organisation kann die Verarbeitung personenbezogener Daten auf Speicherung beschränken, wenn ein Betroffener dies verlangt oder die Rechtmäßigkeit unklar ist."},
+              {"id": "itv-62-priv", "name": "privacy-rationale", "prose": "Die Einschränkung (Art. 18 DSGVO) ist ein milderes Mittel als Löschung. Sie schützt Betroffene, während Streitfragen geklärt werden, ohne dass Daten unwiederbringlich verloren gehen."},
+              {"id": "itv-62-impl", "name": "implementation-levels", "parts": [
+                {"id": "itv-62-base", "name": "baseline", "prose": "Markierung eingeschränkter Datensätze. Manuelle Zugriffssperre in relevanten Anwendungen. Dokumentation des Status."},
+                {"id": "itv-62-std", "name": "standard", "prose": "Technische Zugriffssperre auf Datensatzebene. Status-Attribut in Datenbank. Automatische Filterung in Anwendungen. Benachrichtigung bei Statusänderung."},
+                {"id": "itv-62-enh", "name": "enhanced", "prose": "Verschlüsselung eingeschränkter Daten mit separatem Schlüssel. Workflow für Aufhebung mit 4-Augen-Prinzip. Automatische Fristüberwachung. Audit aller Zugriffe."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#DSR-04", "rel": "implements", "text": "OPC: Einschränkung"}
+            ]
+          },
+          {
+            "id": "SDM-ITV-63",
+            "class": "technical",
+            "title": "Auskunft erteilen",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.1.3.7, A.1.3.9, A.1.3.10"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "itv-63-stmt", "name": "statement", "prose": "Die Organisation stellt Mechanismen bereit, um Betroffenen auf Anfrage Auskunft über ihre verarbeiteten Daten zu erteilen und Kopien bereitzustellen."},
+              {"id": "itv-63-priv", "name": "privacy-rationale", "prose": "Das Auskunftsrecht (Art. 15 DSGVO) ist fundamental für informationelle Selbstbestimmung. Betroffene können nur dann ihre Rechte wahrnehmen, wenn sie wissen, welche Daten verarbeitet werden."},
+              {"id": "itv-63-impl", "name": "implementation-levels", "parts": [
+                {"id": "itv-63-base", "name": "baseline", "prose": "Definierter Prozess für Auskunftsanträge. Manuelle Zusammenstellung aus Systemen. Bereitstellung in gängigem Format (PDF). Fristüberwachung (1 Monat)."},
+                {"id": "itv-63-std", "name": "standard", "prose": "Teilautomatisierte Datenextraktion. Self-Service-Portal für Standardauskünfte. Maschinenlesbares Format (JSON, XML). Identitätsprüfung. Protokollierung."},
+                {"id": "itv-63-enh", "name": "enhanced", "prose": "Vollautomatischer Self-Service-Export. Real-time Dashboard für Betroffene. API für Drittanbieter-Tools. Multi-Faktor-Authentifizierung. Vollständige Automatisierung."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#DSR-02", "rel": "implements", "text": "OPC: Auskunftsrecht"}
+            ]
+          },
+          {
+            "id": "SDM-ITV-64",
+            "class": "technical",
+            "title": "Datenportabilität ermöglichen",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.1.3.9"},
+              {"name": "dp-risk-impact", "value": "moderate"},
+              {"name": "moscow", "value": "should"}
+            ],
+            "parts": [
+              {"id": "itv-64-stmt", "name": "statement", "prose": "Die Organisation stellt personenbezogene Daten auf Anfrage in einem strukturierten, gängigen und maschinenlesbaren Format bereit und ermöglicht die Übertragung an andere Verantwortliche."},
+              {"id": "itv-64-priv", "name": "privacy-rationale", "prose": "Die Datenportabilität (Art. 20 DSGVO) stärkt die Kontrolle der Betroffenen und fördert den Wettbewerb. Sie ermöglicht einen einfachen Wechsel zwischen Diensteanbietern."},
+              {"id": "itv-64-impl", "name": "implementation-levels", "parts": [
+                {"id": "itv-64-base", "name": "baseline", "prose": "Export in CSV oder JSON auf Anfrage. Dokumentation des Datenformats. Manuelle Bereitstellung."},
+                {"id": "itv-64-std", "name": "standard", "prose": "Standardisierte Export-Formate (JSON-LD, XML). Self-Service-Download. Direkte Übermittlung an anderen Anbieter auf Wunsch. Dokumentierte API."},
+                {"id": "itv-64-enh", "name": "enhanced", "prose": "Standardisierte APIs (z.B. Data Transfer Project). Automatische Übertragung zu Drittanbietern. Verschlüsselte Übertragung. Vollständige Metadaten."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#DSR-05", "rel": "implements", "text": "OPC: Datenportabilität"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SDM-NVK",
+        "class": "non-linkability",
+        "title": "SDM-NVK - Nichtverkettung",
+        "props": [
+          {"name": "assurance-goal", "value": "non-linkability", "ns": "https://open-gov-group.org/oscal/sdm"},
+          {"name": "gdpr-reference", "value": "Art. 5(1)b, 5(1)c, 25"}
+        ],
+        "controls": [
+          {
+            "id": "SDM-NVK-50",
+            "class": "technical",
+            "title": "Trennen",
+            "props": [
+              {"name": "original-sdm-id", "value": "B50"},
+              {"name": "iso27701-mapping", "value": "A.1.2.5"},
+              {"name": "iso27001-mapping", "value": "A.8.22, A.8.31"},
+              {"name": "bsi-mapping", "value": "APP.4.3"},
+              {"name": "secondary-goals", "value": "confidentiality, data-minimization"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "nvk-50-stmt", "name": "statement", "prose": "Die Organisation trennt Verarbeitungen personenbezogener Daten nach Zwecken, Mandanten und Zuständigkeiten durch technische und organisatorische Maßnahmen."},
+              {"id": "nvk-50-priv", "name": "privacy-rationale", "prose": "Trennung verhindert unzulässige Zusammenführung von Daten über verschiedene Verarbeitungszwecke hinweg. Dies schützt vor Profilbildung und wahrt die Zweckbindung (Art. 5 Abs. 1b DSGVO)."},
+              {"id": "nvk-50-impl", "name": "implementation-levels", "parts": [
+                {"id": "nvk-50-base", "name": "baseline", "prose": "Logische Trennung durch Mandanten-ID oder Zweck-Kennzeichen in Datenbanken. Getrennte Zugriffsrechte pro Verarbeitungszweck."},
+                {"id": "nvk-50-std", "name": "standard", "prose": "Physisch getrennte Datenbanken oder Schemas pro Zweck. Netzwerksegmentierung. Separate Entwicklungs-, Test- und Produktionsumgebungen. Mandantentrennung in Cloud."},
+                {"id": "nvk-50-enh", "name": "enhanced", "prose": "Air-gapped Systeme für hochsensible Verarbeitungen. Hardware Security Modules für Schlüsseltrennung. Mikroservices-Architektur mit strikter Datenisolation."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#LAW-02", "rel": "implements", "text": "OPC: Zweckbindung"},
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#TOM-03", "rel": "implements", "text": "OPC: Technische Trennung"}
+            ]
+          },
+          {
+            "id": "SDM-NVK-51",
+            "class": "technical",
+            "title": "Pseudonymisieren",
+            "props": [
+              {"name": "original-sdm-id", "value": "B51"},
+              {"name": "iso27701-mapping", "value": "A.1.2.4"},
+              {"name": "iso27001-mapping", "value": "A.8.11"},
+              {"name": "secondary-goals", "value": "confidentiality, data-minimization"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "should"}
+            ],
+            "parts": [
+              {"id": "nvk-51-stmt", "name": "statement", "prose": "Die Organisation setzt Pseudonymisierung ein, um personenbezogene Daten so zu verarbeiten, dass sie ohne zusätzliche Informationen nicht mehr einer spezifischen Person zugeordnet werden können."},
+              {"id": "nvk-51-priv", "name": "privacy-rationale", "prose": "Pseudonymisierung ist eine Kernmaßnahme des Privacy by Design (Art. 25 DSGVO). Sie reduziert Risiken bei Datenpannen und ermöglicht Datennutzung für Analysen bei reduziertem Personenbezug."},
+              {"id": "nvk-51-impl", "name": "implementation-levels", "parts": [
+                {"id": "nvk-51-base", "name": "baseline", "prose": "Einfache Token-Ersetzung für direkte Identifikatoren. Separate Speicherung der Zuordnungstabelle mit Zugriffsschutz."},
+                {"id": "nvk-51-std", "name": "standard", "prose": "Kryptographische Pseudonymisierung (HMAC, Format-Preserving Encryption). Rollenspezifische Re-Identifizierung. Pseudonymwechsel bei Weitergabe. Dokumentierte Verfahren."},
+                {"id": "nvk-51-enh", "name": "enhanced", "prose": "K-Anonymität, L-Diversität für Quasi-Identifikatoren. Differential Privacy für Analysen. Automatische Pseudonymisierung in Data Pipelines. Regelmäßige Re-Analyse der Reidentifizierungsrisiken."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#TOM-05", "rel": "implements", "text": "OPC: Pseudonymisierung"}
+            ]
+          },
+          {
+            "id": "SDM-NVK-52",
+            "class": "organizational",
+            "title": "Lieferanten- und Auftragsverarbeiter-Management",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.1.4.1, A.2.2.1, A.2.2.3, A.3.24"},
+              {"name": "iso27001-mapping", "value": "A.5.19, A.5.20, A.5.21, A.5.22, A.5.23"},
+              {"name": "bsi-mapping", "value": "OPS.2.3"},
+              {"name": "secondary-goals", "value": "confidentiality, integrity"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "nvk-52-stmt", "name": "statement", "prose": "Die Organisation steuert Auftragsverarbeiter und IT-Dienstleister durch geeignete Verträge, Kontrollen und Überwachungsmaßnahmen."},
+              {"id": "nvk-52-priv", "name": "privacy-rationale", "prose": "Der Verantwortliche bleibt gemäß Art. 28 DSGVO für die Einhaltung des Datenschutzes durch Auftragsverarbeiter verantwortlich. Lieferantenkontrolle verhindert unzulässige Datenverkettungen durch Dritte."},
+              {"id": "nvk-52-impl", "name": "implementation-levels", "parts": [
+                {"id": "nvk-52-base", "name": "baseline", "prose": "AVV gemäß Art. 28 DSGVO mit allen Auftragsverarbeitern. Grundlegende Due-Diligence vor Beauftragung. Dokumentation in Lieferantenverzeichnis."},
+                {"id": "nvk-52-std", "name": "standard", "prose": "Strukturierte Lieferantenbewertung (TOMs, Zertifizierungen). Regelmäßige Überprüfung (mind. jährlich). Standardvertragsklauseln. Sub-Auftragsverarbeiter-Kontrolle. Exit-Strategie."},
+                {"id": "nvk-52-enh", "name": "enhanced", "prose": "Kontinuierliches Lieferanten-Monitoring. On-site Audits bei kritischen AV. Automatisierte Vertragsverwaltung. Supply-Chain-Risikoanalyse. Third-Party-Risk-Management-Plattform."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#OPS-03", "rel": "implements", "text": "OPC: Auftragsverarbeitung"},
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#XFER-01", "rel": "implements", "text": "OPC: Datenübermittlung"}
+            ]
+          },
+          {
+            "id": "SDM-NVK-53",
+            "class": "organizational",
+            "title": "Drittlandtransfer absichern",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.1.2.7, A.1.2.8, A.1.4.3"},
+              {"name": "iso27001-mapping", "value": "A.5.20"},
+              {"name": "dp-risk-impact", "value": "critical"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "nvk-53-stmt", "name": "statement", "prose": "Die Organisation überprüft und dokumentiert die Rechtsgrundlage für Übermittlungen personenbezogener Daten in Drittländer und implementiert geeignete Garantien."},
+              {"id": "nvk-53-priv", "name": "privacy-rationale", "prose": "Kapitel V DSGVO schützt Betroffene vor Übermittlungen in Länder mit unzureichendem Datenschutzniveau. Ohne geeignete Garantien drohen Sanktionen und Schutzlosigkeit der Betroffenen."},
+              {"id": "nvk-53-impl", "name": "implementation-levels", "parts": [
+                {"id": "nvk-53-base", "name": "baseline", "prose": "Inventar aller Drittlandtransfers. Prüfung auf Angemessenheitsbeschluss. Bei Fehlen: Standardvertragsklauseln (SCCs)."},
+                {"id": "nvk-53-std", "name": "standard", "prose": "Transfer Impact Assessment (TIA) für alle SCCs. Technische Zusatzmaßnahmen (Verschlüsselung). Dokumentierte Bewertung des Empfängerlandes. Regelmäßige Überprüfung."},
+                {"id": "nvk-53-enh", "name": "enhanced", "prose": "Vollständige TIA-Dokumentation mit Rechtsgutachten. End-to-End-Verschlüsselung mit Schlüsselhoheit in EU. Datenlokalisierung wo möglich. Automatisiertes Monitoring von Rechtsänderungen."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#XFER-02", "rel": "implements", "text": "OPC: Drittlandtransfer"},
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#XFER-03", "rel": "implements", "text": "OPC: SCCs"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SDM-VCI",
+        "class": "vci-triad",
+        "title": "SDM-VCI - Verfügbarkeit, Vertraulichkeit, Integrität",
+        "props": [
+          {"name": "assurance-goal", "value": "availability, confidentiality, integrity", "ns": "https://open-gov-group.org/oscal/sdm"},
+          {"name": "gdpr-reference", "value": "Art. 32"}
+        ],
+        "controls": [
+          {
+            "id": "SDM-VCI-11",
+            "class": "technical",
+            "title": "Aufbewahren und Sichern",
+            "props": [
+              {"name": "original-sdm-id", "value": "B11"},
+              {"name": "iso27701-mapping", "value": "A.3.21"},
+              {"name": "iso27001-mapping", "value": "A.8.13"},
+              {"name": "bsi-mapping", "value": "CON.3"},
+              {"name": "primary-goal", "value": "availability"},
+              {"name": "secondary-goals", "value": "integrity"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "vci-11-stmt", "name": "statement", "prose": "Die Organisation sichert personenbezogene Daten durch Backup-Verfahren und gewährleistet deren Wiederherstellbarkeit im Schadensfall."},
+              {"id": "vci-11-priv", "name": "privacy-rationale", "prose": "Art. 32 Abs. 1c DSGVO fordert die Fähigkeit zur raschen Wiederherstellung. Datenverlust kann für Betroffene gravierende Folgen haben (z.B. Verlust von Anspruchsnachweisen)."},
+              {"id": "vci-11-impl", "name": "implementation-levels", "parts": [
+                {"id": "vci-11-base", "name": "baseline", "prose": "Regelmäßige Backups (mind. täglich). Aufbewahrung an getrenntem Ort. Verschlüsselung der Backup-Medien. Grundlegende Restore-Tests."},
+                {"id": "vci-11-std", "name": "standard", "prose": "Automatisierte Backup-Strategie (3-2-1 Regel). Differenzielle/inkrementelle Backups. Regelmäßige Restore-Tests (mind. quartalsweise). Monitoring der Backup-Jobs. RTO/RPO definiert."},
+                {"id": "vci-11-enh", "name": "enhanced", "prose": "Continuous Data Protection. Immutable Backups. Geo-redundante Speicherung. Automatisierte Wiederherstellungstests. Air-gapped Offline-Kopien für Ransomware-Schutz."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#TOM-06", "rel": "implements", "text": "OPC: Verfügbarkeit"},
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#INC-03", "rel": "related", "text": "OPC: Wiederherstellung"}
+            ]
+          },
+          {
+            "id": "SDM-VCI-12",
+            "class": "technical",
+            "title": "Zugriffe steuern",
+            "props": [
+              {"name": "original-sdm-id", "value": "B12"},
+              {"name": "iso27701-mapping", "value": "A.3.9, A.3.10, A.3.12, A.3.13"},
+              {"name": "iso27001-mapping", "value": "A.5.15, A.5.16, A.5.18, A.8.2, A.8.3"},
+              {"name": "bsi-mapping", "value": "ORP.4"},
+              {"name": "primary-goal", "value": "confidentiality"},
+              {"name": "secondary-goals", "value": "integrity, non-linkability"},
+              {"name": "dp-risk-impact", "value": "critical"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "vci-12-stmt", "name": "statement", "prose": "Die Organisation implementiert ein Berechtigungskonzept, das den Zugriff auf personenbezogene Daten auf berechtigte Personen mit legitimem Bedarf beschränkt."},
+              {"id": "vci-12-priv", "name": "privacy-rationale", "prose": "Zugriffskontrolle ist fundamental für Vertraulichkeit. Das Need-to-Know-Prinzip minimiert das Risiko unbefugter Kenntnisnahme und wahrt das informationelle Selbstbestimmungsrecht."},
+              {"id": "vci-12-impl", "name": "implementation-levels", "parts": [
+                {"id": "vci-12-base", "name": "baseline", "prose": "Dokumentiertes Berechtigungskonzept. Individuelle Benutzerkonten (keine Shared Accounts). Entzug bei Austritt. Adminrechte restriktiv."},
+                {"id": "vci-12-std", "name": "standard", "prose": "Rollenbasierte Zugriffskontrolle (RBAC). Regelmäßige Rezertifizierung (mind. jährlich). Privileged Access Management (PAM). Protokollierung aller Zugriffe. Segregation of Duties."},
+                {"id": "vci-12-enh", "name": "enhanced", "prose": "Attribute-based Access Control (ABAC). Just-in-Time Access. Zero Standing Privileges. Dynamische Risikobewertung. Kontinuierliche Zugriffsanalyse (UEBA)."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#TOM-02", "rel": "implements", "text": "OPC: Zugriffskontrolle"}
+            ]
+          },
+          {
+            "id": "SDM-VCI-13",
+            "class": "technical",
+            "title": "Authentisieren",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.3.11"},
+              {"name": "iso27001-mapping", "value": "A.5.17, A.8.5"},
+              {"name": "bsi-mapping", "value": "ORP.4"},
+              {"name": "primary-goal", "value": "confidentiality"},
+              {"name": "secondary-goals", "value": "integrity"},
+              {"name": "dp-risk-impact", "value": "critical"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "vci-13-stmt", "name": "statement", "prose": "Die Organisation implementiert starke Authentifizierungsmechanismen, um die Identität von Benutzern vor dem Zugriff auf personenbezogene Daten zu verifizieren."},
+              {"id": "vci-13-priv", "name": "privacy-rationale", "prose": "Authentifizierung ist Voraussetzung für wirksame Zugriffskontrolle. Schwache Authentifizierung ermöglicht Identitätsdiebstahl und unbefugten Zugriff auf Betroffenendaten."},
+              {"id": "vci-13-impl", "name": "implementation-levels", "parts": [
+                {"id": "vci-13-base", "name": "baseline", "prose": "Passwort-Policy (Mindestlänge 12 Zeichen, Komplexität). Kontosperrung nach Fehlversuchen. Keine Standardpasswörter. Sichere Passwort-Speicherung (Hash+Salt)."},
+                {"id": "vci-13-std", "name": "standard", "prose": "Multi-Faktor-Authentifizierung (MFA) für Adminzugänge und Remotezugriff. Single Sign-On (SSO). Passwort-Manager empfohlen. Brute-Force-Schutz."},
+                {"id": "vci-13-enh", "name": "enhanced", "prose": "MFA für alle Anwendungen mit PII. Phishing-resistente Authentifizierung (FIDO2/WebAuthn). Adaptive/risikobasierte Authentifizierung. Passwordless wo möglich."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#TOM-02", "rel": "implements", "text": "OPC: Authentifizierung"}
+            ]
+          },
+          {
+            "id": "SDM-VCI-14",
+            "class": "technical",
+            "title": "Verschlüsseln",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.3.8"},
+              {"name": "iso27001-mapping", "value": "A.8.24"},
+              {"name": "bsi-mapping", "value": "CON.1"},
+              {"name": "primary-goal", "value": "confidentiality"},
+              {"name": "secondary-goals", "value": "integrity"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "vci-14-stmt", "name": "statement", "prose": "Die Organisation verschlüsselt personenbezogene Daten bei der Speicherung (at rest) und bei der Übertragung (in transit) entsprechend ihrer Sensitivität."},
+              {"id": "vci-14-priv", "name": "privacy-rationale", "prose": "Verschlüsselung ist eine explizit in Art. 32 DSGVO genannte Maßnahme. Sie macht abgefangene oder gestohlene Daten für Unbefugte wertlos und reduziert Meldepflichten bei Datenpannen."},
+              {"id": "vci-14-impl", "name": "implementation-levels", "parts": [
+                {"id": "vci-14-base", "name": "baseline", "prose": "TLS 1.2+ für alle Übertragungen. Verschlüsselung mobiler Endgeräte und Wechselmedien. Grundlegende Schlüsselverwaltung."},
+                {"id": "vci-14-std", "name": "standard", "prose": "Verschlüsselung at rest für alle PII (AES-256). TLS 1.3. Zentrales Key Management. Regelmäßiger Schlüsselwechsel. Verschlüsselte Backups."},
+                {"id": "vci-14-enh", "name": "enhanced", "prose": "Ende-zu-Ende-Verschlüsselung wo möglich. Hardware Security Modules (HSM) für Schlüssel. Confidential Computing. Homomorphe Verschlüsselung für Analysen."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#TOM-04", "rel": "implements", "text": "OPC: Kryptographie"}
+            ]
+          },
+          {
+            "id": "SDM-VCI-15",
+            "class": "technical",
+            "title": "Übertragung schützen",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.3.7"},
+              {"name": "iso27001-mapping", "value": "A.8.20, A.8.21"},
+              {"name": "bsi-mapping", "value": "NET.1.1, NET.3.1"},
+              {"name": "primary-goal", "value": "confidentiality"},
+              {"name": "secondary-goals", "value": "integrity"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "vci-15-stmt", "name": "statement", "prose": "Die Organisation schützt die Übertragung personenbezogener Daten über Netzwerke durch Verschlüsselung, sichere Protokolle und Netzwerksicherheitsmaßnahmen."},
+              {"id": "vci-15-priv", "name": "privacy-rationale", "prose": "Netzwerkübertragungen sind für Abfangen anfällig. Ungeschützte Übertragung von PII kann zu Identitätsdiebstahl und Verletzung der Vertraulichkeit führen."},
+              {"id": "vci-15-impl", "name": "implementation-levels", "parts": [
+                {"id": "vci-15-base", "name": "baseline", "prose": "HTTPS für alle Webanwendungen. VPN für Remotezugriff. Firewall mit grundlegenden Regeln. Keine PII über unverschlüsselte Kanäle."},
+                {"id": "vci-15-std", "name": "standard", "prose": "Next-Generation Firewall. Netzwerksegmentierung für PII-Systeme. IDS/IPS. Sichere E-Mail (S/MIME, TLS). API-Security (mTLS)."},
+                {"id": "vci-15-enh", "name": "enhanced", "prose": "Zero Trust Network Architecture. Mikrosegmentierung. Always-on VPN. Certificate Pinning. Network Detection and Response (NDR)."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#TOM-04", "rel": "implements", "text": "OPC: Netzwerksicherheit"}
+            ]
+          },
+          {
+            "id": "SDM-VCI-16",
+            "class": "technical",
+            "title": "Endgeräte schützen",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.3.15, A.3.16"},
+              {"name": "iso27001-mapping", "value": "A.8.1"},
+              {"name": "bsi-mapping", "value": "SYS.2.1, SYS.3.1"},
+              {"name": "primary-goal", "value": "confidentiality"},
+              {"name": "secondary-goals", "value": "integrity, availability"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "vci-16-stmt", "name": "statement", "prose": "Die Organisation schützt Endgeräte, die personenbezogene Daten verarbeiten, durch technische Sicherheitsmaßnahmen und Konfigurationsmanagement."},
+              {"id": "vci-16-priv", "name": "privacy-rationale", "prose": "Endgeräte sind häufige Angriffsvektoren. Kompromittierte Geräte gefährden die Vertraulichkeit aller darauf verarbeiteten PII und können als Einfallstor für das Netzwerk dienen."},
+              {"id": "vci-16-impl", "name": "implementation-levels", "parts": [
+                {"id": "vci-16-base", "name": "baseline", "prose": "Antivirus/Antimalware auf allen Systemen. Automatische Updates. Bildschirmsperre. Grundlegende Härtung. Inventar aller Endgeräte."},
+                {"id": "vci-16-std", "name": "standard", "prose": "Endpoint Detection and Response (EDR). Mobile Device Management (MDM). Standardisierte Basiskonfiguration (Hardening). Application Whitelisting. Patch-Management."},
+                {"id": "vci-16-enh", "name": "enhanced", "prose": "Extended Detection and Response (XDR). Mikrosegmentierung auf Endgeräteebene. Data Loss Prevention (DLP). Behavioral Analysis. Automatisierte Incident Response."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#TOM-07", "rel": "implements", "text": "OPC: Endpoint Security"}
+            ]
+          },
+          {
+            "id": "SDM-VCI-17",
+            "class": "technical",
+            "title": "Datenträger handhaben",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.3.20"},
+              {"name": "iso27001-mapping", "value": "A.7.10"},
+              {"name": "bsi-mapping", "value": "CON.6"},
+              {"name": "primary-goal", "value": "confidentiality"},
+              {"name": "secondary-goals", "value": "integrity"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "vci-17-stmt", "name": "statement", "prose": "Die Organisation regelt den sicheren Umgang mit Datenträgern, die personenbezogene Daten enthalten, einschließlich Transport, Aufbewahrung und Entsorgung."},
+              {"id": "vci-17-priv", "name": "privacy-rationale", "prose": "Physische Datenträger können leicht verloren gehen oder gestohlen werden. Sichere Handhabung verhindert physische Datenpannen, die oft große Datenmengen betreffen."},
+              {"id": "vci-17-impl", "name": "implementation-levels", "parts": [
+                {"id": "vci-17-base", "name": "baseline", "prose": "Verschlüsselung mobiler Datenträger. Sichere Aufbewahrung (verschlossene Schränke). Protokollierte Entsorgung. Verbot unverschlüsselter USB-Sticks für PII."},
+                {"id": "vci-17-std", "name": "standard", "prose": "Zentrale Verwaltung verschlüsselter Datenträger. Sichere Kurierdienste für Transport. Zertifizierte Datenträgervernichtung (DIN 66399). Inventarisierung."},
+                {"id": "vci-17-enh", "name": "enhanced", "prose": "Hardware-verschlüsselte Datenträger mit Remote-Wipe. Automatische Verschlüsselung bei Export. Lückenlose Chain-of-Custody-Dokumentation. On-site Aktenvernichtung."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#TOM-07", "rel": "implements", "text": "OPC: Physische Sicherheit"}
+            ]
+          },
+          {
+            "id": "SDM-VCI-18",
+            "class": "organizational",
+            "title": "Sichere Entwicklung",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.3.22, A.3.23"},
+              {"name": "iso27001-mapping", "value": "A.8.25, A.8.26, A.8.27, A.8.28, A.8.29, A.8.31, A.8.32"},
+              {"name": "bsi-mapping", "value": "CON.8"},
+              {"name": "primary-goal", "value": "integrity"},
+              {"name": "secondary-goals", "value": "confidentiality, availability"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "should"}
+            ],
+            "parts": [
+              {"id": "vci-18-stmt", "name": "statement", "prose": "Die Organisation integriert Datenschutz- und Sicherheitsanforderungen in den Softwareentwicklungsprozess (Security & Privacy by Design)."},
+              {"id": "vci-18-priv", "name": "privacy-rationale", "prose": "Art. 25 DSGVO fordert Privacy by Design. Nachträgliche Sicherheitsmaßnahmen sind teurer und weniger effektiv. Frühzeitige Integration reduziert Datenschutzrisiken systematisch."},
+              {"id": "vci-18-impl", "name": "implementation-levels", "parts": [
+                {"id": "vci-18-base", "name": "baseline", "prose": "Trennung von Entwicklung und Produktion. Grundlegende Code-Reviews. Keine echten PII in Testumgebungen. Dokumentierte Sicherheitsanforderungen."},
+                {"id": "vci-18-std", "name": "standard", "prose": "Security Development Lifecycle (SDL). Threat Modeling. SAST/DAST in CI/CD Pipeline. Privacy Impact Assessment in Anforderungsphase. Secure Coding Guidelines."},
+                {"id": "vci-18-enh", "name": "enhanced", "prose": "DevSecOps mit vollautomatisierten Security-Gates. Fuzzing. Dependency Scanning. Bug Bounty Programm. Privacy Engineering als dedizierte Rolle."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#TOM-01", "rel": "implements", "text": "OPC: Privacy by Design"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SDM-DMI",
+        "class": "data-minimization",
+        "title": "SDM-DMI - Datenminimierung",
+        "props": [
+          {"name": "assurance-goal", "value": "data-minimization", "ns": "https://open-gov-group.org/oscal/sdm"},
+          {"name": "gdpr-reference", "value": "Art. 5(1)c, 5(1)e, 25"}
+        ],
+        "controls": [
+          {
+            "id": "SDM-DMI-01",
+            "class": "organizational",
+            "title": "Datenerhebung minimieren",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.1.2.2, A.1.2.3"},
+              {"name": "secondary-goals", "value": "non-linkability, confidentiality"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "dmi-01-stmt", "name": "statement", "prose": "Die Organisation erhebt nur personenbezogene Daten, die für den festgelegten Verarbeitungszweck erforderlich sind (Datensparsamkeit bei der Erhebung)."},
+              {"id": "dmi-01-priv", "name": "privacy-rationale", "prose": "Art. 5 Abs. 1c DSGVO fordert, dass Daten dem Zweck angemessen und auf das notwendige Maß beschränkt sind. Nicht erhobene Daten können nicht verloren gehen oder missbraucht werden."},
+              {"id": "dmi-01-impl", "name": "implementation-levels", "parts": [
+                {"id": "dmi-01-base", "name": "baseline", "prose": "Prüfung der Erforderlichkeit bei neuen Datenfeldern. Dokumentation des Zwecks pro Datenfeld. Keine Pflichtfelder ohne Begründung."},
+                {"id": "dmi-01-std", "name": "standard", "prose": "Data-Minimization-Review im Designprozess. Formular-Audits. Begründungspflicht für jedes erhobene Datum. Regelmäßige Überprüfung bestehender Formulare."},
+                {"id": "dmi-01-enh", "name": "enhanced", "prose": "Privacy-Enhancing Technologies (PETs) bei Erhebung. Anonyme Optionen wo möglich. Selektive Offenlegung. Kontinuierliche Optimierung basierend auf tatsächlicher Nutzung."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#LAW-03", "rel": "implements", "text": "OPC: Datenminimierung"}
+            ]
+          },
+          {
+            "id": "SDM-DMI-02",
+            "class": "organizational",
+            "title": "Verarbeitung beschränken",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.1.2.6"},
+              {"name": "secondary-goals", "value": "non-linkability"},
+              {"name": "dp-risk-impact", "value": "moderate"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "dmi-02-stmt", "name": "statement", "prose": "Die Organisation beschränkt die Verarbeitung personenbezogener Daten auf die für den Zweck erforderlichen Operationen und Zeiträume."},
+              {"id": "dmi-02-priv", "name": "privacy-rationale", "prose": "Jede Verarbeitungsoperation birgt Risiken. Minimierung der Verarbeitung auf das Notwendige reduziert die Angriffsfläche und potenzielle Schäden für Betroffene."},
+              {"id": "dmi-02-impl", "name": "implementation-levels", "parts": [
+                {"id": "dmi-02-base", "name": "baseline", "prose": "Dokumentation erlaubter Verarbeitungsoperationen pro Zweck. Verbot nicht-dokumentierter Verarbeitungen. Grundlegende Zugriffskontrollen."},
+                {"id": "dmi-02-std", "name": "standard", "prose": "Technische Enforcement von Verarbeitungsbeschränkungen. Purpose-Limitation in APIs. Automatische Zweckprüfung bei Datenzugriff. Audit-Logging."},
+                {"id": "dmi-02-enh", "name": "enhanced", "prose": "Policy-as-Code für Verarbeitungsbeschränkungen. Automatische Anomalie-Erkennung bei Verarbeitung. Sticky Policies auf Daten. Fine-grained Purpose Control."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#LAW-02", "rel": "implements", "text": "OPC: Zweckbindung"}
+            ]
+          },
+          {
+            "id": "SDM-DMI-03",
+            "class": "organizational",
+            "title": "Speicherdauer begrenzen",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.1.2.9, A.1.4.6"},
+              {"name": "secondary-goals", "value": "intervenability"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "dmi-03-stmt", "name": "statement", "prose": "Die Organisation definiert und erzwingt Aufbewahrungsfristen für alle Kategorien personenbezogener Daten und löscht diese nach Fristablauf."},
+              {"id": "dmi-03-priv", "name": "privacy-rationale", "prose": "Art. 5 Abs. 1e DSGVO verlangt Speicherbegrenzung. Langfristig gespeicherte Daten akkumulieren Risiken und können für ursprünglich nicht vorgesehene Zwecke missbraucht werden."},
+              {"id": "dmi-03-impl", "name": "implementation-levels", "parts": [
+                {"id": "dmi-03-base", "name": "baseline", "prose": "Löschkonzept mit Fristen pro Datenkategorie. Berücksichtigung gesetzlicher Aufbewahrungspflichten. Jährliche Überprüfung auf Löschfälligkeit."},
+                {"id": "dmi-03-std", "name": "standard", "prose": "Automatisierte Löschroutinen. Monitoring der Datenalterung. Eskalation bei Überschreitung. Integration in Datenbankdesign (TTL, Archivierung)."},
+                {"id": "dmi-03-enh", "name": "enhanced", "prose": "Automatische Löschung mit Compliance-Nachweis. Ausnahme-Workflows für Aufbewahrungsverlängerung. Predictive Analytics für Speicheroptimierung."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#LAW-05", "rel": "implements", "text": "OPC: Speicherbegrenzung"},
+              {"href": "#SDM-ITV-60", "rel": "related", "text": "SPC: Löschen"}
+            ]
+          },
+          {
+            "id": "SDM-DMI-04",
+            "class": "technical",
+            "title": "Testdaten anonymisieren",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.3.22"},
+              {"name": "iso27001-mapping", "value": "A.8.33"},
+              {"name": "secondary-goals", "value": "non-linkability, confidentiality"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "dmi-04-stmt", "name": "statement", "prose": "Die Organisation verwendet in Test- und Entwicklungsumgebungen keine echten personenbezogenen Daten, sondern anonymisierte oder synthetische Testdaten."},
+              {"id": "dmi-04-priv", "name": "privacy-rationale", "prose": "Testumgebungen haben oft schwächere Sicherheitsmaßnahmen. Die Verwendung echter PII exponiert Betroffene unnötigen Risiken. Synthetische Daten eliminieren dieses Risiko vollständig."},
+              {"id": "dmi-04-impl", "name": "implementation-levels", "parts": [
+                {"id": "dmi-04-base", "name": "baseline", "prose": "Verbot der direkten Kopie von Produktionsdaten in Test. Grundlegende Anonymisierung (Entfernung direkter Identifikatoren). Zugriffskontrolle auf Testumgebungen."},
+                {"id": "dmi-04-std", "name": "standard", "prose": "Automatisierte Datenmaskierung bei Test-Refresh. Synthetische Testdatengenerierung. Regelmäßige Überprüfung auf echte PII in Test. Dokumentierte Verfahren."},
+                {"id": "dmi-04-enh", "name": "enhanced", "prose": "Vollständig synthetische Testdaten mit realistischen Eigenschaften. Automatische PII-Detection in Test-Pipelines. Data Virtualization. Privacy-preserving Test-Frameworks."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#TOM-05", "rel": "implements", "text": "OPC: Anonymisierung/Pseudonymisierung"},
+              {"href": "#SDM-VCI-18", "rel": "related", "text": "SPC: Sichere Entwicklung"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SDM-MGT",
+        "class": "management",
+        "title": "SDM-MGT - Datenschutzmanagement",
+        "props": [
+          {"name": "assurance-goal", "value": "management", "ns": "https://open-gov-group.org/oscal/sdm"},
+          {"name": "gdpr-reference", "value": "Art. 5(2), 24, 32, 33, 34, 35"}
+        ],
+        "controls": [
+          {
+            "id": "SDM-MGT-01",
+            "class": "organizational",
+            "title": "Datenschutzmanagementsystem etablieren",
+            "props": [
+              {"name": "iso27701-mapping", "value": "Kl.4-10 (PIMS Requirements)"},
+              {"name": "iso27001-mapping", "value": "Kl.4-10 (ISMS)"},
+              {"name": "bsi-mapping", "value": "ISMS.1"},
+              {"name": "dp-risk-impact", "value": "critical"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "mgt-01-stmt", "name": "statement", "prose": "Die Organisation etabliert ein Datenschutzmanagementsystem (DSMS) mit definierten Rollen, Prozessen und kontinuierlicher Verbesserung."},
+              {"id": "mgt-01-priv", "name": "privacy-rationale", "prose": "Art. 24 DSGVO fordert geeignete Maßnahmen zur Gewährleistung der DSGVO-Compliance. Ein systematischer Ansatz ist effektiver als Ad-hoc-Maßnahmen und demonstriert Rechenschaftspflicht."},
+              {"id": "mgt-01-impl", "name": "implementation-levels", "parts": [
+                {"id": "mgt-01-base", "name": "baseline", "prose": "Benennung DSB (wo erforderlich). Grundlegende Datenschutz-Richtlinie. Verarbeitungsverzeichnis. Reaktive Vorfallsbehandlung."},
+                {"id": "mgt-01-std", "name": "standard", "prose": "Dokumentiertes DSMS mit PDCA-Zyklus. Integration mit ISMS. Regelmäßige Management-Reviews. KPIs für Datenschutz. DSB-Ressourcen."},
+                {"id": "mgt-01-enh", "name": "enhanced", "prose": "ISO 27701-zertifiziertes PIMS. Integration in Unternehmenssteuerung. Automatisierte Compliance-Überwachung. Privacy Metrics Dashboard. Kontinuierliche Verbesserung."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#GOV-01", "rel": "implements", "text": "OPC: Datenschutz-Governance"},
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#ACC-01", "rel": "implements", "text": "OPC: DSMS"}
+            ]
+          },
+          {
+            "id": "SDM-MGT-02",
+            "class": "organizational",
+            "title": "Risiken managen",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.1.2.1"},
+              {"name": "iso27001-mapping", "value": "A.5.7"},
+              {"name": "bsi-mapping", "value": "ISMS.1"},
+              {"name": "dp-risk-impact", "value": "critical"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "mgt-02-stmt", "name": "statement", "prose": "Die Organisation identifiziert, bewertet und behandelt Risiken für die Rechte und Freiheiten natürlicher Personen durch systematisches Datenschutz-Risikomanagement."},
+              {"id": "mgt-02-priv", "name": "privacy-rationale", "prose": "Art. 32 DSGVO fordert risikoangemessene Maßnahmen. Die Perspektive der Betroffenen unterscheidet sich von klassischen IT-Risiken und erfordert spezifische Bewertungsmethoden."},
+              {"id": "mgt-02-impl", "name": "implementation-levels", "parts": [
+                {"id": "mgt-02-base", "name": "baseline", "prose": "Grundlegende Risikobewertung bei neuen Verarbeitungen. Orientierung an Schutzbedarf der Daten. Dokumentation erkannter Risiken."},
+                {"id": "mgt-02-std", "name": "standard", "prose": "Strukturierte Risiko-Methodik (Eintrittswahrscheinlichkeit × Auswirkung). Risiko-Register. Regelmäßige Neubewertung. Integration mit ISMS-Risikomanagement."},
+                {"id": "mgt-02-enh", "name": "enhanced", "prose": "Quantitative Risikobewertung. Automatisierte Risiko-Aggregation. Threat Intelligence für neue Risiken. Risk Appetite Framework für Datenschutz."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#DPIA-02", "rel": "implements", "text": "OPC: Risikoanalyse"},
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#DPIA-04", "rel": "implements", "text": "OPC: Risikobehandlung"}
+            ]
+          },
+          {
+            "id": "SDM-MGT-03",
+            "class": "organizational",
+            "title": "Audits durchführen",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.3.14"},
+              {"name": "iso27001-mapping", "value": "A.5.35, A.5.36"},
+              {"name": "bsi-mapping", "value": "DER.3.1"},
+              {"name": "dp-risk-impact", "value": "moderate"},
+              {"name": "moscow", "value": "should"}
+            ],
+            "parts": [
+              {"id": "mgt-03-stmt", "name": "statement", "prose": "Die Organisation überprüft regelmäßig die Wirksamkeit der Datenschutzmaßnahmen durch interne und externe Audits."},
+              {"id": "mgt-03-priv", "name": "privacy-rationale", "prose": "Audits sind Teil der Rechenschaftspflicht (Art. 5 Abs. 2). Sie identifizieren Lücken zwischen Soll und Ist und treiben kontinuierliche Verbesserung."},
+              {"id": "mgt-03-impl", "name": "implementation-levels", "parts": [
+                {"id": "mgt-03-base", "name": "baseline", "prose": "Jährliche Selbstbewertung. Überprüfung bei Beschwerden oder Vorfällen. Dokumentation von Feststellungen."},
+                {"id": "mgt-03-std", "name": "standard", "prose": "Risikobasiertes internes Audit-Programm. Unabhängige interne Audits. Nachverfolgung von Maßnahmen. Management-Reporting."},
+                {"id": "mgt-03-enh", "name": "enhanced", "prose": "Externe Audits/Zertifizierungen (ISO 27701). Continuous Control Monitoring. Automatisierte Compliance-Checks. Peer Reviews."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#ACC-04", "rel": "implements", "text": "OPC: Audit"}
+            ]
+          },
+          {
+            "id": "SDM-MGT-04",
+            "class": "organizational",
+            "title": "Vorfälle managen",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.1.4.8, A.1.4.10, A.3.25"},
+              {"name": "iso27001-mapping", "value": "A.5.24, A.5.25, A.5.26, A.5.27"},
+              {"name": "bsi-mapping", "value": "DER.2.1"},
+              {"name": "dp-risk-impact", "value": "critical"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "mgt-04-stmt", "name": "statement", "prose": "Die Organisation implementiert Prozesse zur Erkennung, Meldung, Bewertung und Behandlung von Datenschutzvorfällen einschließlich der Erfüllung von Meldepflichten."},
+              {"id": "mgt-04-priv", "name": "privacy-rationale", "prose": "Art. 33/34 DSGVO verpflichten zur Meldung an Aufsichtsbehörden (72h) und ggf. Betroffene. Schnelle, strukturierte Reaktion minimiert Schäden und erfüllt gesetzliche Pflichten."},
+              {"id": "mgt-04-impl", "name": "implementation-levels", "parts": [
+                {"id": "mgt-04-base", "name": "baseline", "prose": "Definierter Meldeprozess für Datenpannen. Kontaktdaten Aufsichtsbehörde bekannt. Dokumentation aller Vorfälle. Fristüberwachung 72h."},
+                {"id": "mgt-04-std", "name": "standard", "prose": "Strukturierter Incident-Response-Plan für Datenschutz. Vorlagen für Meldungen. Bewertungsmatrix für Risiko. Integration mit IT-Incident-Management. Übungen."},
+                {"id": "mgt-04-enh", "name": "enhanced", "prose": "Automatisierte Vorfallserkennung. Playbooks für verschiedene Szenarien. Forensik-Kapazitäten. Krisenmanagement. Lessons Learned mit Prozessverbesserung."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#INC-01", "rel": "implements", "text": "OPC: Vorfallserkennung"},
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#INC-02", "rel": "implements", "text": "OPC: Meldung an Aufsichtsbehörde"},
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#INC-03", "rel": "implements", "text": "OPC: Benachrichtigung Betroffener"}
+            ]
+          },
+          {
+            "id": "SDM-MGT-05",
+            "class": "organizational",
+            "title": "Compliance nachweisen",
+            "props": [
+              {"name": "iso27701-mapping", "value": "A.1.3.1, A.1.3.2, A.1.3.3, A.1.3.4"},
+              {"name": "dp-risk-impact", "value": "high"},
+              {"name": "moscow", "value": "must"}
+            ],
+            "parts": [
+              {"id": "mgt-05-stmt", "name": "statement", "prose": "Die Organisation dokumentiert und weist die Einhaltung der DSGVO gegenüber Aufsichtsbehörden, Betroffenen und anderen Stakeholdern nach (Rechenschaftspflicht)."},
+              {"id": "mgt-05-priv", "name": "privacy-rationale", "prose": "Art. 5 Abs. 2 DSGVO fordert explizit den Nachweis der Compliance. Die Beweislast liegt beim Verantwortlichen. Fehlende Dokumentation ist bereits ein Verstoß."},
+              {"id": "mgt-05-impl", "name": "implementation-levels", "parts": [
+                {"id": "mgt-05-base", "name": "baseline", "prose": "Verarbeitungsverzeichnis (Art. 30). TOMs dokumentiert. DSB-Benennung nachgewiesen. Einwilligungen archiviert."},
+                {"id": "mgt-05-std", "name": "standard", "prose": "Vollständiges DSMS-Dokumentationspaket. Nachweise für alle Pflichten. Regelmäßige Aktualisierung. Revisionssichere Archivierung."},
+                {"id": "mgt-05-enh", "name": "enhanced", "prose": "Automatisierte Compliance-Dokumentation. Echtzeit-Compliance-Dashboard. Zertifizierungen (ISO 27701, Datenschutzsiegel). Proaktive Kommunikation mit Aufsichtsbehörden."}
+              ]}
+            ],
+            "links": [
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#ACC-01", "rel": "implements", "text": "OPC: Rechenschaftspflicht"},
+              {"href": "open_privacy_catalog_risk_v0.7.0.json#ACC-02", "rel": "implements", "text": "OPC: Nachweisfähigkeit"}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

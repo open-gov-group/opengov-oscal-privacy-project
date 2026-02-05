@@ -19,7 +19,8 @@ Zentrale Architektur-Dokumentation für das OpenGov OSCAL Privacy Ecosystem.
 |----------|--------------|
 | [CATALOG_OVERVIEW.md](CATALOG_OVERVIEW.md) | Zwei-Katalog-Architektur Übersicht |
 | [OSCAL_PRIVACY_CATALOGS.md](OSCAL_PRIVACY_CATALOGS.md) | Open Privacy Catalog (OPC) Spezifikation |
-| [SDM_CATALOG_STRUCTURE.md](SDM_CATALOG_STRUCTURE.md) | SDM Privacy Catalog Gliederung |
+| [SDM_CATALOG_STRUCTURE.md](SDM_CATALOG_STRUCTURE.md) | **SDM Privacy Catalog v2.0** (31 Controls) |
+| [SPC_REVERSE_ENGINEERING.md](SPC_REVERSE_ENGINEERING.md) | **NEU: Methodik Maßnahmen-Konsolidierung** |
 | [CATALOG_INTEGRATION.md](CATALOG_INTEGRATION.md) | Integration Workflow |
 
 ### Framework-Mappings

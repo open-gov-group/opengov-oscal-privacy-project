@@ -329,6 +329,7 @@
 | 2026-02-04 | Initiale Status-Erfassung |
 | 2026-02-05 | BSI Grundschutz++ Mapping abgeschlossen, SDM-Katalogstruktur v1.0 festgeschrieben |
 | 2026-02-05 | **ISO 27701:2025 Mapping abgeschlossen** - 89% Coverage, 1546 Zeilen OSCAL-Mapping |
+| 2026-02-05 | **SDM Privacy Catalog v2.0** - 31 Controls durch Reverse Engineering (ISO/BSI) |
 
 ---
 
@@ -344,6 +345,7 @@
 | [CATALOG_OVERVIEW.md](architecture/CATALOG_OVERVIEW.md) | Zwei-Katalog-Architektur Übersicht |
 | **[MAPPING_PRIVACY_TO_ISO27701.md](architecture/MAPPING_PRIVACY_TO_ISO27701.md)** | **NEU: ISO 27701:2025 Mapping (89% Coverage)** |
 | **[REFERENCE_ARCHITECTURE.md](architecture/REFERENCE_ARCHITECTURE.md)** | **NEU: OPC ↔ SPC ↔ Frameworks Referenzierungsarchitektur** |
+| **[SPC_REVERSE_ENGINEERING.md](architecture/SPC_REVERSE_ENGINEERING.md)** | **NEU: Methodik zur Maßnahmen-Konsolidierung** |
 
 ### Neue OSCAL-Artefakte
 
@@ -353,6 +355,7 @@
 | **ISO 27701-Mapping** | **oscal/mappings/opengov_privacy_to_iso27701.json** (1546 Zeilen) |
 | Integriertes Profil | oscal/profiles/profile_integrated_privacy_security.json |
 | OPC v0.7.0 | oscal/catalog/open_privacy_catalog_risk_v0.7.0.json |
+| **SPC v2.0.0** | **oscal/catalog/sdm_privacy_catalog_v2.0.0.json** (861 Zeilen, 31 Controls) |
 
 ---
 

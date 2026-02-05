@@ -1,22 +1,22 @@
-# SDM Privacy Catalog - Gliederungsspezifikation v1.0
+# SDM Privacy Catalog - Gliederungsspezifikation v2.0
 
-**Version**: 1.0.0
+**Version**: 2.0.0
 **Stand**: 2026-02-05
-**Status**: Festgeschriebene Referenzstruktur
+**Status**: Erweiterte Struktur durch Reverse Engineering
 **Verantwortlich**: Architecture Team
 
 ---
 
 ## 1. Übersicht
 
-Diese Spezifikation definiert die **verbindliche Gliederungsstruktur** für den SDM Privacy Catalog. Die Struktur ist auf die bestehende Open Privacy Catalog (OPC) Architektur abgestimmt und ermöglicht durchgängige Referenzierungen.
+Diese Spezifikation definiert die **verbindliche Gliederungsstruktur** für den SDM Privacy Catalog v2.0. Die Struktur basiert auf einem Reverse-Engineering-Ansatz, bei dem technisch-organisatorische Maßnahmen aus ISO 27701, ISO 27001 und BSI IT-Grundschutz konsolidiert und aus Datenschutz-Perspektive interpretiert wurden.
 
 ### 1.1 Design-Prinzipien
 
 1. **Gewährleistungsziel-orientiert**: Primäre Strukturierung nach den 7 SDM-Gewährleistungszielen
 2. **OPC-harmonisiert**: Mapping zu den 11 OPC-Gruppen
-3. **Baustein-integriert**: Alle 9 existierenden SDM-Bausteine eingeordnet
-4. **Erweiterbar**: Nummerierung erlaubt zukünftige Bausteine
+3. **Framework-konsolidiert**: 31 Controls aus ~330 Quell-Maßnahmen (ISO 27701 + ISO 27001 + BSI)
+4. **Schutzniveau-basiert**: Drei Implementierungsebenen (baseline/standard/enhanced)
 5. **OSCAL-konform**: Kompatibel mit OSCAL 1.1.2 Catalog-Schema
 
 ### 1.2 Architektur-Kontext
@@ -54,51 +54,66 @@ Diese Spezifikation definiert die **verbindliche Gliederungsstruktur** für den 
 
 ### 2.1 Übersicht der Hauptgruppen
 
-| Gruppe-ID | Titel | Gewährleistungsziele | OPC-Bezug |
-|-----------|-------|----------------------|-----------|
-| **SDM-TRA** | Transparenz | TRA | GOV, ACC, REG, TRAIN |
-| **SDM-ITV** | Intervenierbarkeit | ITV | DSR |
-| **SDM-NVK** | Nichtverkettung | NVK | LAW, XFER |
-| **SDM-VCI** | Verfügbarkeit, Vertraulichkeit, Integrität | VER, VRT, INT | TOM, OPS, INC |
-| **SDM-DMI** | Datenminimierung | DMI | LAW, DPIA |
-| **SDM-MGT** | Management & Übergreifend | Alle | GOV, ACC, DPIA |
+| Gruppe-ID | Titel | Controls | Gewährleistungsziele | OPC-Bezug |
+|-----------|-------|----------|----------------------|-----------|
+| **SDM-TRA** | Transparenz | 5 | TRA | GOV, ACC, REG, TRAIN |
+| **SDM-ITV** | Intervenierbarkeit | 5 | ITV | DSR |
+| **SDM-NVK** | Nichtverkettung | 4 | NVK | LAW, XFER, OPS |
+| **SDM-VCI** | Verfügbarkeit, Vertraulichkeit, Integrität | 8 | VER, VRT, INT | TOM, OPS, INC |
+| **SDM-DMI** | Datenminimierung | 4 | DMI | LAW, DPIA |
+| **SDM-MGT** | Management & Übergreifend | 5 | Alle | GOV, ACC, DPIA, INC |
+| | **GESAMT** | **31** | | |
 
-### 2.2 Vollständige Hierarchie
+### 2.2 Vollständige Hierarchie (v2.0 - 31 Controls)
 
 ```
-SDM PRIVACY CATALOG v1.0
+SDM PRIVACY CATALOG v2.0
 ════════════════════════
 
-SDM-TRA: Transparenz
-├── SDM-TRA-41: Planen und Spezifizieren
-├── SDM-TRA-42: Dokumentieren
-├── SDM-TRA-43: Protokollieren
-└── [Erweiterung: SDM-TRA-44 bis SDM-TRA-49 reserviert]
+SDM-TRA: Transparenz (5 Controls)
+├── SDM-TRA-41: Planen und Spezifizieren [B41]
+├── SDM-TRA-42: Dokumentieren [B42, ISO A.5.33/A.5.37, BSI ORP.1]
+├── SDM-TRA-43: Protokollieren [B43, ISO A.8.15/A.8.16, BSI OPS.1.1.5]
+├── SDM-TRA-44: Klassifizieren und Kennzeichnen [ISO A.5.12/A.5.13]
+└── SDM-TRA-45: Schulen und Sensibilisieren [ISO A.6.3, BSI ORP.2/ORP.3]
 
-SDM-ITV: Intervenierbarkeit
-├── SDM-ITV-60: Löschen und Vernichten (+ NVK, DMI, INT, VRT)
-├── SDM-ITV-61: Berichtigen (+ INT)
-├── SDM-ITV-62: Einschränken der Verarbeitung (+ NVK, DMI, INT, VRT)
-└── [Erweiterung: SDM-ITV-63 bis SDM-ITV-69 reserviert]
+SDM-ITV: Intervenierbarkeit (5 Controls)
+├── SDM-ITV-60: Löschen und Vernichten [B60, ISO A.8.10, BSI CON.6]
+├── SDM-ITV-61: Berichtigen [B61, ISO 27701 A.1.4.4]
+├── SDM-ITV-62: Einschränken der Verarbeitung [B62]
+├── SDM-ITV-63: Auskunft erteilen [ISO 27701 A.1.3.7/A.1.3.9/A.1.3.10]
+└── SDM-ITV-64: Datenportabilität ermöglichen [ISO 27701 A.1.3.9]
 
-SDM-NVK: Nichtverkettung
-├── SDM-NVK-50: Trennen (+ DMI, VRT, ITV)
-└── [Erweiterung: SDM-NVK-51 bis SDM-NVK-59 reserviert]
+SDM-NVK: Nichtverkettung (4 Controls)
+├── SDM-NVK-50: Trennen [B50, ISO A.8.22/A.8.31, BSI APP.4.3]
+├── SDM-NVK-51: Pseudonymisieren [ISO A.8.11, ISO 27701 A.1.2.4]
+├── SDM-NVK-52: Lieferanten- und Auftragsverarbeiter-Management [ISO A.5.19-A.5.23, BSI OPS.2.3]
+└── SDM-NVK-53: Drittlandtransfer absichern [ISO 27701 A.1.2.7/A.1.2.8]
 
-SDM-VCI: Verfügbarkeit, Vertraulichkeit, Integrität
-├── SDM-VCI-11: Aufbewahren (+ DMI)
-├── SDM-VCI-51: Zugriffe auf Daten, Systeme und Prozesse regeln (+ NVK, DMI)
-└── [Erweiterung: SDM-VCI-12 bis SDM-VCI-19, SDM-VCI-52 bis SDM-VCI-59 reserviert]
+SDM-VCI: Verfügbarkeit, Vertraulichkeit, Integrität (8 Controls)
+├── SDM-VCI-11: Aufbewahren und Sichern [B11, ISO A.8.13, BSI CON.3]
+├── SDM-VCI-12: Zugriffe steuern [B51, ISO A.5.15-A.5.18/A.8.2-A.8.3, BSI ORP.4]
+├── SDM-VCI-13: Authentisieren [ISO A.5.17/A.8.5]
+├── SDM-VCI-14: Verschlüsseln [ISO A.8.24, BSI CON.1]
+├── SDM-VCI-15: Übertragung schützen [ISO A.8.20/A.8.21, BSI NET.1.1/NET.3.1]
+├── SDM-VCI-16: Endgeräte schützen [ISO A.8.1, BSI SYS.2.1/SYS.3.1]
+├── SDM-VCI-17: Datenträger handhaben [ISO A.7.10, BSI CON.6]
+└── SDM-VCI-18: Sichere Entwicklung [ISO A.8.25-A.8.32, BSI CON.8]
 
-SDM-DMI: Datenminimierung
-└── [Konzeptionelle Gruppe - Bausteine primär in anderen Gruppen]
-    └── Referenziert: SDM-ITV-60, SDM-ITV-62, SDM-NVK-50, SDM-VCI-11, SDM-VCI-51
+SDM-DMI: Datenminimierung (4 Controls)
+├── SDM-DMI-01: Datenerhebung minimieren [ISO 27701 A.1.2.2/A.1.2.3]
+├── SDM-DMI-02: Verarbeitung beschränken [ISO 27701 A.1.2.6]
+├── SDM-DMI-03: Speicherdauer begrenzen [ISO 27701 A.1.2.9/A.1.4.6]
+└── SDM-DMI-04: Testdaten anonymisieren [ISO A.8.33, ISO 27701 A.3.22]
 
-SDM-MGT: Management & Übergreifend
-├── SDM-MGT-01: Datenschutz-Managementsystem (DSMS)
-├── SDM-MGT-02: Risikomanagement & DSFA
-├── SDM-MGT-03: Audit & Kontrolle
-└── [Erweiterung: SDM-MGT-04 bis SDM-MGT-09 reserviert]
+SDM-MGT: Management & Übergreifend (5 Controls)
+├── SDM-MGT-01: Datenschutzmanagementsystem etablieren [ISO 27701 Kl.4-10, BSI ISMS.1]
+├── SDM-MGT-02: Risiken managen [ISO A.5.7, ISO 27701 A.1.2.1]
+├── SDM-MGT-03: Audits durchführen [ISO A.5.35/A.5.36, BSI DER.3.1]
+├── SDM-MGT-04: Vorfälle managen [ISO A.5.24-A.5.27, BSI DER.2.1]
+└── SDM-MGT-05: Compliance nachweisen [ISO 27701 A.1.3.1-A.1.3.4]
+
+LEGENDE: [Bxx] = Original SDM-Baustein | ISO = ISO 27001:2022 | BSI = BSI IT-Grundschutz
 ```
 
 ---
@@ -682,10 +697,27 @@ Wobei:
 
 | Version | Datum | Änderung |
 |---------|-------|----------|
-| 1.0.0 | 2026-02-05 | Initiale festgeschriebene Gliederungsstruktur |
+| 1.0.0 | 2026-02-05 | Initiale festgeschriebene Gliederungsstruktur (12 Controls) |
+| 2.0.0 | 2026-02-05 | Erweiterung auf 31 Controls durch Reverse Engineering aus ISO 27701/27001/BSI |
+
+### v2.0 Änderungen im Detail
+
+**Neue Controls:**
+- **SDM-TRA**: +2 (Klassifizieren, Schulen)
+- **SDM-ITV**: +2 (Auskunft, Portabilität)
+- **SDM-NVK**: +3 (Pseudonymisieren, Lieferanten, Drittland)
+- **SDM-VCI**: +6 (Auth, Krypto, Netzwerk, Endpoint, Medien, DevSecOps)
+- **SDM-DMI**: +4 (Erhebung, Verarbeitung, Speicher, Testdaten)
+- **SDM-MGT**: +2 (Vorfälle, Compliance)
+
+**Strukturelle Erweiterungen:**
+- Dreistufiges Implementierungsmodell (baseline/standard/enhanced)
+- Privacy-Rationale für jeden Control
+- Vollständige Framework-Referenzen (ISO 27701, ISO 27001, BSI)
+- OPC-Verlinkung pro Control
 
 ---
 
 **Letzte Aktualisierung**: 2026-02-05
 **Verantwortlich**: Architecture Team
-**Status**: Festgeschrieben v1.0
+**Status**: Festgeschrieben v2.0

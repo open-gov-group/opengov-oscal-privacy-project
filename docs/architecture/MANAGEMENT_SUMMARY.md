@@ -58,7 +58,7 @@ Das **OpenGov OSCAL Privacy Ecosystem** ist ein Open-Source-Framework zur maschi
 | **Phase 1: MVP Foundation** | In Umsetzung | **70%** |
 | Architektur-Dokumentation | Abgeschlossen | 100% |
 | DSGVO-Katalog (OPC) | 10 Gruppen, 50+ Controls | 90% |
-| SDM-Katalog Struktur | v1.0 festgeschrieben | 100% |
+| SDM-Katalog (SPC) | **v2.0 - 31 Controls** | 100% |
 | BSI Grundschutz++ Mapping | Vollständig (60% Coverage) | 100% |
 | **ISO 27701:2025 Mapping** | **Vollständig (89% Coverage)** | **100%** |
 | Python Libraries | Architektur definiert | 50% |
@@ -92,9 +92,9 @@ Das **OpenGov OSCAL Privacy Ecosystem** ist ein Open-Source-Framework zur maschi
 │   • MASTER_BLUEPRINT, VISION, GOVERNANCE                                    │
 │   • Alle ADRs dokumentiert                                                  │
 │                                                                             │
-│   KATALOG-ENTWICKLUNG (OPC + SDM)                        ████████░░░░  70%  │
+│   KATALOG-ENTWICKLUNG (OPC + SPC)                        ████████████ 100%  │
 │   • Open Privacy Catalog: 10 Gruppen, ~50 Controls                         │
-│   • SDM Privacy Catalog: Struktur v1.0 festgeschrieben                     │
+│   • SDM Privacy Catalog: v2.0 mit 31 Controls (Reverse Engineering)        │
 │                                                                             │
 │   BSI GRUNDSCHUTZ++ MAPPING                              ████████████ 100%  │
 │   • Mapping-Methodik dokumentiert (742 Zeilen)                             │

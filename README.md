@@ -208,7 +208,8 @@ opengov-oscal-privacy-project/
 
 **Highlights Q1 2026:**
 - BSI Grundschutz++ Mapping abgeschlossen (10 OPC-Gruppen → BSI-Bausteine)
-- SDM-Katalogstruktur v1.0 festgeschrieben
+- ISO 27701:2025 Mapping abgeschlossen (89% Privacy Coverage)
+- **SDM Privacy Catalog v2.0** mit 31 Controls (Reverse Engineering aus ISO/BSI)
 - OSCAL-Artefakte (Kataloge, Mappings, Profile) in diesem Repository
 
 Siehe [ROADMAP.md](docs/architecture/ROADMAP.md) für Details.
