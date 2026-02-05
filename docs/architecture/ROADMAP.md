@@ -1,8 +1,8 @@
 # OpenGov OSCAL Privacy Ecosystem - Roadmap
 
-**Version**: 1.1.0
+**Version**: 1.2.0
 **Stand**: 2026-02-05
-**Status**: Aktiv – Phase 1 in Umsetzung
+**Status**: Aktiv – Phase 1 bei 70%, Phase 2 Mappings vorgezogen
 
 ---
 
@@ -110,20 +110,22 @@ Q1          Q2          Q3          Q4          Q1          Q2
 
 ### Meilenstein 2.1: Privacy Mappings
 **Deadline**: Ende Juni 2026
-**Status**: Vorgezogen – BSI-Mapping Q1 2026 abgeschlossen
+**Status**: Vorgezogen – BSI + ISO 27701 Mappings Q1 2026 abgeschlossen
 
 | Aufgabe | Repository | Status | Priorität |
 |---------|------------|--------|-----------|
 | BSI Grundschutz++ Mapping | privacy-oscal | ✓ Abgeschlossen | Kritisch |
 | Mapping-Methodologie dokumentieren | privacy-oscal | ✓ Dokumentiert | Hoch |
+| **ISO 27701:2025 Mapping** | privacy-oscal | **✓ Abgeschlossen** | Kritisch |
 | ISO 27001:2022 Mapping | privacy-mappings | Teilweise | Kritisch |
-| ISO 27701:2019 Mapping | privacy-mappings | Offen | Kritisch |
 | Mapping-Validierung | privacy-mappings | In Arbeit | Hoch |
 
 **Erfolgskriterien**:
-- [x] BSI Grundschutz++ Mapping vollständig (10 Gruppen)
-- [x] Mapping-Methodik dokumentiert (742 Zeilen)
-- [x] OSCAL-Mapping-Datei erstellt (947 Zeilen)
+- [x] BSI Grundschutz++ Mapping vollständig (10 Gruppen, 60% Coverage)
+- [x] **ISO 27701:2025 Mapping vollständig (11 Gruppen, 89% Coverage)**
+- [x] Mapping-Methodik dokumentiert (BSI: 742 Zeilen, ISO: 435 Zeilen)
+- [x] OSCAL-Mapping-Dateien erstellt (BSI: 947 Zeilen, ISO: 1546 Zeilen)
+- [x] **Referenzierungsarchitektur OPC ↔ SPC ↔ Frameworks dokumentiert**
 - [ ] ISO 27001 Mapping vollständig
 - [ ] Mappings extern validiert
 - [ ] Viewer zeigt Mappings an
@@ -315,6 +317,7 @@ M1.4 (pyprivacy)      M1.2 (Viewer)       M1.3 (App)
 |---------|-------|----------|
 | 1.0.0 | 2026-02-02 | Initiale Roadmap |
 | 1.1.0 | 2026-02-05 | Status-Update: M1.1 90%, M2.1 BSI-Mapping vorgezogen und abgeschlossen |
+| 1.2.0 | 2026-02-05 | **ISO 27701:2025 Mapping abgeschlossen** (89% Coverage, 1546 Zeilen), Referenzierungsarchitektur dokumentiert |
 
 ---
 

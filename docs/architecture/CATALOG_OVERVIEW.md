@@ -67,6 +67,14 @@ Das OpenGov OSCAL Privacy Ecosystem basiert auf einem **zweischichtigen Katalog-
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
+### Verwandte Dokumente
+
+| Dokument | Beschreibung |
+|----------|--------------|
+| [REFERENCE_ARCHITECTURE.md](REFERENCE_ARCHITECTURE.md) | Referenzierungsarchitektur OPC ↔ SPC ↔ Frameworks |
+| [MAPPING_PRIVACY_TO_ISO27701.md](MAPPING_PRIVACY_TO_ISO27701.md) | Detailliertes ISO 27701 Mapping |
+| [MAPPING_PRIVACY_TO_BSI_GRUNDSCHUTZ.md](MAPPING_PRIVACY_TO_BSI_GRUNDSCHUTZ.md) | BSI Grundschutz++ Mapping |
+
 ---
 
 ## 1. Open Privacy Catalog - Datenschutz-Kompendium

@@ -1,14 +1,14 @@
 # OpenGov OSCAL Privacy Ecosystem – Management Summary
 
-**Version**: 1.1.0
+**Version**: 1.2.0
 **Stand**: 2026-02-05
-**Status**: Projektfortschritt Q1 2026 – Phase 1 bei 70%
+**Status**: Projektfortschritt Q1 2026 – Phase 1 bei 70%, Mappings vorgezogen
 
 ---
 
 ## Executive Summary
 
-Das **OpenGov OSCAL Privacy Ecosystem** ist ein Open-Source-Framework zur maschinenlesbaren Abbildung von Datenschutz-Compliance auf Basis des NIST OSCAL-Standards (Open Security Controls Assessment Language). Das Projekt ermöglicht erstmals eine durchgängige, standardisierte Dokumentation von DSGVO-Anforderungen, deren technische Umsetzung (SDM/TOM) und die Verknüpfung mit etablierten Security-Frameworks (BSI Grundschutz++, ISO 27001).
+Das **OpenGov OSCAL Privacy Ecosystem** ist ein Open-Source-Framework zur maschinenlesbaren Abbildung von Datenschutz-Compliance auf Basis des NIST OSCAL-Standards (Open Security Controls Assessment Language). Das Projekt ermöglicht erstmals eine durchgängige, standardisierte Dokumentation von DSGVO-Anforderungen, deren technische Umsetzung (SDM/TOM) und die Verknüpfung mit etablierten Security-Frameworks (BSI Grundschutz++, ISO 27001, **ISO 27701:2025**).
 
 ---
 
@@ -59,7 +59,8 @@ Das **OpenGov OSCAL Privacy Ecosystem** ist ein Open-Source-Framework zur maschi
 | Architektur-Dokumentation | Abgeschlossen | 100% |
 | DSGVO-Katalog (OPC) | 10 Gruppen, 50+ Controls | 90% |
 | SDM-Katalog Struktur | v1.0 festgeschrieben | 100% |
-| BSI Grundschutz++ Mapping | Vollständig | 100% |
+| BSI Grundschutz++ Mapping | Vollständig (60% Coverage) | 100% |
+| **ISO 27701:2025 Mapping** | **Vollständig (89% Coverage)** | **100%** |
 | Python Libraries | Architektur definiert | 50% |
 | Privacy Viewer | In Entwicklung | 40% |
 | RoPa MVP | Architektur definiert | 35% |
@@ -99,6 +100,12 @@ Das **OpenGov OSCAL Privacy Ecosystem** ist ein Open-Source-Framework zur maschi
 │   • Mapping-Methodik dokumentiert (742 Zeilen)                             │
 │   • OSCAL Mapping-Datei erstellt (947 Zeilen)                              │
 │   • Coverage-Analyse: TOM 85%, DSR 0% (erwartete Gap)                      │
+│                                                                             │
+│   ISO 27701:2025 MAPPING                                 ████████████ 100%  │
+│   • Mapping-Methodik dokumentiert (435 Zeilen)                             │
+│   • OSCAL Mapping-Datei erstellt (1546 Zeilen)                             │
+│   • Coverage-Analyse: DSR 95%, LAW 95% (kritischer Vorteil!)               │
+│   • Referenzierungsarchitektur OPC ↔ SPC ↔ Frameworks dokumentiert        │
 │                                                                             │
 │   CORE LIBRARIES (Python)                                ██████░░░░░░  50%  │
 │   • pyprivacy: Architektur definiert                                       │
@@ -169,7 +176,31 @@ Das **OpenGov OSCAL Privacy Ecosystem** ist ein Open-Source-Framework zur maschi
 | LAW | 25% | Datenschutz-spezifisch |
 | DSR | 0% | **Kritischer Privacy-Gap** |
 
-### 3. SDM-Katalogstruktur festgeschrieben (v1.0)
+### 3. ISO 27701:2025 Mapping abgeschlossen ⭐ NEU
+
+| Metrik | Wert |
+|--------|------|
+| Gemappte Gruppen | 11/11 |
+| Control-Mappings | 56 detailliert |
+| Durchschnittliche Coverage (Privacy → ISO) | **89%** |
+| OSCAL-Mapping-Datei | 1546 Zeilen |
+
+**Coverage-Analyse nach Gruppen:**
+
+| OPC-Gruppe | ISO 27701-Coverage | BSI-Coverage | Differenz |
+|------------|-------------------|--------------|-----------|
+| DSR | **95%** | 0% | **+95%** ⭐ |
+| LAW | **95%** | 25% | +70% |
+| DPIA | **95%** | 60% | +35% |
+| TRAIN | **95%** | 70% | +25% |
+| TOM | 93% | 85% | +8% |
+| XFER | 92% | 30% | +62% |
+| ACC | 90% | 50% | +40% |
+| REG | 90% | 50% | +40% |
+
+**Kritischer Vorteil**: ISO 27701 schließt den BSI-Gap bei Betroffenenrechten (DSR) vollständig.
+
+### 4. SDM-Katalogstruktur festgeschrieben (v1.0)
 
 ```
 SDM PRIVACY CATALOG v1.0

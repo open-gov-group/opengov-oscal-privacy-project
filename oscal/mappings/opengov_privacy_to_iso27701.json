@@ -1,0 +1,1546 @@
+{
+  "mapping-collection": {
+    "uuid": "b2c3d4e5-f6a7-8901-bcde-f23456789012",
+    "metadata": {
+      "title": "OpenGov Privacy Catalog ↔ ISO/IEC 27701:2025 Mapping",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2026-02-05T15:00:00Z",
+      "published": "2026-02-05T15:00:00Z",
+      "remarks": "Bidirektionales Mapping zwischen dem OpenGov Privacy Catalog (DSGVO-fokussiert) und ISO/IEC 27701:2025 (Privacy Information Management System). ISO 27701 bietet die beste Privacy-Abdeckung aller Framework-Mappings mit 95% Coverage für Betroffenenrechte (DSR).",
+      "parties": [
+        {
+          "uuid": "party-001-opengov",
+          "type": "organization",
+          "name": "OpenGov Privacy Group",
+          "links": [
+            {
+              "href": "https://github.com/open-gov-group",
+              "rel": "homepage"
+            }
+          ]
+        },
+        {
+          "uuid": "party-002-iso",
+          "type": "organization",
+          "name": "ISO - International Organization for Standardization",
+          "links": [
+            {
+              "href": "https://www.iso.org",
+              "rel": "homepage"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "creator",
+          "party-uuids": ["party-001-opengov"]
+        },
+        {
+          "role-id": "maintainer",
+          "party-uuids": ["party-001-opengov"]
+        }
+      ],
+      "props": [
+        {
+          "name": "mapping-methodology",
+          "value": "expert-review",
+          "class": "methodology"
+        },
+        {
+          "name": "review-status",
+          "value": "initial-draft",
+          "class": "status"
+        },
+        {
+          "name": "iso-version",
+          "value": "ISO/IEC 27701:2025 Second Edition",
+          "class": "framework-version"
+        }
+      ]
+    },
+    "source-catalog": {
+      "uuid": "source-catalog-opengov-privacy",
+      "href": "https://github.com/open-gov-group/opengov-privacy-oscal/blob/main/oscal/catalog/open_privacy_catalog_risk_v0.7.0.json",
+      "title": "OpenGov Privacy Catalog v0.7.0",
+      "props": [
+        {
+          "name": "namespace",
+          "value": "https://open-gov-group.org/oscal/privacy"
+        },
+        {
+          "name": "focus",
+          "value": "data-protection-rights"
+        },
+        {
+          "name": "perspective",
+          "value": "data-subject"
+        },
+        {
+          "name": "regulatory-basis",
+          "value": "DSGVO, SDM"
+        }
+      ]
+    },
+    "target-catalog": {
+      "uuid": "target-catalog-iso27701",
+      "href": "urn:iso:std:iso-iec:27701:ed-2:2025",
+      "title": "ISO/IEC 27701:2025 - Privacy Information Management Systems",
+      "props": [
+        {
+          "name": "namespace",
+          "value": "urn:iso:std:iso-iec:27701"
+        },
+        {
+          "name": "focus",
+          "value": "privacy-information-management"
+        },
+        {
+          "name": "perspective",
+          "value": "organization-pims"
+        },
+        {
+          "name": "regulatory-basis",
+          "value": "ISO 27001, GDPR-aligned"
+        },
+        {
+          "name": "annexes",
+          "value": "A.1 (PII Controller: 28), A.2 (PII Processor: 17), A.3 (Security: 29)"
+        }
+      ]
+    },
+    "mapping-types": {
+      "types": [
+        {
+          "id": "equivalent",
+          "title": "Equivalent",
+          "description": "1:1 Entsprechung - gleiche oder nahezu identische Anforderung"
+        },
+        {
+          "id": "related",
+          "title": "Related",
+          "description": "Thematisch verwandt - ähnliche Zielsetzung, unterschiedliche Perspektive"
+        },
+        {
+          "id": "partial",
+          "title": "Partial",
+          "description": "Teilweise Abdeckung - Schnittmenge vorhanden"
+        },
+        {
+          "id": "extends",
+          "title": "Extends",
+          "description": "Source erweitert Target um zusätzliche Anforderungen"
+        },
+        {
+          "id": "none",
+          "title": "None",
+          "description": "Keine direkte Entsprechung im Target-Katalog"
+        }
+      ]
+    },
+    "group-mappings": [
+      {
+        "uuid": "grp-map-iso-001",
+        "source-group-id": "GOV",
+        "source-group-title": "Governance & Organisation",
+        "target-groups": [
+          {
+            "target-group-id": "Clause-5",
+            "target-group-title": "Führung (Leadership)",
+            "relationship": "related",
+            "coverage-percentage": 85,
+            "target-controls": ["5.1", "5.2", "5.3"]
+          },
+          {
+            "target-group-id": "A.3",
+            "target-group-title": "Sicherheits-Controls (Rollen & Policies)",
+            "relationship": "related",
+            "coverage-percentage": 80,
+            "target-controls": ["A.3.3", "A.3.4"]
+          }
+        ],
+        "remarks": "GOV fokussiert auf Datenschutz-Organisation (DSB, Art. 37-39), ISO 27701 auf PIMS-Führung und Informationssicherheitsrollen"
+      },
+      {
+        "uuid": "grp-map-iso-002",
+        "source-group-id": "ACC",
+        "source-group-title": "Rechenschaft & Dokumentation",
+        "target-groups": [
+          {
+            "target-group-id": "Clause-7.5",
+            "target-group-title": "Dokumentierte Information",
+            "relationship": "equivalent",
+            "coverage-percentage": 90
+          },
+          {
+            "target-group-id": "A.1.2",
+            "target-group-title": "Bedingungen für Erhebung und Verarbeitung (Records)",
+            "relationship": "related",
+            "coverage-percentage": 85,
+            "target-controls": ["A.1.2.9"]
+          },
+          {
+            "target-group-id": "A.2.2",
+            "target-group-title": "Processor Records",
+            "relationship": "related",
+            "coverage-percentage": 80,
+            "target-controls": ["A.2.2.7"]
+          }
+        ],
+        "remarks": "ACC (Art. 5(2) DSGVO Rechenschaftspflicht) mapped direkt auf ISO 27701 Dokumentationsanforderungen"
+      },
+      {
+        "uuid": "grp-map-iso-003",
+        "source-group-id": "LAW",
+        "source-group-title": "Rechtsgrundlagen",
+        "target-groups": [
+          {
+            "target-group-id": "A.1.2",
+            "target-group-title": "Bedingungen für Erhebung und Verarbeitung",
+            "relationship": "equivalent",
+            "coverage-percentage": 95,
+            "target-controls": ["A.1.2.2", "A.1.2.3", "A.1.2.4", "A.1.2.5"]
+          },
+          {
+            "target-group-id": "A.3.13",
+            "target-group-title": "Legal, statutory, regulatory requirements",
+            "relationship": "related",
+            "coverage-percentage": 80
+          }
+        ],
+        "remarks": "LAW (Art. 5-11 DSGVO) hat hervorragende Entsprechung in ISO 27701 A.1.2 - Zweckbindung, Rechtsgrundlage, Einwilligung"
+      },
+      {
+        "uuid": "grp-map-iso-004",
+        "source-group-id": "DSR",
+        "source-group-title": "Betroffenenrechte",
+        "target-groups": [
+          {
+            "target-group-id": "A.1.3",
+            "target-group-title": "Pflichten gegenüber PII-Betroffenen",
+            "relationship": "equivalent",
+            "coverage-percentage": 95,
+            "target-controls": ["A.1.3.2", "A.1.3.3", "A.1.3.4", "A.1.3.5", "A.1.3.6", "A.1.3.7", "A.1.3.8", "A.1.3.9", "A.1.3.10", "A.1.3.11"]
+          }
+        ],
+        "remarks": "KRITISCHER VORTEIL: DSR (Art. 12-22 DSGVO) hat 95% Coverage in ISO 27701 vs. 0% in BSI Grundschutz++. A.1.3 deckt Auskunft, Berichtigung, Löschung, Einschränkung, Datenportabilität und Widerspruch vollständig ab."
+      },
+      {
+        "uuid": "grp-map-iso-005",
+        "source-group-id": "REG",
+        "source-group-title": "Verarbeitungsverzeichnis",
+        "target-groups": [
+          {
+            "target-group-id": "A.1.2.9",
+            "target-group-title": "Records related to processing PII",
+            "relationship": "equivalent",
+            "coverage-percentage": 90
+          },
+          {
+            "target-group-id": "A.2.2.7",
+            "target-group-title": "Processor Records",
+            "relationship": "equivalent",
+            "coverage-percentage": 85
+          }
+        ],
+        "remarks": "REG (Art. 30 DSGVO) mapped direkt auf A.1.2.9 und A.2.2.7 - Aufzeichnungspflichten für Controller und Processor"
+      },
+      {
+        "uuid": "grp-map-iso-006",
+        "source-group-id": "TOM",
+        "source-group-title": "Technische und organisatorische Maßnahmen",
+        "target-groups": [
+          {
+            "target-group-id": "A.3",
+            "target-group-title": "Sicherheits-Controls für PII Controller & Processor",
+            "relationship": "extends",
+            "coverage-percentage": 90,
+            "target-controls": ["A.3.3", "A.3.5", "A.3.6", "A.3.7", "A.3.8", "A.3.9", "A.3.10", "A.3.17", "A.3.18", "A.3.19", "A.3.20", "A.3.21", "A.3.22", "A.3.23", "A.3.24", "A.3.25", "A.3.26", "A.3.27", "A.3.28", "A.3.29", "A.3.30", "A.3.31"]
+          },
+          {
+            "target-group-id": "A.1.4",
+            "target-group-title": "Privacy by Design und Default",
+            "relationship": "equivalent",
+            "coverage-percentage": 95,
+            "target-controls": ["A.1.4.2", "A.1.4.3", "A.1.4.4", "A.1.4.5", "A.1.4.6", "A.1.4.7", "A.1.4.8", "A.1.4.9", "A.1.4.10"]
+          }
+        ],
+        "remarks": "TOM (Art. 25, 32 DSGVO) hat hervorragende Coverage: A.3 für technische Sicherheit, A.1.4 für Privacy by Design/Default"
+      },
+      {
+        "uuid": "grp-map-iso-007",
+        "source-group-id": "DPIA",
+        "source-group-title": "Datenschutz-Folgenabschätzung",
+        "target-groups": [
+          {
+            "target-group-id": "A.1.2.6",
+            "target-group-title": "Privacy impact assessment",
+            "relationship": "equivalent",
+            "coverage-percentage": 95
+          },
+          {
+            "target-group-id": "Clause-6.1.2",
+            "target-group-title": "Datenschutz-Risikobewertung",
+            "relationship": "related",
+            "coverage-percentage": 85
+          },
+          {
+            "target-group-id": "Clause-6.1.3",
+            "target-group-title": "Datenschutz-Risikobehandlung",
+            "relationship": "related",
+            "coverage-percentage": 80
+          }
+        ],
+        "remarks": "DPIA (Art. 35, 36 DSGVO) mapped direkt auf A.1.2.6 und das PIMS-Risikomanagement in Klausel 6"
+      },
+      {
+        "uuid": "grp-map-iso-008",
+        "source-group-id": "OPS",
+        "source-group-title": "Betriebsprozesse",
+        "target-groups": [
+          {
+            "target-group-id": "Clause-8",
+            "target-group-title": "Betrieb",
+            "relationship": "related",
+            "coverage-percentage": 85,
+            "target-controls": ["8.1", "8.2", "8.3"]
+          },
+          {
+            "target-group-id": "A.1.2.7",
+            "target-group-title": "Contracts with PII processors",
+            "relationship": "related",
+            "coverage-percentage": 80
+          }
+        ],
+        "remarks": "OPS behandelt Betriebsprozesse und Auftragsverarbeitung, gemapped auf PIMS Klausel 8 und A.1.2.7"
+      },
+      {
+        "uuid": "grp-map-iso-009",
+        "source-group-id": "XFER",
+        "source-group-title": "Datenübermittlung",
+        "target-groups": [
+          {
+            "target-group-id": "A.1.5",
+            "target-group-title": "PII-Weitergabe, -Transfer und -Offenlegung (Controller)",
+            "relationship": "equivalent",
+            "coverage-percentage": 95,
+            "target-controls": ["A.1.5.2", "A.1.5.3", "A.1.5.4", "A.1.5.5"]
+          },
+          {
+            "target-group-id": "A.2.5",
+            "target-group-title": "PII-Weitergabe, -Transfer und -Offenlegung (Processor)",
+            "relationship": "equivalent",
+            "coverage-percentage": 90,
+            "target-controls": ["A.2.5.2", "A.2.5.3", "A.2.5.4", "A.2.5.5", "A.2.5.6", "A.2.5.7", "A.2.5.8", "A.2.5.9"]
+          }
+        ],
+        "remarks": "XFER (Art. 44-49 DSGVO) hat exzellente Coverage in ISO 27701 A.1.5 und A.2.5 - Drittlandübermittlung, Rechtsgrundlagen, Dokumentation"
+      },
+      {
+        "uuid": "grp-map-iso-010",
+        "source-group-id": "INC",
+        "source-group-title": "Datenschutzvorfälle",
+        "target-groups": [
+          {
+            "target-group-id": "A.3.11",
+            "target-group-title": "Information security incident management planning",
+            "relationship": "extends",
+            "coverage-percentage": 85
+          },
+          {
+            "target-group-id": "A.3.12",
+            "target-group-title": "Response to information security incidents",
+            "relationship": "extends",
+            "coverage-percentage": 85
+          }
+        ],
+        "remarks": "INC erweitert A.3.11/A.3.12 um DSGVO-spezifische Meldefristen (72h Behörde, unverzüglich Betroffene)"
+      },
+      {
+        "uuid": "grp-map-iso-011",
+        "source-group-id": "TRAIN",
+        "source-group-title": "Schulung & Sensibilisierung",
+        "target-groups": [
+          {
+            "target-group-id": "Clause-7.2",
+            "target-group-title": "Kompetenz",
+            "relationship": "equivalent",
+            "coverage-percentage": 90
+          },
+          {
+            "target-group-id": "Clause-7.3",
+            "target-group-title": "Bewusstsein",
+            "relationship": "equivalent",
+            "coverage-percentage": 90
+          },
+          {
+            "target-group-id": "A.3.17",
+            "target-group-title": "Information security awareness, education and training",
+            "relationship": "equivalent",
+            "coverage-percentage": 95
+          }
+        ],
+        "remarks": "TRAIN mapped direkt auf PIMS Kompetenz/Bewusstsein (7.2/7.3) und A.3.17 Security Awareness"
+      }
+    ],
+    "control-mappings": [
+      {
+        "uuid": "ctrl-map-iso-001",
+        "source-control-id": "GOV-01",
+        "source-control-title": "Datenschutzorganisation definiert",
+        "target-mappings": [
+          {
+            "target-control-id": "5.3",
+            "target-control-title": "Rollen, Verantwortlichkeiten und Befugnisse",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Beide Controls fordern klare Zuweisung von Verantwortlichkeiten. ISO 27701 5.3 fokussiert auf PIMS-Rollen, GOV-01 auf DSB-spezifische Strukturen."
+          },
+          {
+            "target-control-id": "A.3.4",
+            "target-control-title": "Information security roles and responsibilities",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "A.3.4 definiert Sicherheitsrollen bei PII-Verarbeitung, ergänzt GOV-01 auf technischer Ebene."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-002",
+        "source-control-id": "GOV-02",
+        "source-control-title": "Datenschutzziele und -strategie",
+        "target-mappings": [
+          {
+            "target-control-id": "5.2",
+            "target-control-title": "Datenschutzpolitik",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Beide fordern eine dokumentierte Datenschutzpolitik/Strategie, die mit Unternehmenszielen abgestimmt ist."
+          },
+          {
+            "target-control-id": "6.2",
+            "target-control-title": "Datenschutzziele und Planung",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "ISO 27701 6.2 fordert messbare Datenschutzziele auf allen Ebenen."
+          },
+          {
+            "target-control-id": "A.3.3",
+            "target-control-title": "Policies for information security",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Informationssicherheitsrichtlinien müssen Datenschutzaspekte berücksichtigen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-003",
+        "source-control-id": "GOV-03",
+        "source-control-title": "DSGVO-Umsetzungsprogramm und Maßnahmenplan",
+        "target-mappings": [
+          {
+            "target-control-id": "6.1.3",
+            "target-control-title": "Datenschutz-Risikobehandlung",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Risikobehandlungsplan entspricht dem DSGVO-Maßnahmenplan."
+          },
+          {
+            "target-control-id": "8.3",
+            "target-control-title": "Datenschutz-Risikobehandlung (Betrieb)",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Operative Umsetzung des Risikobehandlungsplans."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-004",
+        "source-control-id": "GOV-04",
+        "source-control-title": "Datenschutzbeauftragter (DSB)",
+        "target-mappings": [
+          {
+            "target-control-id": "5.3",
+            "target-control-title": "Rollen, Verantwortlichkeiten und Befugnisse",
+            "relationship": "partial",
+            "confidence": "high",
+            "rationale": "ISO 27701 erwähnt DSB nicht explizit, aber 5.3 umfasst die Zuweisung relevanter Rollen inkl. Berichterstattung an Top-Management."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-005",
+        "source-control-id": "GOV-05",
+        "source-control-title": "Management-Commitment",
+        "target-mappings": [
+          {
+            "target-control-id": "5.1",
+            "target-control-title": "Führung und Verpflichtung",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Top-Management muss Engagement für PIMS demonstrieren."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-006",
+        "source-control-id": "GOV-06",
+        "source-control-title": "Ressourcenbereitstellung",
+        "target-mappings": [
+          {
+            "target-control-id": "7.1",
+            "target-control-title": "Ressourcen",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Notwendige Ressourcen für PIMS bestimmen und bereitstellen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-007",
+        "source-control-id": "ACC-01",
+        "source-control-title": "Dokumentation der Datenverarbeitung",
+        "target-mappings": [
+          {
+            "target-control-id": "7.5",
+            "target-control-title": "Dokumentierte Information",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Beide fordern Erstellung, Aktualisierung und Lenkung dokumentierter Information."
+          },
+          {
+            "target-control-id": "A.1.2.9",
+            "target-control-title": "Records related to processing PII",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "A.1.2.9 fordert explizit Aufzeichnungen zur PII-Verarbeitung."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-008",
+        "source-control-id": "ACC-02",
+        "source-control-title": "Nachweisfähigkeit",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.14",
+            "target-control-title": "Protection of records",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Aufzeichnungen müssen vor Verlust, Vernichtung und unbefugtem Zugriff geschützt werden."
+          },
+          {
+            "target-control-id": "9.2",
+            "target-control-title": "Internes Audit",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Interne Audits dienen der Nachweisfähigkeit der Compliance."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-009",
+        "source-control-id": "ACC-03",
+        "source-control-title": "Regelmäßige Überprüfung",
+        "target-mappings": [
+          {
+            "target-control-id": "9.1",
+            "target-control-title": "Überwachung, Messung, Analyse und Bewertung",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Wirksamkeit des PIMS regelmäßig bewerten."
+          },
+          {
+            "target-control-id": "9.3",
+            "target-control-title": "Managementbewertung",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Regelmäßige Überprüfung durch Top-Management."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-010",
+        "source-control-id": "ACC-04",
+        "source-control-title": "Compliance-Reporting",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.16",
+            "target-control-title": "Compliance with policies, rules and standards",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Regelmäßige Überprüfung der Einhaltung von Richtlinien bei PII-Verarbeitung."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-011",
+        "source-control-id": "ACC-05",
+        "source-control-title": "Kontinuierliche Verbesserung",
+        "target-mappings": [
+          {
+            "target-control-id": "10.1",
+            "target-control-title": "Kontinuierliche Verbesserung",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Eignung, Angemessenheit und Wirksamkeit des PIMS fortlaufend verbessern."
+          },
+          {
+            "target-control-id": "10.2",
+            "target-control-title": "Nichtkonformität und Korrekturmaßnahmen",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Auf Nichtkonformitäten reagieren und Korrekturmaßnahmen umsetzen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-012",
+        "source-control-id": "LAW-01",
+        "source-control-title": "Rechtmäßigkeit der Verarbeitung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.2.3",
+            "target-control-title": "Identify lawful basis",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Rechtsgrundlage für PII-Verarbeitung bestimmen und dokumentieren."
+          },
+          {
+            "target-control-id": "A.3.13",
+            "target-control-title": "Legal, statutory, regulatory and contractual requirements",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Rechtliche Anforderungen zur PII-Verarbeitung dokumentieren und aktuell halten."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-013",
+        "source-control-id": "LAW-02",
+        "source-control-title": "Zweckbindung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.2.2",
+            "target-control-title": "Identify and document purpose",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Spezifische Zwecke für PII-Verarbeitung identifizieren und dokumentieren."
+          },
+          {
+            "target-control-id": "A.2.2.3",
+            "target-control-title": "Organization's purposes",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Processor darf PII nur für dokumentierte Zwecke des Controllers verarbeiten."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-014",
+        "source-control-id": "LAW-03",
+        "source-control-title": "Datenminimierung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.4.2",
+            "target-control-title": "Limit collection",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Erhebung auf das Notwendige beschränken."
+          },
+          {
+            "target-control-id": "A.1.4.3",
+            "target-control-title": "Limit processing",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Verarbeitung auf das Angemessene und Notwendige beschränken."
+          },
+          {
+            "target-control-id": "A.1.4.5",
+            "target-control-title": "PII minimization objectives",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Datenminimierungsziele definieren und Mechanismen dokumentieren."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-015",
+        "source-control-id": "LAW-04",
+        "source-control-title": "Einwilligungsmanagement",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.2.4",
+            "target-control-title": "Determine when and how consent is to be obtained",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Prozess für Einholung der Einwilligung bestimmen und dokumentieren."
+          },
+          {
+            "target-control-id": "A.1.2.5",
+            "target-control-title": "Obtain and record consent",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Einwilligung einholen und aufzeichnen."
+          },
+          {
+            "target-control-id": "A.1.3.5",
+            "target-control-title": "Providing mechanism to modify or withdraw consent",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Mechanismus für Änderung/Widerruf der Einwilligung bereitstellen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-016",
+        "source-control-id": "LAW-05",
+        "source-control-title": "Speicherbegrenzung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.4.8",
+            "target-control-title": "Retention",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "PII nicht länger aufbewahren als erforderlich."
+          },
+          {
+            "target-control-id": "A.1.4.6",
+            "target-control-title": "PII de-identification and deletion at end of processing",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "PII löschen oder de-identifizieren, wenn nicht mehr benötigt."
+          },
+          {
+            "target-control-id": "A.1.4.9",
+            "target-control-title": "Disposal",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Dokumentierte Richtlinien für Entsorgung von PII."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-017",
+        "source-control-id": "LAW-06",
+        "source-control-title": "Richtigkeit der Daten",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.4.4",
+            "target-control-title": "Accuracy and quality",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: PII so genau, vollständig und aktuell wie nötig."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-018",
+        "source-control-id": "DSR-01",
+        "source-control-title": "Informationspflichten",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.3.3",
+            "target-control-title": "Determining information for PII principals",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Informationen bestimmen, die Betroffenen bereitgestellt werden."
+          },
+          {
+            "target-control-id": "A.1.3.4",
+            "target-control-title": "Providing information to PII principals",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Betroffene klar und zugänglich über Verarbeitung informieren."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-019",
+        "source-control-id": "DSR-02",
+        "source-control-title": "Auskunftsrecht",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.3.7",
+            "target-control-title": "Access, correction or erasure",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Richtlinien und Mechanismen für Zugang implementieren."
+          },
+          {
+            "target-control-id": "A.1.3.9",
+            "target-control-title": "Providing copy of PII processed",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Auf Anfrage Kopie der verarbeiteten PII bereitstellen."
+          },
+          {
+            "target-control-id": "A.1.3.10",
+            "target-control-title": "Handling requests",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Verfahren für Bearbeitung von Betroffenenanfragen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-020",
+        "source-control-id": "DSR-03",
+        "source-control-title": "Berichtigung und Löschung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.3.7",
+            "target-control-title": "Access, correction or erasure",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Berichtigung und Löschung implementieren."
+          },
+          {
+            "target-control-id": "A.1.3.8",
+            "target-control-title": "PII controllers' obligations to inform third parties",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Dritte über Änderungen/Löschungen informieren."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-021",
+        "source-control-id": "DSR-04",
+        "source-control-title": "Einschränkung der Verarbeitung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.3.2",
+            "target-control-title": "Determining and fulfilling obligations to PII principals",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Pflichten gegenüber Betroffenen bestimmen und erfüllen, inkl. Einschränkung."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-022",
+        "source-control-id": "DSR-05",
+        "source-control-title": "Datenportabilität",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.3.9",
+            "target-control-title": "Providing copy of PII processed",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Bereitstellung einer Kopie unterstützt Portabilität, strukturiertes Format impliziert."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-023",
+        "source-control-id": "DSR-06",
+        "source-control-title": "Widerspruchsrecht",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.3.6",
+            "target-control-title": "Providing mechanism to object to PII processing",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Mechanismus für Widerspruch bereitstellen."
+          },
+          {
+            "target-control-id": "A.1.3.11",
+            "target-control-title": "Automated decision making",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Pflichten bei automatisierter Entscheidungsfindung."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-024",
+        "source-control-id": "REG-01",
+        "source-control-title": "Verarbeitungsverzeichnis führen",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.2.9",
+            "target-control-title": "Records related to processing PII",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Aufzeichnungen zur PII-Verarbeitung führen und sicher aufbewahren."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-025",
+        "source-control-id": "REG-02",
+        "source-control-title": "Processor-Verzeichnis",
+        "target-mappings": [
+          {
+            "target-control-id": "A.2.2.7",
+            "target-control-title": "Records related to processing PII",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Aufzeichnungen für Processor zur Nachweisführung."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-026",
+        "source-control-id": "REG-03",
+        "source-control-title": "Verzeichnis-Aktualisierung",
+        "target-mappings": [
+          {
+            "target-control-id": "7.5",
+            "target-control-title": "Dokumentierte Information",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Dokumentierte Information aktualisieren und lenken."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-027",
+        "source-control-id": "TOM-01",
+        "source-control-title": "Zugangskontrollen",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.8",
+            "target-control-title": "Identity management",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Identitätslebenszyklus bei PII-Verarbeitung verwalten."
+          },
+          {
+            "target-control-id": "A.3.9",
+            "target-control-title": "Access rights",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Zugriffsrechte auf PII provisionieren, überprüfen, ändern, entziehen."
+          },
+          {
+            "target-control-id": "A.3.23",
+            "target-control-title": "Secure authentication",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Sichere Authentifizierung für PII-Verarbeitung."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-028",
+        "source-control-id": "TOM-02",
+        "source-control-title": "Verschlüsselung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.26",
+            "target-control-title": "Use of cryptography",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Regeln für Kryptographie bei PII-Verarbeitung definieren und umsetzen."
+          },
+          {
+            "target-control-id": "A.1.4.10",
+            "target-control-title": "PII transmission controls",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "PII bei Übertragung geeigneten Kontrollen unterziehen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-029",
+        "source-control-id": "TOM-03",
+        "source-control-title": "Pseudonymisierung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.4.5",
+            "target-control-title": "PII minimization objectives",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Datenminimierungsziele inkl. De-Identifizierungsmechanismen."
+          },
+          {
+            "target-control-id": "A.1.4.6",
+            "target-control-title": "PII de-identification and deletion at end of processing",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "De-Identifizierung als Alternative zur Löschung."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-030",
+        "source-control-id": "TOM-04",
+        "source-control-title": "Datensicherung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.24",
+            "target-control-title": "Information backup",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Sicherungskopien von PII erstellen und regelmäßig testen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-031",
+        "source-control-id": "TOM-05",
+        "source-control-title": "Physische Sicherheit",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.19",
+            "target-control-title": "Clear desk and clear screen",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Clean-Desk/Clean-Screen-Regeln."
+          },
+          {
+            "target-control-id": "A.3.20",
+            "target-control-title": "Storage media",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Speichermedien mit PII über gesamten Lebenszyklus verwalten."
+          },
+          {
+            "target-control-id": "A.3.21",
+            "target-control-title": "Secure disposal or re-use of equipment",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Geräte vor Entsorgung/Wiederverwendung verifizieren."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-032",
+        "source-control-id": "TOM-06",
+        "source-control-title": "Protokollierung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.25",
+            "target-control-title": "Logging",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Protokolle zu PII-Verarbeitung erstellen, speichern, schützen und analysieren."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-033",
+        "source-control-id": "DPIA-01",
+        "source-control-title": "DPIA-Erforderlichkeitsprüfung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.2.6",
+            "target-control-title": "Privacy impact assessment",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Notwendigkeit einer DSFA prüfen."
+          },
+          {
+            "target-control-id": "6.1.2",
+            "target-control-title": "Datenschutz-Risikobewertung",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Risikokriterien festlegen, Risiken identifizieren und bewerten."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-034",
+        "source-control-id": "DPIA-02",
+        "source-control-title": "DPIA-Durchführung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.2.6",
+            "target-control-title": "Privacy impact assessment",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "DSFA durchführen bei geplanter neuer oder geänderter PII-Verarbeitung."
+          },
+          {
+            "target-control-id": "8.2",
+            "target-control-title": "Datenschutz-Risikobewertung",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Risikobewertungen bei wesentlichen Änderungen durchführen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-035",
+        "source-control-id": "DPIA-03",
+        "source-control-title": "Risikominderungsmaßnahmen",
+        "target-mappings": [
+          {
+            "target-control-id": "6.1.3",
+            "target-control-title": "Datenschutz-Risikobehandlung",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Risikobehandlungsoptionen wählen, Controls bestimmen."
+          },
+          {
+            "target-control-id": "8.3",
+            "target-control-title": "Datenschutz-Risikobehandlung",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Risikobehandlungsplan umsetzen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-036",
+        "source-control-id": "OPS-01",
+        "source-control-title": "Auftragsverarbeitung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.2.7",
+            "target-control-title": "Contracts with PII processors",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Schriftliche Verträge mit Auftragsverarbeitern abschließen."
+          },
+          {
+            "target-control-id": "A.1.2.8",
+            "target-control-title": "Joint PII controller",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Rollen bei gemeinsamer Verantwortlichkeit festlegen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-037",
+        "source-control-id": "OPS-02",
+        "source-control-title": "Unterauftragnehmer",
+        "target-mappings": [
+          {
+            "target-control-id": "A.2.5.7",
+            "target-control-title": "Disclosure of subcontractors used to process PII",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Unterauftragsverarbeiter dem Kunden offenlegen."
+          },
+          {
+            "target-control-id": "A.2.5.8",
+            "target-control-title": "Engagement of a subcontractor to process PII",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Unterauftragsverarbeiter nur gemäß Vertrag einsetzen."
+          },
+          {
+            "target-control-id": "A.2.5.9",
+            "target-control-title": "Change of subcontractor to process PII",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Über Änderungen bei Unterauftragsverarbeitern informieren."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-038",
+        "source-control-id": "OPS-03",
+        "source-control-title": "Lieferantenmanagement",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.10",
+            "target-control-title": "Addressing information security within supplier agreements",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Sicherheitsanforderungen zur PII-Verarbeitung mit Lieferanten vereinbaren."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-039",
+        "source-control-id": "OPS-04",
+        "source-control-title": "Betriebliche Steuerung",
+        "target-mappings": [
+          {
+            "target-control-id": "8.1",
+            "target-control-title": "Betriebliche Planung und Steuerung",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Prozesse planen, umsetzen und steuern."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-040",
+        "source-control-id": "OPS-05",
+        "source-control-title": "Change Management",
+        "target-mappings": [
+          {
+            "target-control-id": "6.3",
+            "target-control-title": "Planung von Änderungen",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Änderungen am PIMS in geplanter Weise durchführen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-041",
+        "source-control-id": "XFER-01",
+        "source-control-title": "Drittlandübermittlung - Grundlagen",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.5.2",
+            "target-control-title": "Identify basis for PII transfer between jurisdictions",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Rechtsgrundlage für Übermittlung identifizieren."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-042",
+        "source-control-id": "XFER-02",
+        "source-control-title": "Angemessenheitsbeschluss",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.5.3",
+            "target-control-title": "Countries and international organizations to which PII can be transferred",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Länder und Organisationen für PII-Übermittlung dokumentieren."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-043",
+        "source-control-id": "XFER-03",
+        "source-control-title": "Geeignete Garantien",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.5.2",
+            "target-control-title": "Identify basis for PII transfer between jurisdictions",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Garantien als Rechtsgrundlage dokumentieren."
+          },
+          {
+            "target-control-id": "A.2.5.2",
+            "target-control-title": "Basis for PII transfer between jurisdictions",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Processor informiert Kunden über Transfer-Grundlage."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-044",
+        "source-control-id": "XFER-04",
+        "source-control-title": "Transfer-Dokumentation",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.5.4",
+            "target-control-title": "Records of transfer of PII",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "PII-Übermittlungen aufzeichnen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-045",
+        "source-control-id": "XFER-05",
+        "source-control-title": "Offenlegung an Dritte",
+        "target-mappings": [
+          {
+            "target-control-id": "A.1.5.5",
+            "target-control-title": "Records of PII disclosures to third parties",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Offenlegungen an Dritte aufzeichnen."
+          },
+          {
+            "target-control-id": "A.2.5.4",
+            "target-control-title": "Records of PII disclosures to third parties",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Processor dokumentiert Offenlegungen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-046",
+        "source-control-id": "XFER-06",
+        "source-control-title": "Behördliche Anfragen",
+        "target-mappings": [
+          {
+            "target-control-id": "A.2.5.5",
+            "target-control-title": "Notification of PII disclosure requests",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Kunden über Offenlegungsanfragen benachrichtigen."
+          },
+          {
+            "target-control-id": "A.2.5.6",
+            "target-control-title": "Legally binding PII disclosures",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Nicht rechtsverbindliche Anfragen ablehnen, Kunden konsultieren."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-047",
+        "source-control-id": "INC-01",
+        "source-control-title": "Incident-Management-Prozess",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.11",
+            "target-control-title": "Information security incident management planning and preparation",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Incident Management für PII-bezogene Vorfälle planen und vorbereiten."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-048",
+        "source-control-id": "INC-02",
+        "source-control-title": "Vorfallserkennung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.12",
+            "target-control-title": "Response to information security incidents",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Reaktion auf PII-bezogene Sicherheitsvorfälle."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-049",
+        "source-control-id": "INC-03",
+        "source-control-title": "Behördenmeldung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.12",
+            "target-control-title": "Response to information security incidents",
+            "relationship": "extends",
+            "confidence": "high",
+            "rationale": "INC-03 erweitert um DSGVO-spezifische 72h-Meldefrist an Aufsichtsbehörde (Art. 33)."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-050",
+        "source-control-id": "INC-04",
+        "source-control-title": "Betroffenenbenachrichtigung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.12",
+            "target-control-title": "Response to information security incidents",
+            "relationship": "extends",
+            "confidence": "high",
+            "rationale": "INC-04 erweitert um DSGVO-spezifische Pflicht zur unverzüglichen Betroffenenbenachrichtigung bei hohem Risiko (Art. 34)."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-051",
+        "source-control-id": "INC-05",
+        "source-control-title": "Vorfallsdokumentation",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.14",
+            "target-control-title": "Protection of records",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Aufzeichnungen zu Vorfällen schützen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-052",
+        "source-control-id": "INC-06",
+        "source-control-title": "Lessons Learned",
+        "target-mappings": [
+          {
+            "target-control-id": "10.2",
+            "target-control-title": "Nichtkonformität und Korrekturmaßnahmen",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Aus Vorfällen lernen und Korrekturmaßnahmen umsetzen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-053",
+        "source-control-id": "TRAIN-01",
+        "source-control-title": "Schulungsprogramm",
+        "target-mappings": [
+          {
+            "target-control-id": "7.2",
+            "target-control-title": "Kompetenz",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Kompetenz bestimmen, Schulungen sicherstellen."
+          },
+          {
+            "target-control-id": "A.3.17",
+            "target-control-title": "Information security awareness, education and training",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Angemessene Schulungen zur PII-Verarbeitung."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-054",
+        "source-control-id": "TRAIN-02",
+        "source-control-title": "Awareness",
+        "target-mappings": [
+          {
+            "target-control-id": "7.3",
+            "target-control-title": "Bewusstsein",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Personen müssen Datenschutzpolitik kennen und ihren Beitrag verstehen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-055",
+        "source-control-id": "TRAIN-03",
+        "source-control-title": "Rollenspezifische Schulung",
+        "target-mappings": [
+          {
+            "target-control-id": "7.2",
+            "target-control-title": "Kompetenz",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Kompetenz für spezifische Rollen sicherstellen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-iso-056",
+        "source-control-id": "TRAIN-04",
+        "source-control-title": "Vertraulichkeitsverpflichtung",
+        "target-mappings": [
+          {
+            "target-control-id": "A.3.18",
+            "target-control-title": "Confidentiality or non-disclosure agreements",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Vertraulichkeitsvereinbarungen zum Schutz von PII."
+          }
+        ]
+      }
+    ],
+    "coverage-analysis": {
+      "summary": {
+        "total-source-groups": 11,
+        "total-source-controls": 56,
+        "mapped-controls": 56,
+        "unmapped-controls": 0,
+        "average-coverage-percentage": 89
+      },
+      "group-coverage": [
+        {
+          "source-group-id": "GOV",
+          "coverage-percentage": 85,
+          "mapping-type": "related",
+          "remarks": "Gute Coverage durch PIMS Klausel 5 und A.3 Security Controls"
+        },
+        {
+          "source-group-id": "ACC",
+          "coverage-percentage": 90,
+          "mapping-type": "equivalent",
+          "remarks": "Exzellente Coverage durch PIMS Dokumentationsanforderungen"
+        },
+        {
+          "source-group-id": "LAW",
+          "coverage-percentage": 95,
+          "mapping-type": "equivalent",
+          "remarks": "Hervorragende Coverage - A.1.2 deckt Zweckbindung, Rechtsgrundlage, Einwilligung ab"
+        },
+        {
+          "source-group-id": "DSR",
+          "coverage-percentage": 95,
+          "mapping-type": "equivalent",
+          "remarks": "KRITISCHER VORTEIL: A.1.3 deckt alle Betroffenenrechte ab (vs. 0% bei BSI)"
+        },
+        {
+          "source-group-id": "REG",
+          "coverage-percentage": 90,
+          "mapping-type": "equivalent",
+          "remarks": "Direkte Entsprechung für Verarbeitungsverzeichnis"
+        },
+        {
+          "source-group-id": "TOM",
+          "coverage-percentage": 93,
+          "mapping-type": "extends",
+          "remarks": "Sehr gute Coverage - A.3 + A.1.4 Privacy by Design"
+        },
+        {
+          "source-group-id": "DPIA",
+          "coverage-percentage": 95,
+          "mapping-type": "equivalent",
+          "remarks": "Direkte Entsprechung durch A.1.2.6 und PIMS Risikomanagement"
+        },
+        {
+          "source-group-id": "OPS",
+          "coverage-percentage": 85,
+          "mapping-type": "related",
+          "remarks": "Gute Coverage für Auftragsverarbeitung und Betrieb"
+        },
+        {
+          "source-group-id": "XFER",
+          "coverage-percentage": 92,
+          "mapping-type": "equivalent",
+          "remarks": "Exzellente Coverage - A.1.5 und A.2.5 für Transfers"
+        },
+        {
+          "source-group-id": "INC",
+          "coverage-percentage": 80,
+          "mapping-type": "extends",
+          "remarks": "OpenGov erweitert um DSGVO-Meldefristen"
+        },
+        {
+          "source-group-id": "TRAIN",
+          "coverage-percentage": 95,
+          "mapping-type": "equivalent",
+          "remarks": "Direkte Entsprechung durch PIMS 7.2/7.3 und A.3.17"
+        }
+      ],
+      "comparison-to-bsi": {
+        "summary": "ISO 27701 bietet signifikant bessere Privacy-Coverage als BSI Grundschutz++",
+        "key-differences": [
+          {
+            "area": "Betroffenenrechte (DSR)",
+            "iso27701-coverage": 95,
+            "bsi-coverage": 0,
+            "remarks": "KRITISCHER UNTERSCHIED: ISO 27701 A.1.3 deckt alle Art. 12-22 DSGVO ab"
+          },
+          {
+            "area": "Einwilligung",
+            "iso27701-coverage": 95,
+            "bsi-coverage": 20,
+            "remarks": "ISO 27701 A.1.2.4/A.1.2.5 dedizierte Einwilligungs-Controls"
+          },
+          {
+            "area": "Drittlandübermittlung",
+            "iso27701-coverage": 92,
+            "bsi-coverage": 30,
+            "remarks": "ISO 27701 A.1.5/A.2.5 vollständige Transfer-Controls"
+          },
+          {
+            "area": "Privacy by Design",
+            "iso27701-coverage": 95,
+            "bsi-coverage": 40,
+            "remarks": "ISO 27701 A.1.4 dedizierte PbD-Controls"
+          },
+          {
+            "area": "Technische Maßnahmen",
+            "iso27701-coverage": 90,
+            "bsi-coverage": 85,
+            "remarks": "Beide gut - BSI detaillierter bei IT-Sicherheit"
+          }
+        ],
+        "recommendation": "Für Privacy-fokussierte Compliance ist ISO 27701 das bevorzugte Framework. BSI Grundschutz++ ergänzt bei IT-Sicherheit."
+      }
+    }
+  }
+}

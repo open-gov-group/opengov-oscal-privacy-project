@@ -26,8 +26,10 @@ Zentrale Architektur-Dokumentation für das OpenGov OSCAL Privacy Ecosystem.
 
 | Dokument | Beschreibung |
 |----------|--------------|
-| [MAPPING_PRIVACY_TO_BSI_GRUNDSCHUTZ.md](MAPPING_PRIVACY_TO_BSI_GRUNDSCHUTZ.md) | Privacy ↔ BSI Grundschutz++ Mapping |
+| **[MAPPING_PRIVACY_TO_ISO27701.md](MAPPING_PRIVACY_TO_ISO27701.md)** | **NEU: Privacy ↔ ISO 27701:2025 Mapping (89% Coverage)** |
+| [MAPPING_PRIVACY_TO_BSI_GRUNDSCHUTZ.md](MAPPING_PRIVACY_TO_BSI_GRUNDSCHUTZ.md) | Privacy ↔ BSI Grundschutz++ Mapping (60% Coverage) |
 | [GROUP_MAPPING_ANALYSIS.md](GROUP_MAPPING_ANALYSIS.md) | OPC ↔ SDM ↔ BSI ↔ ISO Mapping-Analyse |
+| [REFERENCE_ARCHITECTURE.md](REFERENCE_ARCHITECTURE.md) | **NEU: OPC ↔ SPC ↔ Frameworks Referenzierung** |
 | [EXTENDED_CONTROL_SCHEMA.md](EXTENDED_CONTROL_SCHEMA.md) | BSI-kompatible Control-Erweiterungen |
 
 ### Team-Dokumentation

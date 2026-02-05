@@ -352,7 +352,24 @@ Der Resilience-Katalog enthält Security-Controls mit Domänen:
 | SDM-TOM-LG-02 | 8.15, 8.16 | Logging, Monitoring activities |
 | SDM-TOM-REC-01-05 | 8.15 | Logging |
 
-### 5.3 ISO/IEC 27701 (PIMS)
+### 5.3 ISO/IEC 27701:2025 (PIMS)
+
+> **Neu (Q1 2026)**: Vollständiges OSCAL-Mapping verfügbar in:
+> - **Mapping-Datei**: `oscal/mappings/opengov_privacy_to_iso27701.json`
+> - **Dokumentation**: `docs/architecture/MAPPING_PRIVACY_TO_ISO27701.md`
+
+#### Gruppen-Mapping Übersicht
+
+| OpenGov Gruppe | ISO 27701 Target | Coverage |
+|----------------|------------------|----------|
+| **DSR** (Betroffenenrechte) | A.1.3.x | **95%** |
+| **LAW** (Rechtsgrundlagen) | A.1.2.2-A.1.2.5 | **95%** |
+| **DPIA** (Folgenabschätzung) | A.1.2.6 | **95%** |
+| **TOM** (Tech. Maßnahmen) | A.3.x, A.1.4.x | 93% |
+| **XFER** (Datenübermittlung) | A.1.5.x, A.2.5.x | 92% |
+| **Durchschnitt** | | **89%** |
+
+#### SDM-Control-Mapping (Auszug)
 
 | SDM Control | ISO 27701 | Beschreibung |
 |-------------|-----------|--------------|
@@ -360,6 +377,11 @@ Der Resilience-Katalog enthält Security-Controls mit Domänen:
 | SDM-TOM-DEL-01-03 | 7.4.7, 7.4.8 | Retention, Disposal |
 | SDM-TOM-RES-01-04 | 7.4.2 | Limit processing |
 | SDM-TOM-LG-02 | 8.3.1 | Obligations to PII principals |
+
+#### Kritischer Vorteil gegenüber BSI Grundschutz++
+
+**Betroffenenrechte (DSR)**: ISO 27701 deckt **95%** ab vs. **0%** bei BSI Grundschutz++.
+ISO 27701 A.1.3 enthält dedizierte Controls für alle Art. 12-22 DSGVO.
 
 ---
 
