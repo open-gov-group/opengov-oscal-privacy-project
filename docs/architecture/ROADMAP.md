@@ -1,8 +1,8 @@
 # OpenGov OSCAL Privacy Ecosystem - Roadmap
 
-**Version**: 1.0.0
-**Stand**: 2026-02-02
-**Status**: Aktiv
+**Version**: 1.1.0
+**Stand**: 2026-02-05
+**Status**: Aktiv – Phase 1 in Umsetzung
 
 ---
 
@@ -32,18 +32,22 @@ Q1          Q2          Q3          Q4          Q1          Q2
 
 ### Meilenstein 1.1: OSCAL-Katalog-Basis
 **Deadline**: Ende Februar 2026
+**Status**: 90% abgeschlossen
 
 | Aufgabe | Repository | Status | Priorität |
 |---------|------------|--------|-----------|
-| DSGVO-Katalog fertigstellen | privacy-oscal | In Arbeit | Kritisch |
-| SDM/TOM-Katalog erweitern | privacy-oscal | In Arbeit | Kritisch |
-| Custom Properties dokumentieren | privacy-oscal | Offen | Hoch |
+| DSGVO-Katalog fertigstellen | privacy-oscal | ✓ Abgeschlossen | Kritisch |
+| SDM/TOM-Katalog erweitern | privacy-oscal | ✓ Struktur v1.0 | Kritisch |
+| Custom Properties dokumentieren | privacy-oscal | ✓ Dokumentiert | Hoch |
+| BSI Grundschutz++ Mapping | privacy-oscal | ✓ Abgeschlossen | Kritisch |
 | OSCAL 1.1.2 Validierung | oscal-pyprivacy | In Arbeit | Hoch |
-| Profile für Melderegister | privacy-oscal | Offen | Mittel |
+| Profile für Melderegister | privacy-oscal | In Arbeit | Mittel |
 
 **Erfolgskriterien**:
-- [ ] Mindestens 30 DSGVO-Controls definiert
-- [ ] Alle Controls mit `citizen-title-de` versehen
+- [x] Mindestens 30 DSGVO-Controls definiert (50+ erreicht)
+- [x] 10 OPC-Gruppen vollständig strukturiert
+- [x] SDM-Katalogstruktur v1.0 festgeschrieben
+- [x] BSI Grundschutz++ Mapping abgeschlossen
 - [ ] Validierung gegen OSCAL-Schema bestanden
 - [ ] Profile-Resolution funktioniert
 
@@ -106,17 +110,21 @@ Q1          Q2          Q3          Q4          Q1          Q2
 
 ### Meilenstein 2.1: Privacy Mappings
 **Deadline**: Ende Juni 2026
+**Status**: Vorgezogen – BSI-Mapping Q1 2026 abgeschlossen
 
 | Aufgabe | Repository | Status | Priorität |
 |---------|------------|--------|-----------|
+| BSI Grundschutz++ Mapping | privacy-oscal | ✓ Abgeschlossen | Kritisch |
+| Mapping-Methodologie dokumentieren | privacy-oscal | ✓ Dokumentiert | Hoch |
 | ISO 27001:2022 Mapping | privacy-mappings | Teilweise | Kritisch |
 | ISO 27701:2019 Mapping | privacy-mappings | Offen | Kritisch |
-| BSI IT-Grundschutz Mapping | privacy-mappings | Offen | Hoch |
-| Mapping-Validierung | privacy-mappings | Offen | Hoch |
-| Mapping-Methodologie dokumentieren | privacy-mappings | Offen | Mittel |
+| Mapping-Validierung | privacy-mappings | In Arbeit | Hoch |
 
 **Erfolgskriterien**:
-- [ ] 100% der SDM-Controls zu ISO 27001 gemappt
+- [x] BSI Grundschutz++ Mapping vollständig (10 Gruppen)
+- [x] Mapping-Methodik dokumentiert (742 Zeilen)
+- [x] OSCAL-Mapping-Datei erstellt (947 Zeilen)
+- [ ] ISO 27001 Mapping vollständig
 - [ ] Mappings extern validiert
 - [ ] Viewer zeigt Mappings an
 
@@ -298,6 +306,15 @@ M1.4 (pyprivacy)      M1.2 (Viewer)       M1.3 (App)
 - **Wöchentlich**: Sprint-Review (technische Teams)
 - **Monatlich**: Meilenstein-Review (alle Stakeholder)
 - **Quartalsweise**: Roadmap-Review (Architecture Team)
+
+---
+
+## Änderungshistorie
+
+| Version | Datum | Änderung |
+|---------|-------|----------|
+| 1.0.0 | 2026-02-02 | Initiale Roadmap |
+| 1.1.0 | 2026-02-05 | Status-Update: M1.1 90%, M2.1 BSI-Mapping vorgezogen und abgeschlossen |
 
 ---
 

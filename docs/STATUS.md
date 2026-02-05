@@ -1,7 +1,7 @@
 # OpenGov Privacy Ecosystem - Repository Status
 
-**Stand**: 2026-02-04
-**Analyse-Datum**: 2026-02-04
+**Stand**: 2026-02-05
+**Analyse-Datum**: 2026-02-05
 
 ---
 
@@ -327,6 +327,28 @@
 | Datum | Änderung |
 |-------|----------|
 | 2026-02-04 | Initiale Status-Erfassung |
+| 2026-02-05 | BSI Grundschutz++ Mapping abgeschlossen, SDM-Katalogstruktur v1.0 festgeschrieben |
+
+---
+
+## Highlights seit letztem Update
+
+### Neu erstellte Dokumente (2026-02-05)
+
+| Dokument | Beschreibung |
+|----------|--------------|
+| [MANAGEMENT_SUMMARY.md](architecture/MANAGEMENT_SUMMARY.md) | Executive Summary für Stakeholder |
+| [SDM_CATALOG_STRUCTURE.md](architecture/SDM_CATALOG_STRUCTURE.md) | SDM Privacy Catalog Gliederung v1.0 |
+| [GROUP_MAPPING_ANALYSIS.md](architecture/GROUP_MAPPING_ANALYSIS.md) | OPC ↔ SDM ↔ BSI ↔ ISO Mapping-Analyse |
+| [CATALOG_OVERVIEW.md](architecture/CATALOG_OVERVIEW.md) | Zwei-Katalog-Architektur Übersicht |
+
+### Neue OSCAL-Artefakte
+
+| Artefakt | Pfad |
+|----------|------|
+| BSI-Mapping | oscal/mappings/opengov_privacy_to_bsi_grundschutz.json |
+| Integriertes Profil | oscal/profiles/profile_integrated_privacy_security.json |
+| OPC v0.7.0 | oscal/catalog/open_privacy_catalog_risk_v0.7.0.json |
 
 ---
 

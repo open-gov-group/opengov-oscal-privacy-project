@@ -1,0 +1,341 @@
+{
+  "profile": {
+    "uuid": "f8e7d6c5-b4a3-9281-0fed-cba987654321",
+    "metadata": {
+      "title": "Integriertes Privacy + Security Profil - Öffentliche Verwaltung",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2026-02-05T12:00:00Z",
+      "published": "2026-02-05T12:00:00Z",
+      "remarks": "Kombiniertes Profil für gleichzeitige DSGVO- und BSI-Grundschutz-Compliance. Geeignet für mittlere bis große öffentliche Verwaltungen mit normalem Schutzbedarf.",
+      "roles": [
+        {
+          "id": "profile-owner",
+          "title": "Profile Owner",
+          "description": "Verantwortlich für Pflege und Aktualisierung des Profils"
+        },
+        {
+          "id": "dpo",
+          "title": "Datenschutzbeauftragter",
+          "description": "Verantwortlich für DSGVO-Compliance-Aspekte"
+        },
+        {
+          "id": "iso",
+          "title": "Informationssicherheitsbeauftragter",
+          "description": "Verantwortlich für BSI-Grundschutz-Aspekte"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "party-opengov-profile",
+          "type": "organization",
+          "name": "OpenGov Privacy Group"
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "profile-owner",
+          "party-uuids": ["party-opengov-profile"]
+        }
+      ],
+      "props": [
+        {
+          "name": "profile-type",
+          "value": "integrated-compliance",
+          "ns": "https://open-gov-group.org/oscal/privacy"
+        },
+        {
+          "name": "target-audience",
+          "value": "public-administration",
+          "ns": "https://open-gov-group.org/oscal/privacy"
+        },
+        {
+          "name": "schutzbedarf",
+          "value": "normal",
+          "ns": "https://open-gov-group.org/oscal/privacy"
+        },
+        {
+          "name": "compliance-frameworks",
+          "value": "DSGVO, BSI-Grundschutz, ISO27001",
+          "ns": "https://open-gov-group.org/oscal/privacy"
+        }
+      ]
+    },
+    "imports": [
+      {
+        "href": "../catalog/open_privacy_catalog_risk.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "GOV-01", "GOV-02", "GOV-03", "GOV-04", "GOV-05",
+              "ACC-01", "ACC-02", "ACC-03", "ACC-04",
+              "LAW-01", "LAW-02", "LAW-03", "LAW-04", "LAW-05", "LAW-06",
+              "DSR-01", "DSR-02", "DSR-03", "DSR-04", "DSR-05", "DSR-06", "DSR-07",
+              "REG-01", "REG-02", "REG-03",
+              "TOM-01", "TOM-02", "TOM-03", "TOM-04", "TOM-05", "TOM-06", "TOM-07",
+              "DPIA-01", "DPIA-02", "DPIA-03", "DPIA-04",
+              "OPS-01", "OPS-02", "OPS-03", "OPS-04",
+              "XFER-01", "XFER-02", "XFER-03", "XFER-04",
+              "INC-01", "INC-02", "INC-03", "INC-04"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "https://github.com/BSI-Bund/Stand-der-Technik-Bibliothek/blob/main/Quellkataloge/Methodik-Grundschutz%2B%2B/BSI-Methodik-Grundschutz%2B%2B-catalog.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "GC.1.1",
+              "GC.2.1", "GC.2.2", "GC.2.2.1", "GC.2.2.2", "GC.2.2.3",
+              "GC.3.1", "GC.3.2", "GC.3.3",
+              "GC.4.1", "GC.4.2", "GC.4.3", "GC.4.4", "GC.4.5",
+              "GC.5.1", "GC.5.1.1", "GC.5.2", "GC.5.3", "GC.5.4",
+              "GC.6.1", "GC.6.1.1", "GC.6.2",
+              "GC.7.1", "GC.7.1.1", "GC.7.2", "GC.7.3", "GC.7.4", "GC.7.5", "GC.7.6", "GC.7.7"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "combine": {
+        "method": "merge"
+      },
+      "as-is": false,
+      "custom": {
+        "groups": [
+          {
+            "id": "integrated-governance",
+            "title": "Integrierte Governance (DSGVO + ISMS)",
+            "class": "integrated",
+            "props": [
+              {
+                "name": "description",
+                "value": "Zusammenführung von Datenschutz- und Informationssicherheits-Governance"
+              }
+            ]
+          },
+          {
+            "id": "integrated-operations",
+            "title": "Integrierte Betriebsprozesse",
+            "class": "integrated"
+          },
+          {
+            "id": "privacy-specific",
+            "title": "Datenschutz-spezifische Anforderungen (DSGVO)",
+            "class": "privacy-only",
+            "props": [
+              {
+                "name": "description",
+                "value": "Controls ohne BSI-Äquivalent, rein DSGVO-basiert"
+              }
+            ]
+          },
+          {
+            "id": "security-specific",
+            "title": "Sicherheits-spezifische Anforderungen (BSI)",
+            "class": "security-only"
+          }
+        ]
+      }
+    },
+    "modify": {
+      "set-parameters": [
+        {
+          "param-id": "gc.1.1-prm1",
+          "values": ["einem integrierten DSMS/ISMS nach ISO 27001 und DSGVO"],
+          "remarks": "Anpassung für integriertes Managementsystem"
+        },
+        {
+          "param-id": "meldefrist-aufsicht",
+          "values": ["72 Stunden"],
+          "remarks": "DSGVO Art. 33 Abs. 1"
+        },
+        {
+          "param-id": "rezertifizierung-intervall",
+          "values": ["jährlich"],
+          "remarks": "Mindestens jährliche Überprüfung der Berechtigungen"
+        },
+        {
+          "param-id": "aufbewahrungsfrist-protokolle",
+          "values": ["3 Jahre"],
+          "remarks": "Verjährungsfrist für Ordnungswidrigkeiten"
+        }
+      ],
+      "alters": [
+        {
+          "control-id": "GOV-01",
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "gov-01-stmt",
+              "parts": [
+                {
+                  "id": "gov-01-integration-note",
+                  "name": "integration-guidance",
+                  "class": "integrated-profile",
+                  "prose": "INTEGRATION MIT BSI GRUNDSCHUTZ++: Dieses Control sollte gemeinsam mit GC.4.1 (Rollen und Zuständigkeiten) und GC.4.3 (Sicherheitsorganisation) umgesetzt werden. Die Datenschutz-Organisation kann in die bestehende ISMS-Organisation integriert werden, wobei auf Interessenkonflikte gemäß GC.4.2 zu achten ist."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "ACC-01",
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "acc-01-stmt",
+              "parts": [
+                {
+                  "id": "acc-01-integration-note",
+                  "name": "integration-guidance",
+                  "class": "integrated-profile",
+                  "prose": "INTEGRATION MIT BSI GRUNDSCHUTZ++: Das DSMS sollte als Erweiterung des ISMS gemäß GC.1.1 implementiert werden. Die Dokumentationsanforderungen aus GC.7.1 (Vorgehensweisen dokumentieren) und GC.7.2 (Freigabe) gelten analog für Datenschutz-Dokumentation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "TOM-02",
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "tom-02-stmt",
+              "parts": [
+                {
+                  "id": "tom-02-integration-note",
+                  "name": "integration-guidance",
+                  "class": "integrated-profile",
+                  "prose": "INTEGRATION MIT BSI GRUNDSCHUTZ++: Direkte Entsprechung zu BSI ORP.4 (Identitäts- und Berechtigungsmanagement). Implementierung kann gemeinsam erfolgen. Datenschutz-Aspekte (Vertraulichkeit pbD) ergänzen die IT-Sicherheits-Perspektive."
+                }
+              ],
+              "props": [
+                {
+                  "name": "bsi-integration-status",
+                  "value": "equivalent",
+                  "ns": "https://open-gov-group.org/oscal/privacy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "INC-02",
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "inc-02-stmt",
+              "parts": [
+                {
+                  "id": "inc-02-integration-note",
+                  "name": "integration-guidance",
+                  "class": "integrated-profile",
+                  "prose": "INTEGRATION MIT BSI GRUNDSCHUTZ++: Erweitert DER.2.1 (Behandlung von Sicherheitsvorfällen) um DSGVO-spezifische Meldefristen. Der Incident-Response-Prozess sollte beide Aspekte abdecken: 1) Technische Vorfallsbehandlung (BSI), 2) Meldepflichten an Aufsichtsbehörde und Betroffene (DSGVO)."
+                }
+              ],
+              "props": [
+                {
+                  "name": "bsi-integration-status",
+                  "value": "extends",
+                  "ns": "https://open-gov-group.org/oscal/privacy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "DPIA-02",
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "dpia-02-stmt",
+              "parts": [
+                {
+                  "id": "dpia-02-integration-note",
+                  "name": "integration-guidance",
+                  "class": "integrated-profile",
+                  "prose": "INTEGRATION MIT BSI GRUNDSCHUTZ++: Nutzt die Risikomanagement-Methodik aus GC.7.4. Die DSFA erweitert die Risikoanalyse um die Perspektive der Rechte und Freiheiten natürlicher Personen. Kritikalitätskriterien aus GC.7.6 können als Basis für DSFA-Schwellwertprüfung dienen."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control-id": "DSR-01",
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "dsr-01-stmt",
+              "parts": [
+                {
+                  "id": "dsr-01-integration-note",
+                  "name": "integration-guidance",
+                  "class": "integrated-profile",
+                  "prose": "PRIVACY-SPEZIFISCH: Dieses Control hat keine Entsprechung im BSI Grundschutz++. Es muss zusätzlich zur ISMS-Implementierung umgesetzt werden. Betroffenenrechte (Art. 12-22 DSGVO) sind ein Gap in reinen Security-Frameworks."
+                }
+              ],
+              "props": [
+                {
+                  "name": "bsi-integration-status",
+                  "value": "privacy-only",
+                  "ns": "https://open-gov-group.org/oscal/privacy"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "res-mapping-bsi",
+          "title": "OpenGov Privacy ↔ BSI Grundschutz++ Mapping",
+          "description": "Detailliertes Mapping zwischen Privacy Catalog und BSI Grundschutz++ Methodik",
+          "rlinks": [
+            {
+              "href": "../mappings/opengov_privacy_to_bsi_grundschutz.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "res-extended-schema",
+          "title": "Erweitertes Control-Schema",
+          "description": "Spezifikation für BSI-kompatible Erweiterungen",
+          "rlinks": [
+            {
+              "href": "../../docs/architecture/EXTENDED_CONTROL_SCHEMA.md",
+              "media-type": "text/markdown"
+            }
+          ]
+        },
+        {
+          "uuid": "res-bsi-catalog",
+          "title": "BSI Grundschutz++ Methodik Katalog",
+          "description": "Quellkatalog der BSI Grundschutz++ Methodik",
+          "rlinks": [
+            {
+              "href": "https://github.com/BSI-Bund/Stand-der-Technik-Bibliothek/blob/main/Quellkataloge/Methodik-Grundschutz%2B%2B/BSI-Methodik-Grundschutz%2B%2B-catalog.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "res-dsgvo",
+          "title": "Datenschutz-Grundverordnung (DSGVO)",
+          "description": "EU-Verordnung 2016/679",
+          "rlinks": [
+            {
+              "href": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679",
+              "media-type": "text/html"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

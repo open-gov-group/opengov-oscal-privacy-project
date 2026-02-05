@@ -1,0 +1,961 @@
+{
+  "mapping-collection": {
+    "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "metadata": {
+      "title": "OpenGov Privacy Catalog ↔ BSI Grundschutz++ Methodik Mapping",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2026-02-05T12:00:00Z",
+      "published": "2026-02-05T12:00:00Z",
+      "remarks": "Bidirektionales Mapping zwischen dem OpenGov Privacy Catalog (DSGVO-fokussiert, Betroffenen-Perspektive) und der BSI Grundschutz++ Methodik (ISMS-fokussiert, Organisations-Perspektive).",
+      "parties": [
+        {
+          "uuid": "party-001-opengov",
+          "type": "organization",
+          "name": "OpenGov Privacy Group",
+          "links": [
+            {
+              "href": "https://github.com/open-gov-group",
+              "rel": "homepage"
+            }
+          ]
+        },
+        {
+          "uuid": "party-002-bsi",
+          "type": "organization",
+          "name": "BSI - Bundesamt für Sicherheit in der Informationstechnik",
+          "links": [
+            {
+              "href": "https://www.bsi.bund.de",
+              "rel": "homepage"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "creator",
+          "party-uuids": ["party-001-opengov"]
+        },
+        {
+          "role-id": "maintainer",
+          "party-uuids": ["party-001-opengov"]
+        }
+      ],
+      "props": [
+        {
+          "name": "mapping-methodology",
+          "value": "expert-review",
+          "class": "methodology"
+        },
+        {
+          "name": "review-status",
+          "value": "initial-draft",
+          "class": "status"
+        }
+      ]
+    },
+    "source-catalog": {
+      "uuid": "source-catalog-opengov-privacy",
+      "href": "https://github.com/open-gov-group/opengov-privacy-oscal/blob/main/oscal/catalog/open_privacy_catalog_risk.json",
+      "title": "OpenGov Privacy Catalog",
+      "props": [
+        {
+          "name": "namespace",
+          "value": "https://open-gov-group.org/oscal/privacy"
+        },
+        {
+          "name": "focus",
+          "value": "data-protection-rights"
+        },
+        {
+          "name": "perspective",
+          "value": "data-subject"
+        },
+        {
+          "name": "regulatory-basis",
+          "value": "DSGVO, SDM"
+        }
+      ]
+    },
+    "target-catalog": {
+      "uuid": "target-catalog-bsi-grundschutz",
+      "href": "https://github.com/BSI-Bund/Stand-der-Technik-Bibliothek/blob/main/Quellkataloge/Methodik-Grundschutz%2B%2B/BSI-Methodik-Grundschutz%2B%2B-catalog.json",
+      "title": "BSI Methodik Grundschutz++",
+      "props": [
+        {
+          "name": "namespace",
+          "value": "https://bsi.bund.de/grundschutz-plus-plus"
+        },
+        {
+          "name": "focus",
+          "value": "information-security-management"
+        },
+        {
+          "name": "perspective",
+          "value": "organization"
+        },
+        {
+          "name": "regulatory-basis",
+          "value": "BSI-Gesetz, ISO 27001"
+        }
+      ]
+    },
+    "mapping-types": {
+      "types": [
+        {
+          "id": "equivalent",
+          "title": "Equivalent",
+          "description": "1:1 Entsprechung - gleiche oder nahezu identische Anforderung"
+        },
+        {
+          "id": "related",
+          "title": "Related",
+          "description": "Thematisch verwandt - ähnliche Zielsetzung, unterschiedliche Perspektive"
+        },
+        {
+          "id": "partial",
+          "title": "Partial",
+          "description": "Teilweise Abdeckung - Schnittmenge vorhanden"
+        },
+        {
+          "id": "extends",
+          "title": "Extends",
+          "description": "Source erweitert Target um zusätzliche Anforderungen"
+        },
+        {
+          "id": "none",
+          "title": "None",
+          "description": "Keine direkte Entsprechung im Target-Katalog"
+        }
+      ]
+    },
+    "group-mappings": [
+      {
+        "uuid": "grp-map-001",
+        "source-group-id": "GOV",
+        "source-group-title": "Governance & Organisation",
+        "target-groups": [
+          {
+            "target-group-id": "GC.4",
+            "target-group-title": "Sicherheitsorganisation",
+            "relationship": "related",
+            "coverage-percentage": 80
+          },
+          {
+            "target-group-id": "GC.5",
+            "target-group-title": "Leitlinie",
+            "relationship": "partial",
+            "coverage-percentage": 60
+          }
+        ],
+        "remarks": "GOV fokussiert auf Datenschutz-Organisation (DSB, Art. 37-39), GC.4/GC.5 auf ISMS-Organisation"
+      },
+      {
+        "uuid": "grp-map-002",
+        "source-group-id": "ACC",
+        "source-group-title": "Rechenschaft & Dokumentation",
+        "target-groups": [
+          {
+            "target-group-id": "GC.1",
+            "target-group-title": "Grundlagen",
+            "relationship": "related",
+            "coverage-percentage": 60
+          },
+          {
+            "target-group-id": "GC.7",
+            "target-group-title": "Vorgehensweisen",
+            "relationship": "partial",
+            "coverage-percentage": 50
+          }
+        ],
+        "remarks": "ACC adressiert DSGVO Art. 5(2) Rechenschaftspflicht, GC.1/GC.7 die ISMS-Dokumentation"
+      },
+      {
+        "uuid": "grp-map-003",
+        "source-group-id": "LAW",
+        "source-group-title": "Rechtsgrundlagen",
+        "target-groups": [
+          {
+            "target-group-id": "GC.2",
+            "target-group-title": "Kontext",
+            "relationship": "related",
+            "coverage-percentage": 40
+          }
+        ],
+        "remarks": "LAW ist DSGVO-spezifisch (Art. 5-11), GC.2 analysiert allgemeinen regulatorischen Kontext"
+      },
+      {
+        "uuid": "grp-map-004",
+        "source-group-id": "DSR",
+        "source-group-title": "Betroffenenrechte",
+        "target-groups": [],
+        "relationship": "none",
+        "remarks": "KRITISCHER GAP: DSR (Art. 12-22 DSGVO) hat keine Entsprechung in BSI Grundschutz++"
+      },
+      {
+        "uuid": "grp-map-005",
+        "source-group-id": "REG",
+        "source-group-title": "Verarbeitungsverzeichnis",
+        "target-groups": [
+          {
+            "target-group-id": "GC.3",
+            "target-group-title": "Informationsverbund",
+            "relationship": "related",
+            "coverage-percentage": 50
+          }
+        ],
+        "remarks": "REG dokumentiert Verarbeitungen (Art. 30), GC.3 den Informationsverbund"
+      },
+      {
+        "uuid": "grp-map-006",
+        "source-group-id": "TOM",
+        "source-group-title": "Technische und organisatorische Maßnahmen",
+        "target-groups": [
+          {
+            "target-group-id": "ORP",
+            "target-group-title": "Organisation und Personal",
+            "relationship": "extends",
+            "coverage-percentage": 85
+          },
+          {
+            "target-group-id": "CON",
+            "target-group-title": "Konzepte",
+            "relationship": "extends",
+            "coverage-percentage": 80
+          }
+        ],
+        "remarks": "TOM (Art. 32) mapped auf BSI-Bausteine ORP, CON, OPS"
+      },
+      {
+        "uuid": "grp-map-007",
+        "source-group-id": "DPIA",
+        "source-group-title": "Datenschutz-Folgenabschätzung",
+        "target-groups": [
+          {
+            "target-group-id": "GC.7",
+            "target-group-title": "Vorgehensweisen (Risikomanagement)",
+            "relationship": "partial",
+            "coverage-percentage": 60,
+            "target-controls": ["GC.7.4", "GC.7.5", "GC.7.6"]
+          }
+        ],
+        "remarks": "DPIA (Art. 35) nutzt Risikomanagement-Methodik, fokussiert aber auf Betroffenenrechte"
+      },
+      {
+        "uuid": "grp-map-008",
+        "source-group-id": "OPS",
+        "source-group-title": "Betriebsprozesse",
+        "target-groups": [
+          {
+            "target-group-id": "GC.7",
+            "target-group-title": "Vorgehensweisen",
+            "relationship": "related",
+            "coverage-percentage": 75
+          }
+        ],
+        "remarks": "OPS und GC.7 behandeln beide Prozess-Dokumentation und -Freigabe"
+      },
+      {
+        "uuid": "grp-map-009",
+        "source-group-id": "XFER",
+        "source-group-title": "Datenübermittlung",
+        "target-groups": [
+          {
+            "target-group-id": "GC.3",
+            "target-group-title": "Informationsverbund (Schnittstellen)",
+            "relationship": "partial",
+            "coverage-percentage": 30,
+            "target-controls": ["GC.3.2"]
+          }
+        ],
+        "remarks": "XFER (Art. 44-49) ist stark DSGVO-spezifisch, nur Schnittstellen-Aspekte gemapped"
+      },
+      {
+        "uuid": "grp-map-010",
+        "source-group-id": "INC",
+        "source-group-title": "Datenschutzvorfälle",
+        "target-groups": [
+          {
+            "target-group-id": "DER",
+            "target-group-title": "Detektion und Reaktion",
+            "relationship": "extends",
+            "coverage-percentage": 70
+          }
+        ],
+        "remarks": "INC erweitert DER um DSGVO-Meldefristen (Art. 33, 34)"
+      }
+    ],
+    "control-mappings": [
+      {
+        "uuid": "ctrl-map-001",
+        "source-control-id": "GOV-01",
+        "source-control-title": "Datenschutz-Organisation",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.4.1",
+            "target-control-title": "Festlegung von Rollen und Zuständigkeiten",
+            "relationship": "related",
+            "confidence": "high",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "must",
+                "remarks": "MUSS"
+              },
+              {
+                "name": "coverage-source-to-target",
+                "value": "80"
+              },
+              {
+                "name": "coverage-target-to-source",
+                "value": "60"
+              }
+            ],
+            "rationale": "Beide Controls adressieren die organisatorische Verankerung von Verantwortlichkeiten. GOV-01 fokussiert auf Datenschutz-Organisation, GC.4.1 auf allgemeine Sicherheitsrollen."
+          },
+          {
+            "target-control-id": "GC.4.3",
+            "target-control-title": "Festlegen einer Sicherheitsorganisation",
+            "relationship": "related",
+            "confidence": "high",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "must",
+                "remarks": "MUSS"
+              }
+            ],
+            "rationale": "GC.4.3 definiert die Sicherheitsorganisation, GOV-01 ergänzt um DSB-spezifische Strukturen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-002",
+        "source-control-id": "GOV-02",
+        "source-control-title": "Datenschutzbeauftragter",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.4.1",
+            "target-control-title": "Festlegung von Rollen und Zuständigkeiten",
+            "relationship": "partial",
+            "confidence": "high",
+            "rationale": "DSB ist eine spezifische Rolle. GC.4.1 behandelt Rollen allgemein, ohne DSB-spezifische Anforderungen (Art. 37-39)."
+          },
+          {
+            "target-control-id": "GC.4.5",
+            "target-control-title": "Stellvertreterregelungen",
+            "relationship": "partial",
+            "confidence": "medium",
+            "rationale": "DSB-Stellvertretung kann unter GC.4.5 subsumiert werden."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-003",
+        "source-control-id": "GOV-03",
+        "source-control-title": "Verantwortlichkeiten",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.4.1",
+            "target-control-title": "Festlegung von Rollen und Zuständigkeiten",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Beide fordern klare Verantwortlichkeitszuweisung."
+          },
+          {
+            "target-control-id": "GC.4.2",
+            "target-control-title": "Vermeidung von Interessenkonflikten",
+            "relationship": "related",
+            "confidence": "medium",
+            "rationale": "Interessenkonflikte sind auch für DSB relevant (Art. 38 Abs. 6 DSGVO)."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-004",
+        "source-control-id": "GOV-04",
+        "source-control-title": "Datenschutz-Strategie",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.5.1",
+            "target-control-title": "Festlegen von Zielen für die Informationssicherheit",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Strategische Zielsetzung ist in beiden Frameworks zentral."
+          },
+          {
+            "target-control-id": "GC.5.1.1",
+            "target-control-title": "Festlegen einer Sicherheitsstrategie",
+            "relationship": "related",
+            "confidence": "high",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "should",
+                "remarks": "SOLLTE"
+              }
+            ],
+            "rationale": "Datenschutz-Strategie sollte mit Sicherheitsstrategie harmoniert sein."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-005",
+        "source-control-id": "GOV-05",
+        "source-control-title": "Management-Verpflichtung",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.5.2",
+            "target-control-title": "Verpflichtung der obersten Leitung",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "must",
+                "remarks": "MUSS"
+              }
+            ],
+            "rationale": "Direkte Entsprechung: Management Commitment ist in beiden Frameworks identisch gefordert."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-006",
+        "source-control-id": "ACC-01",
+        "source-control-title": "DSMS dokumentiert",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.1.1",
+            "target-control-title": "Errichtung und Aufrechterhaltung eines ISMS",
+            "relationship": "related",
+            "confidence": "high",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "must",
+                "remarks": "MUSS"
+              }
+            ],
+            "rationale": "DSMS (Datenschutz-Managementsystem) entspricht methodisch dem ISMS. GC.1.1 ist breiter, ACC-01 datenschutzspezifisch."
+          },
+          {
+            "target-control-id": "GC.5.3",
+            "target-control-title": "Erstellung einer Leitlinie",
+            "relationship": "partial",
+            "confidence": "high",
+            "rationale": "Leitlinien-Erstellung ist Teil der DSMS-Dokumentation."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-007",
+        "source-control-id": "ACC-02",
+        "source-control-title": "Nachweisführung",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.7.1",
+            "target-control-title": "Festlegen von Vorgehensweisen",
+            "relationship": "related",
+            "confidence": "high",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "must",
+                "remarks": "MUSS"
+              }
+            ],
+            "rationale": "Dokumentierte Vorgehensweisen sind Basis für Nachweisführung."
+          },
+          {
+            "target-control-id": "GC.7.2",
+            "target-control-title": "Freigabe von Vorgehensweisen",
+            "relationship": "related",
+            "confidence": "medium",
+            "rationale": "Freigabe ist Teil des Nachweis-Workflows."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-008",
+        "source-control-id": "ACC-04",
+        "source-control-title": "Schulungen & Awareness",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.4.4",
+            "target-control-title": "Sicherstellen der Qualifikation",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "must",
+                "remarks": "MUSS"
+              }
+            ],
+            "rationale": "Direkte Entsprechung: Beide fordern Schulung und Kompetenzentwicklung."
+          },
+          {
+            "target-control-id": "GC.6.1",
+            "target-control-title": "Festlegung der Kommunikation",
+            "relationship": "partial",
+            "confidence": "medium",
+            "rationale": "Awareness-Maßnahmen sind Teil der Kommunikationsstrategie."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-009",
+        "source-control-id": "LAW-01",
+        "source-control-title": "Rechtsgrundlagen festlegen",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.2.2",
+            "target-control-title": "Verfahren und Regelungen",
+            "relationship": "related",
+            "confidence": "high",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "must",
+                "remarks": "MUSS"
+              }
+            ],
+            "rationale": "GC.2.2 analysiert regulatorische Anforderungen allgemein."
+          },
+          {
+            "target-control-id": "GC.2.2.1",
+            "target-control-title": "Gesetzliche Verpflichtungen",
+            "relationship": "partial",
+            "confidence": "high",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "should",
+                "remarks": "SOLLTE"
+              }
+            ],
+            "rationale": "GC.2.2.1 dokumentiert gesetzliche Verpflichtungen, LAW-01 ist DSGVO-spezifisch."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-010",
+        "source-control-id": "REG-01",
+        "source-control-title": "Verarbeitungsverzeichnis",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.3.1",
+            "target-control-title": "Definition des Informationsverbunds",
+            "relationship": "related",
+            "confidence": "medium",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "must",
+                "remarks": "MUSS"
+              }
+            ],
+            "rationale": "Informationsverbund und VVT dokumentieren beide Datenflüsse, mit unterschiedlichem Fokus."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-011",
+        "source-control-id": "REG-02",
+        "source-control-title": "Informationsflüsse",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.3.2",
+            "target-control-title": "Festlegen der Schnittstellen",
+            "relationship": "related",
+            "confidence": "medium",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "must",
+                "remarks": "MUSS"
+              }
+            ],
+            "rationale": "Schnittstellen und Datenflüsse überlappen konzeptionell."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-012",
+        "source-control-id": "TOM-02",
+        "source-control-title": "Zugriffs- und Berechtigungsmanagement",
+        "target-mappings": [
+          {
+            "target-control-id": "ORP.4",
+            "target-control-title": "Identitäts- und Berechtigungsmanagement",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Beide behandeln Zugriffssteuerung. TOM-02 betont Datenschutz (Vertraulichkeit pbD), ORP.4 IT-Sicherheit.",
+            "props": [
+              {
+                "name": "bsi-baustein",
+                "value": "ORP.4"
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "href": "#SDM-TOM-AC-01",
+            "rel": "related-control",
+            "text": "Technische Umsetzung im SDM-Katalog"
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-013",
+        "source-control-id": "TOM-01",
+        "source-control-title": "Pseudonymisierung/Verschlüsselung",
+        "target-mappings": [
+          {
+            "target-control-id": "CON.1",
+            "target-control-title": "Kryptokonzept",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "TOM-01 fordert Verschlüsselung für pbD, CON.1 definiert das umfassende Kryptokonzept.",
+            "props": [
+              {
+                "name": "bsi-baustein",
+                "value": "CON.1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-014",
+        "source-control-id": "TOM-04",
+        "source-control-title": "Verfügbarkeit",
+        "target-mappings": [
+          {
+            "target-control-id": "CON.3",
+            "target-control-title": "Datensicherungskonzept",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Verfügbarkeit wird durch Datensicherung gewährleistet.",
+            "props": [
+              {
+                "name": "bsi-baustein",
+                "value": "CON.3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-015",
+        "source-control-id": "TOM-06",
+        "source-control-title": "Wiederherstellung",
+        "target-mappings": [
+          {
+            "target-control-id": "CON.3",
+            "target-control-title": "Datensicherungskonzept",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Wiederherstellung ist integraler Bestandteil des Datensicherungskonzepts.",
+            "props": [
+              {
+                "name": "bsi-baustein",
+                "value": "CON.3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-016",
+        "source-control-id": "DPIA-02",
+        "source-control-title": "Risikoanalyse",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.7.4",
+            "target-control-title": "Methodik für das Risikomanagement",
+            "relationship": "related",
+            "confidence": "high",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "must",
+                "remarks": "MUSS"
+              }
+            ],
+            "rationale": "GC.7.4 definiert die Risikomanagement-Methodik. DPIA-02 wendet diese auf Betroffenenrechte an (Art. 35 DSGVO)."
+          },
+          {
+            "target-control-id": "GC.7.5",
+            "target-control-title": "Definition des Risikoeigentümers",
+            "relationship": "partial",
+            "confidence": "medium",
+            "rationale": "Risikoeigentümer sind auch für DSFA relevant."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-017",
+        "source-control-id": "DPIA-01",
+        "source-control-title": "Schwellwertprüfung",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.7.6",
+            "target-control-title": "Kritikalitätskriterien",
+            "relationship": "related",
+            "confidence": "medium",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "must",
+                "remarks": "MUSS"
+              }
+            ],
+            "rationale": "Kritikalitätskriterien und DSFA-Schwellwerte verfolgen ähnliche Ziele mit unterschiedlichem Fokus."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-018",
+        "source-control-id": "OPS-01",
+        "source-control-title": "Änderungsmanagement",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.7.1.1",
+            "target-control-title": "Änderungen im ISMS",
+            "relationship": "related",
+            "confidence": "high",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "must",
+                "remarks": "MUSS"
+              }
+            ],
+            "rationale": "Änderungsmanagement ist in beiden Frameworks zentral für die Aufrechterhaltung."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-019",
+        "source-control-id": "OPS-02",
+        "source-control-title": "Prozessdokumentation",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.7.1",
+            "target-control-title": "Festlegen von Vorgehensweisen",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "rationale": "Direkte Entsprechung: Prozesse/Vorgehensweisen dokumentieren."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-020",
+        "source-control-id": "OPS-03",
+        "source-control-title": "Freigabeprozesse",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.7.2",
+            "target-control-title": "Freigabe von Vorgehensweisen",
+            "relationship": "equivalent",
+            "confidence": "high",
+            "props": [
+              {
+                "name": "bsi-modalverb",
+                "value": "must",
+                "remarks": "MUSS"
+              }
+            ],
+            "rationale": "Direkte Entsprechung: Formale Freigabe von Dokumenten/Prozessen."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-021",
+        "source-control-id": "XFER-01",
+        "source-control-title": "Drittland-Transfers",
+        "target-mappings": [
+          {
+            "target-control-id": "GC.3.2",
+            "target-control-title": "Festlegen der Schnittstellen",
+            "relationship": "partial",
+            "confidence": "low",
+            "rationale": "Drittland-Transfers (Art. 44-49) haben nur schwachen Bezug zu Schnittstellen-Definition. Privacy-spezifischer Gap."
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-022",
+        "source-control-id": "INC-01",
+        "source-control-title": "Vorfallserkennung",
+        "target-mappings": [
+          {
+            "target-control-id": "DER.1",
+            "target-control-title": "Detektion von sicherheitsrelevanten Ereignissen",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Vorfallserkennung ist in beiden Frameworks zentral.",
+            "props": [
+              {
+                "name": "bsi-baustein",
+                "value": "DER.1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-023",
+        "source-control-id": "INC-02",
+        "source-control-title": "Meldung an Aufsichtsbehörde (Art. 33)",
+        "target-mappings": [
+          {
+            "target-control-id": "DER.2.1",
+            "target-control-title": "Behandlung von Sicherheitsvorfällen",
+            "relationship": "extends",
+            "confidence": "high",
+            "rationale": "INC-02 erweitert DER.2.1 um DSGVO-spezifische 72-Stunden-Meldefrist an Aufsichtsbehörde.",
+            "props": [
+              {
+                "name": "bsi-baustein",
+                "value": "DER.2.1"
+              },
+              {
+                "name": "dsgvo-article",
+                "value": "Art. 33"
+              },
+              {
+                "name": "meldefrist",
+                "value": "72 Stunden"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ctrl-map-024",
+        "source-control-id": "INC-04",
+        "source-control-title": "Vorfall-Dokumentation",
+        "target-mappings": [
+          {
+            "target-control-id": "DER.2.2",
+            "target-control-title": "Vorsorge für die IT-Forensik",
+            "relationship": "related",
+            "confidence": "high",
+            "rationale": "Dokumentation von Vorfällen dient auch forensischen Zwecken.",
+            "props": [
+              {
+                "name": "bsi-baustein",
+                "value": "DER.2.2"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "gaps": [
+      {
+        "uuid": "gap-001",
+        "gap-type": "source-only",
+        "source-group-id": "DSR",
+        "title": "Betroffenenrechte (Art. 12-22 DSGVO)",
+        "description": "Die gesamte Gruppe DSR (Betroffenenrechte) hat keine Entsprechung in BSI Grundschutz++. Dies umfasst: Informationspflichten (Art. 13, 14), Auskunftsrecht (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung (Art. 18), Datenübertragbarkeit (Art. 20), Widerspruch (Art. 21), automatisierte Entscheidungen (Art. 22).",
+        "criticality": "critical",
+        "recommendation": "Bei BSI-Grundschutz-Anwendung MUSS zusätzlich der OpenGov Privacy Catalog für DSR-Anforderungen herangezogen werden."
+      },
+      {
+        "uuid": "gap-002",
+        "gap-type": "source-only",
+        "source-control-id": "INC-03",
+        "title": "Benachrichtigung Betroffener (Art. 34 DSGVO)",
+        "description": "Die Benachrichtigung betroffener Personen bei Datenschutzverletzungen mit hohem Risiko hat keine Entsprechung im BSI-Katalog.",
+        "criticality": "high",
+        "recommendation": "Ergänzende Implementierung aus OpenGov Privacy Catalog erforderlich. Art. 34 DSGVO fordert unverzügliche Benachrichtigung bei hohem Risiko.",
+        "props": [
+          {
+            "name": "dsgvo-article",
+            "value": "Art. 34"
+          }
+        ]
+      },
+      {
+        "uuid": "gap-003",
+        "gap-type": "source-only",
+        "source-control-id": "XFER-03",
+        "title": "Binding Corporate Rules (Art. 47 DSGVO)",
+        "description": "Verbindliche interne Datenschutzvorschriften für internationale Transfers sind nicht in BSI Grundschutz++ abgedeckt.",
+        "criticality": "medium",
+        "recommendation": "DSGVO-spezifische Compliance für internationale Konzernstrukturen zusätzlich sicherstellen."
+      },
+      {
+        "uuid": "gap-004",
+        "gap-type": "source-only",
+        "source-control-id": "LAW-02",
+        "title": "Zweckbindung (Art. 5 Abs. 1 lit. b DSGVO)",
+        "description": "Das Prinzip der Zweckbindung hat keine explizite Entsprechung in BSI Grundschutz++.",
+        "criticality": "high",
+        "recommendation": "Datenschutzrechtliche Grundsätze zusätzlich aus OpenGov Privacy Catalog implementieren."
+      },
+      {
+        "uuid": "gap-005",
+        "gap-type": "source-only",
+        "source-control-id": "LAW-03",
+        "title": "Datenminimierung (Art. 5 Abs. 1 lit. c DSGVO)",
+        "description": "Das Prinzip der Datenminimierung hat keine explizite Entsprechung in BSI Grundschutz++.",
+        "criticality": "high",
+        "recommendation": "Datenschutzrechtliche Grundsätze zusätzlich aus OpenGov Privacy Catalog implementieren."
+      },
+      {
+        "uuid": "gap-006",
+        "gap-type": "target-only",
+        "target-control-id": "GC.6.2",
+        "title": "Kommunikation im Projektmanagement",
+        "description": "Projektmanagement-Kommunikation ist nicht explizit im OpenGov Privacy Catalog adressiert.",
+        "criticality": "low",
+        "recommendation": "Optional: Bei Bedarf aus BSI Grundschutz++ ergänzen."
+      },
+      {
+        "uuid": "gap-007",
+        "gap-type": "methodology",
+        "title": "Modalverben-System",
+        "description": "BSI Grundschutz++ verwendet ein explizites Modalverben-System (MUSS/SOLLTE/KANN). OpenGov Privacy Catalog impliziert Verbindlichkeit über DSGVO-Artikel.",
+        "criticality": "medium",
+        "recommendation": "OpenGov Privacy Catalog sollte Modalverben-System übernehmen für bessere Kompatibilität."
+      }
+    ],
+    "recommendations": [
+      {
+        "uuid": "rec-001",
+        "title": "Modalverben-System adaptieren",
+        "description": "OpenGov Privacy Catalog sollte das BSI-Modalverben-System (MUSS/SOLLTE/KANN) als Property in allen Controls einführen.",
+        "priority": "high",
+        "implementation": "Neue prop 'modalverb' mit Werten 'MUSS', 'SOLLTE', 'KANN' in allen Controls ergänzen."
+      },
+      {
+        "uuid": "rec-002",
+        "title": "Abhängigkeits-Links einführen",
+        "description": "rel='required' Links zwischen Controls ergänzen, analog zu BSI Grundschutz++ Praxis.",
+        "priority": "high",
+        "implementation": "Links mit rel='required' für Control-Abhängigkeiten (z.B. TOM-02 requires GOV-01)."
+      },
+      {
+        "uuid": "rec-003",
+        "title": "Effort-Level ergänzen",
+        "description": "Aufwandsschätzung (effort_level 0-4) für Ressourcenplanung ergänzen.",
+        "priority": "medium",
+        "implementation": "Neue prop 'effort_level' mit Werten 0-4 basierend auf BSI-Skala."
+      },
+      {
+        "uuid": "rec-004",
+        "title": "Dokumentations-Empfehlungen formalisieren",
+        "description": "Explizite Dokumentations-Empfehlungen als Part 'documentation-requirements' ergänzen.",
+        "priority": "medium",
+        "implementation": "Neuer Part analog zu BSI 'dokumentation' Property."
+      }
+    ]
+  }
+}

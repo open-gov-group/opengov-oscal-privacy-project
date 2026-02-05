@@ -8,9 +8,34 @@ Zentrale Architektur-Dokumentation für das OpenGov OSCAL Privacy Ecosystem.
 
 | Dokument | Beschreibung |
 |----------|--------------|
+| **[MANAGEMENT_SUMMARY.md](MANAGEMENT_SUMMARY.md)** | **Executive Summary für Stakeholder** |
 | [MASTER_BLUEPRINT.md](MASTER_BLUEPRINT.md) | Gesamtarchitektur des Ecosystems |
 | [ROADMAP.md](ROADMAP.md) | Phasen, Meilensteine, Zeitplan |
 | [GOVERNANCE.md](GOVERNANCE.md) | Rollen, Prozesse, Kommunikation |
+
+### Katalog-Spezifikationen
+
+| Dokument | Beschreibung |
+|----------|--------------|
+| [CATALOG_OVERVIEW.md](CATALOG_OVERVIEW.md) | Zwei-Katalog-Architektur Übersicht |
+| [OSCAL_PRIVACY_CATALOGS.md](OSCAL_PRIVACY_CATALOGS.md) | Open Privacy Catalog (OPC) Spezifikation |
+| [SDM_CATALOG_STRUCTURE.md](SDM_CATALOG_STRUCTURE.md) | SDM Privacy Catalog Gliederung |
+| [CATALOG_INTEGRATION.md](CATALOG_INTEGRATION.md) | Integration Workflow |
+
+### Framework-Mappings
+
+| Dokument | Beschreibung |
+|----------|--------------|
+| [MAPPING_PRIVACY_TO_BSI_GRUNDSCHUTZ.md](MAPPING_PRIVACY_TO_BSI_GRUNDSCHUTZ.md) | Privacy ↔ BSI Grundschutz++ Mapping |
+| [GROUP_MAPPING_ANALYSIS.md](GROUP_MAPPING_ANALYSIS.md) | OPC ↔ SDM ↔ BSI ↔ ISO Mapping-Analyse |
+| [EXTENDED_CONTROL_SCHEMA.md](EXTENDED_CONTROL_SCHEMA.md) | BSI-kompatible Control-Erweiterungen |
+
+### Team-Dokumentation
+
+| Dokument | Beschreibung |
+|----------|--------------|
+| [CORE_TEAM_LIBRARIES.md](CORE_TEAM_LIBRARIES.md) | Python Core Libraries (pyprivacy, pylegal-utils) |
+| [MVP_ROPA_ARCHITECTURE.md](MVP_ROPA_ARCHITECTURE.md) | RoPa MVP Architektur |
 
 ---
 
@@ -105,4 +130,4 @@ Diese Dokumentation wird gepflegt vom **Architecture Team**.
 
 ---
 
-**Letzte Aktualisierung**: 2026-02-02
+**Letzte Aktualisierung**: 2026-02-05
