@@ -79,7 +79,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 2 DS-GVO"
                         },
@@ -87,7 +86,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -95,7 +93,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -103,7 +100,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -259,7 +255,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -267,7 +262,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-25",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 25 DS-GVO"
                         },
@@ -275,7 +269,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -283,7 +276,6 @@
                             "name": "assurance_goal",
                             "value": "unlinkability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Nicht-Verkettbarkeit"
                         },
@@ -430,7 +422,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 2 DS-GVO"
                         },
@@ -438,7 +429,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -446,7 +436,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -600,7 +589,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-4_ABS-7",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 4 Abs. 7 DS-GVO"
                         },
@@ -608,7 +596,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-26",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 26 DS-GVO"
                         },
@@ -616,7 +603,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-28",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 28 DS-GVO"
                         },
@@ -624,7 +610,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -770,7 +755,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-37-39",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 37–39 DS-GVO"
                         },
@@ -778,7 +762,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -786,7 +769,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -932,7 +914,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -940,7 +921,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-25",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 25 DS-GVO"
                         },
@@ -948,7 +928,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -956,7 +935,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -964,7 +942,6 @@
                             "name": "assurance_goal",
                             "value": "unlinkability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Nicht-Verkettbarkeit"
                         },
@@ -1117,7 +1094,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 2 DS-GVO"
                         },
@@ -1125,7 +1101,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -1133,7 +1108,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -1265,8 +1239,7 @@
                         {
                             "id": "acc-01-questions",
                             "name": "assessment-questions",
-                            "prose": "• Gibt es eine dokumentierte Beschreibung des Datenschutzmanagementsystems (z.B. DSMS-Handbuch) mit Geltungsbereich, Rollen und Kernprozessen?\n• Sind Schnittstellen des DSMS zu anderen Managementsystemen (z.B. Informationssicherheit, Qualitätsmanagement, Compliance) beschrieben und organisatorisch etabliert?",
-                            "parts": []
+                            "prose": "• Gibt es eine dokumentierte Beschreibung des Datenschutzmanagementsystems (z.B. DSMS-Handbuch) mit Geltungsbereich, Rollen und Kernprozessen?\n• Sind Schnittstellen des DSMS zu anderen Managementsystemen (z.B. Informationssicherheit, Qualitätsmanagement, Compliance) beschrieben und organisatorisch etabliert?"
                         },
                         {
                             "id": "ACC-01-risk-hint",
@@ -1284,7 +1257,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 2 DS-GVO"
                         },
@@ -1292,7 +1264,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -1300,7 +1271,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-30",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 30 DS-GVO"
                         },
@@ -1308,7 +1278,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -1470,7 +1439,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 2 DS-GVO"
                         },
@@ -1478,7 +1446,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -1486,7 +1453,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -1631,7 +1597,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -1639,7 +1604,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -1647,7 +1611,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-39_ABS-1_LIT-b",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 39 Abs. 1 Lit. b DS-GVO"
                         },
@@ -1655,7 +1618,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -1663,7 +1625,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -1825,7 +1786,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-6_ABS-1_LIT-f",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 6 Abs. 1 lit. b DS-GVO"
                         },
@@ -1833,7 +1793,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -1841,7 +1800,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-25",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 25 DS-GVO"
                         },
@@ -1849,7 +1807,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-35",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 35 DS-GVO"
                         },
@@ -1857,7 +1814,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -1865,7 +1821,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -2034,7 +1989,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-a",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 1 lit. a DS-GVO"
                         },
@@ -2042,7 +1996,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-6",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 6 DS-GVO"
                         },
@@ -2050,7 +2003,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-9",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 9 DS-GVO"
                         },
@@ -2058,7 +2010,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -2220,7 +2171,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-b",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 abs. 1 lit. b DS-GVO"
                         },
@@ -2228,7 +2178,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -2236,7 +2185,6 @@
                             "name": "assurance_goal",
                             "value": "unlinkability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Nicht-Verkettbarkeit"
                         },
@@ -2402,7 +2350,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-c",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 1 lit. c DS-GVO"
                         },
@@ -2410,7 +2357,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-e",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 1 lit. e DS-GVO"
                         },
@@ -2418,7 +2364,6 @@
                             "name": "assurance_goal",
                             "value": "data_minimization",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Datenminimierung"
                         },
@@ -2426,7 +2371,6 @@
                             "name": "assurance_goal",
                             "value": "availability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Verfügbarkeit"
                         },
@@ -2588,7 +2532,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-9",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 9 DS-GVO"
                         },
@@ -2596,7 +2539,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-10",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 10 DS-GVO"
                         },
@@ -2604,7 +2546,6 @@
                             "name": "assurance_goal",
                             "value": "data_minimization",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Datenminimierung"
                         },
@@ -2612,7 +2553,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -2774,7 +2714,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-4_ABS-11",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 4 Abs. 11 DS-GVO"
                         },
@@ -2782,7 +2721,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-6_ABS-1_LIT-a",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 6 Abs. 1 lit. a DS-GVO"
                         },
@@ -2790,7 +2728,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-7",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 7 DS-GVO"
                         },
@@ -2798,7 +2735,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -2806,7 +2742,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -2976,7 +2911,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-6_ABS-1_LIT-f",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 6 Abs. 1 lit. f DS-GVO"
                         },
@@ -2984,7 +2918,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -2992,7 +2925,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -3170,7 +3102,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-12",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 12 DS-GVO"
                         },
@@ -3178,7 +3109,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-15-22",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 15–22 DS-GVO"
                         },
@@ -3186,7 +3116,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 2 DS-GVO"
                         },
@@ -3194,7 +3123,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -3202,7 +3130,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -3210,7 +3137,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -3372,7 +3298,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-11",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 11 DS-GVO"
                         },
@@ -3380,7 +3305,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-12_ABS_2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 12 Abs. 2 DS-GVO"
                         },
@@ -3388,7 +3312,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-12_ABS_3",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 12 Abs. 3 DS-GVO"
                         },
@@ -3396,7 +3319,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-12_ABS_6",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 12 Abs. 6 DS-GVO"
                         },
@@ -3404,7 +3326,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -3412,7 +3333,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -3420,7 +3340,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -3577,7 +3496,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-15",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 15 DS-GVO"
                         },
@@ -3585,7 +3503,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-12_ABS-3",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 12 Abs. 3 DS-GVO"
                         },
@@ -3593,7 +3510,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-12_ABS-4",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 12 Abs. 4 DS-GVO"
                         },
@@ -3601,7 +3517,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-12_ABS-5",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 12 Abs. 5 DS-GVO"
                         },
@@ -3609,7 +3524,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-19",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 19 DS-GVO"
                         },
@@ -3617,7 +3531,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -3625,7 +3538,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -3787,7 +3699,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-16",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 16 DS-GVO"
                         },
@@ -3795,7 +3706,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-17",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 17 DS-GVO"
                         },
@@ -3803,7 +3713,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-19",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 19 DS-GVO"
                         },
@@ -3811,7 +3720,6 @@
                             "name": "assurance_goal",
                             "value": "data_minimization",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Datenminimierung"
                         },
@@ -3819,7 +3727,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -3827,7 +3734,6 @@
                             "name": "assurance_goal",
                             "value": "availability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Verfügbarkeit"
                         },
@@ -3994,7 +3900,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-18",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 18 DS-GVO"
                         },
@@ -4002,7 +3907,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-21",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 21 DS-GVO"
                         },
@@ -4010,7 +3914,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:REC-69-70",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "ErwGr. 69–70 DS-GVO"
                         },
@@ -4018,7 +3921,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -4026,7 +3928,6 @@
                             "name": "assurance_goal",
                             "value": "unlinkability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Nicht-Verkettbarkeit"
                         },
@@ -4034,7 +3935,6 @@
                             "name": "assurance_goal",
                             "value": "data_minimization",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Datenminimierung"
                         },
@@ -4201,7 +4101,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 2 DS-GVO"
                         },
@@ -4209,7 +4108,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-12_ABS-3",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 12 Abs. 3 DS-GVO"
                         },
@@ -4217,7 +4115,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-12_ABS-4",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 12 Abs. 4 DS-GVO"
                         },
@@ -4225,7 +4122,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-12_ABS-5",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 12 Abs. 5 DS-GVO"
                         },
@@ -4233,7 +4129,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -4241,7 +4136,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -4249,7 +4143,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -4257,7 +4150,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -4426,7 +4318,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-30",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 30 DS-GVO"
                         },
@@ -4434,7 +4325,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -4579,7 +4469,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-30",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 30 DS-GVO"
                         },
@@ -4587,7 +4476,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -4742,7 +4630,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-30_ABS-2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 30 Abs. 2 DS-GVO"
                         },
@@ -4750,7 +4637,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -4901,7 +4787,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-30",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 30 DS-GVO"
                         },
@@ -4909,7 +4794,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -4917,7 +4801,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-35",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 35 DS-GVO"
                         },
@@ -4925,7 +4808,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-44-49",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 44–49 DS-GVO"
                         },
@@ -4933,7 +4815,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -4941,7 +4822,6 @@
                             "name": "assurance_goal",
                             "value": "unlinkability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Nicht-Verkettbarkeit"
                         },
@@ -5086,7 +4966,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 2 DS-GVO"
                         },
@@ -5094,7 +4973,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -5102,7 +4980,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-30",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 30 DS-GVO"
                         },
@@ -5110,7 +4987,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -5268,7 +5144,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -5276,7 +5151,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-25",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 25 DS-GVO"
                         },
@@ -5284,7 +5158,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -5292,7 +5165,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -5300,7 +5172,6 @@
                             "name": "assurance_goal",
                             "value": "availability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Verfügbarkeit"
                         },
@@ -5512,7 +5383,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -5520,7 +5390,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-f",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 1 lit. f DS-GVO"
                         },
@@ -5528,7 +5397,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -5536,7 +5404,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -5760,7 +5627,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32_ABS-1_LIT-a",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 Abs. 1 lit. a DS-GVO"
                         },
@@ -5768,7 +5634,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-25",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 25 DS-GVO"
                         },
@@ -5776,7 +5641,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -5784,7 +5648,6 @@
                             "name": "assurance_goal",
                             "value": "unlinkability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Nicht-Verkettbarkeit"
                         },
@@ -6002,7 +5865,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -6010,7 +5872,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-f",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 1 lit. f DS-GVO"
                         },
@@ -6018,7 +5879,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -6026,7 +5886,6 @@
                             "name": "assurance_goal",
                             "value": "availability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Verfügbarkeit"
                         },
@@ -6249,7 +6108,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32_ABS-1_LIT-b",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 Abs. 1 lit. b DS-GVO"
                         },
@@ -6257,7 +6115,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32_ABS-1_LIT-c",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 Abs. 1 lit. c DS-GVO"
                         },
@@ -6265,7 +6122,6 @@
                             "name": "assurance_goal",
                             "value": "availability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Verfügbarkeit"
                         },
@@ -6273,7 +6129,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -6485,7 +6340,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-25",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 25 DS-GVO"
                         },
@@ -6493,7 +6347,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -6501,7 +6354,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -6509,7 +6361,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -6517,7 +6368,6 @@
                             "name": "assurance_goal",
                             "value": "unlinkability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Nicht-Verkettbarkeit"
                         },
@@ -6746,7 +6596,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-35",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 35 DS-GVO"
                         },
@@ -6754,7 +6603,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-36",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 36 DS-GVO"
                         },
@@ -6762,7 +6610,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -6770,7 +6617,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -6778,7 +6624,6 @@
                             "name": "assurance_goal",
                             "value": "unlinkability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Nicht-Verkettbarkeit"
                         },
@@ -6923,7 +6768,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-35_ABS-1",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 35 Abs. 1 - 4 DS-GVO"
                         },
@@ -6931,7 +6775,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -7086,7 +6929,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-35_ABS-7",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 35 Abs. 7 - 9 DS-GVO"
                         },
@@ -7094,7 +6936,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -7102,7 +6943,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -7110,7 +6950,6 @@
                             "name": "assurance_goal",
                             "value": "unlinkability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Nicht-Verkettbarkeit"
                         },
@@ -7269,7 +7108,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 2 DS-GVO"
                         },
@@ -7277,7 +7115,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -7285,7 +7122,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-35_ABS-7",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 35 Abs. 7 - 9 DS-GVO"
                         },
@@ -7293,7 +7129,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -7301,7 +7136,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -7452,7 +7286,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-35_ABS-2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 35 Abs. 2 DS-GVO"
                         },
@@ -7460,7 +7293,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-36",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 36 DS-GVO"
                         },
@@ -7468,7 +7300,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -7476,7 +7307,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -7631,7 +7461,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-25",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 25 DS-GVO"
                         },
@@ -7639,7 +7468,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-35",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 35 DS-GVO"
                         },
@@ -7647,7 +7475,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -7655,7 +7482,6 @@
                             "name": "assurance_goal",
                             "value": "unlinkability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Nicht-Verkettbarkeit"
                         },
@@ -7807,7 +7633,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-b",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 1 lit. b DS-GVO"
                         },
@@ -7815,7 +7640,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-c",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 1 lit. c DS-GVO"
                         },
@@ -7823,7 +7647,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-e",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 1 lit. e DS-GVO"
                         },
@@ -7831,7 +7654,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -7839,7 +7661,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-25",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 25 DS-GVO"
                         },
@@ -7847,7 +7668,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -7855,7 +7675,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -7863,7 +7682,6 @@
                             "name": "assurance_goal",
                             "value": "data_minimization",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Datenminimierung"
                         },
@@ -7871,7 +7689,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -7879,7 +7696,6 @@
                             "name": "assurance_goal",
                             "value": "availability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Verfügbarkeit"
                         },
@@ -8024,7 +7840,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -8032,7 +7847,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-25",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 25 DS-GVO"
                         },
@@ -8040,7 +7854,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -8048,7 +7861,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-35",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 35 DS-GVO"
                         },
@@ -8056,7 +7868,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -8064,7 +7875,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -8072,7 +7882,6 @@
                             "name": "assurance_goal",
                             "value": "data_minimization",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Datenminimierung"
                         },
@@ -8227,7 +8036,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 2 DS-GVO"
                         },
@@ -8235,7 +8043,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -8243,7 +8050,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-26",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 26 DS-GVO"
                         },
@@ -8251,7 +8057,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-28",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 28 DS-GVO"
                         },
@@ -8259,7 +8064,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -8267,7 +8071,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -8275,7 +8078,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -8283,7 +8085,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -8438,7 +8239,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-c",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 1 lit. c DS-GVO"
                         },
@@ -8446,7 +8246,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-e",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 1 lit. e DS-GVO"
                         },
@@ -8454,7 +8253,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-17",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 17 DS-GVO"
                         },
@@ -8462,7 +8260,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-18",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 18 DS-GVO"
                         },
@@ -8470,7 +8267,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-30",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 30 DS-GVO"
                         },
@@ -8478,7 +8274,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -8486,7 +8281,6 @@
                             "name": "assurance_goal",
                             "value": "data_minimization",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Datenminimierung"
                         },
@@ -8494,7 +8288,6 @@
                             "name": "assurance_goal",
                             "value": "availability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Verfügbarkeit"
                         },
@@ -8502,7 +8295,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -8647,7 +8439,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-f",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 1 lit. f DS-GVO"
                         },
@@ -8655,7 +8446,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -8663,7 +8453,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-25",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 25 DS-GVO"
                         },
@@ -8671,7 +8460,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -8679,7 +8467,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -8687,7 +8474,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -8695,7 +8481,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -8857,7 +8642,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-5_ABS-2",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 5 Abs. 2 DS-GVO"
                         },
@@ -8865,7 +8649,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-30",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 30 DS-GVO"
                         },
@@ -8873,7 +8656,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-44-49",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 44–49 DS-GVO"
                         },
@@ -8881,7 +8663,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -9026,7 +8807,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-44-46",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 44–46 DS-GVO"
                         },
@@ -9034,7 +8814,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -9042,7 +8821,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -9050,7 +8828,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -9205,7 +8982,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-44",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 44 DS-GVO"
                         },
@@ -9213,7 +8989,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-46",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 46 DS-GVO"
                         },
@@ -9221,7 +8996,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -9229,7 +9003,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -9237,7 +9010,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -9245,7 +9017,6 @@
                             "name": "assurance_goal",
                             "value": "availability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Verfügbarkeit"
                         },
@@ -9396,7 +9167,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-45",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 45 DS-GVO"
                         },
@@ -9404,7 +9174,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -9412,7 +9181,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -9567,7 +9335,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-49",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 49 DS-GVO"
                         },
@@ -9575,7 +9342,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -9583,7 +9349,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -9734,7 +9499,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-48",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 48 DS-GVO"
                         },
@@ -9742,7 +9506,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-44-46",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 44–46 DS-GVO"
                         },
@@ -9750,7 +9513,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -9758,7 +9520,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -9766,7 +9527,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -9924,7 +9684,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-4_ABS-12",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 4 Abs. 12 DS-GVO"
                         },
@@ -9932,7 +9691,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -9940,7 +9698,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -9948,7 +9705,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-33",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 33 DS-GVO"
                         },
@@ -9956,7 +9712,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-34",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 34 DS-GVO"
                         },
@@ -9964,7 +9719,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -9972,7 +9726,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -9980,7 +9733,6 @@
                             "name": "assurance_goal",
                             "value": "availability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Verfügbarkeit"
                         },
@@ -9988,7 +9740,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -10139,7 +9890,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -10147,7 +9897,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-33_ABS-1",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 33 Abs. 1 DS-GVO"
                         },
@@ -10155,7 +9904,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -10163,7 +9911,6 @@
                             "name": "assurance_goal",
                             "value": "availability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Verfügbarkeit"
                         },
@@ -10319,7 +10066,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-33",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 33 DS-GVO"
                         },
@@ -10327,7 +10073,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-34",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 34 DS-GVO"
                         },
@@ -10335,7 +10080,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -10343,7 +10087,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -10351,7 +10094,6 @@
                             "name": "assurance_goal",
                             "value": "availability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Verfügbarkeit"
                         },
@@ -10359,7 +10101,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -10522,7 +10263,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-33",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 33 DS-GVO"
                         },
@@ -10530,7 +10270,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -10538,7 +10277,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -10689,7 +10427,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-34",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 34 DS-GVO"
                         },
@@ -10697,7 +10434,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -10705,7 +10441,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -10856,7 +10591,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-33_ABS-5",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 33 Abs. 5 DS-GVO"
                         },
@@ -10864,7 +10598,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -10872,7 +10605,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -10880,7 +10612,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -10888,7 +10619,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -10896,7 +10626,6 @@
                             "name": "assurance_goal",
                             "value": "availability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Verfügbarkeit"
                         },
@@ -11070,7 +10799,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-39_ABS-1_LIT-b",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 39 Abs. 1 lit. b DS-GVO"
                         },
@@ -11078,7 +10806,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -11086,7 +10813,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -11094,7 +10820,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -11102,7 +10827,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -11265,7 +10989,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-39_ABS-1_LIT-b",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 39 Abs. 1 lit. b DS-GVO"
                         },
@@ -11273,7 +10996,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -11281,7 +11003,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -11289,7 +11010,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -11297,7 +11017,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },
@@ -11305,7 +11024,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -11450,7 +11168,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -11458,7 +11175,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-25",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 25 DS-GVO"
                         },
@@ -11466,7 +11182,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -11474,7 +11189,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -11482,7 +11196,6 @@
                             "name": "assurance_goal",
                             "value": "transparency",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Transparenz"
                         },
@@ -11490,7 +11203,6 @@
                             "name": "assurance_goal",
                             "value": "intervenability",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Intervenierbarkeit"
                         },
@@ -11641,7 +11353,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-24",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 24 DS-GVO"
                         },
@@ -11649,7 +11360,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-32",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 32 DS-GVO"
                         },
@@ -11657,7 +11367,6 @@
                             "name": "legal",
                             "value": "EU:REG:GDPR:ART-39_ABS-1_LIT-b",
                             "class": "proof",
-                            "ns": "de",
                             "group": "reference",
                             "remarks": "Art. 39 Abs. 1 lit. b DS-GVO"
                         },
@@ -11665,7 +11374,6 @@
                             "name": "assurance_goal",
                             "value": "confidentiality",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Vertraulichkeit"
                         },
@@ -11673,7 +11381,6 @@
                             "name": "assurance_goal",
                             "value": "integrity",
                             "class": "teleological_interpretation",
-                            "ns": "de",
                             "group": "aim_of_measure",
                             "remarks": "Integrität"
                         },

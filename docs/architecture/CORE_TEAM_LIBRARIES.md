@@ -1,8 +1,9 @@
 # Core Team Libraries – Architektur und Integration
 
-> **Version:** 1.0.0
+> **Version:** 1.1.0
 > **Status:** Draft
 > **Zielgruppe:** Alle Entwicklungsteams (Workbench, RoPa, Crossover)
+> **Letzte Änderung:** 2026-02-06 – Localization Service Task hinzugefügt
 
 ---
 
@@ -552,6 +553,7 @@ def test_catalog_roundtrip():
 - [ ] JSON Schema Export für TypeScript
 - [ ] CLI-Tools für Normalisierung
 - [ ] PyPI-Veröffentlichung
+- [ ] **Localization Service** – Implementierung eines Lokalisierungsdienstes für OSCAL-Controls (DE, EN, FR). Das `ns`-Attribut wurde aus den Katalogen entfernt (OPC v0.6.0/v0.7.0); Lokalisierung erfolgt nun als Service in pyprivacy.
 
 ### Phase 3: Erweiterung
 - [ ] Weitere Jurisdiktionen (AT, weitere EU-Mitgliedstaaten)

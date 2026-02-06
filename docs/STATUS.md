@@ -1,7 +1,7 @@
 # OpenGov Privacy Ecosystem - Repository Status
 
-**Stand**: 2026-02-05
-**Analyse-Datum**: 2026-02-05
+**Stand**: 2026-02-06
+**Analyse-Datum**: 2026-02-06
 
 ---
 
@@ -330,6 +330,7 @@
 | 2026-02-05 | BSI Grundschutz++ Mapping abgeschlossen, SDM-Katalogstruktur v1.0 festgeschrieben |
 | 2026-02-05 | **ISO 27701:2025 Mapping abgeschlossen** - 89% Coverage, 1546 Zeilen OSCAL-Mapping |
 | 2026-02-05 | **SDM Privacy Catalog v2.0** - 31 Controls durch Reverse Engineering (ISO/BSI) |
+| 2026-02-06 | **OSCAL Catalog Bugfix** - `ns`-Attribut aus OPC v0.6.0/v0.7.0 entfernt; Lokalisierung wird als Service in pyprivacy implementiert |
 
 ---
 

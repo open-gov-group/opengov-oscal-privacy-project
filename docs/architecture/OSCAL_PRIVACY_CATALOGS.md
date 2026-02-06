@@ -1,8 +1,8 @@
 # OSCAL Privacy Kataloge - Konzept und Spezifikation
 
-**Version**: 1.2.1
+**Version**: 1.3.0
 **Stand**: 2026-02-05
-**Status**: BSI Grundschutz++ Mapping integriert
+**Status**: Namespace-Attribut entfernt (Lokalisierung via pyprivacy)
 
 ---
 
@@ -276,7 +276,6 @@ Jedes Control enthält folgende Properties mit erweiterter Taxonomie:
   "name": "legal",
   "value": "EU:REG:GDPR:ART-32",
   "class": "proof",
-  "ns": "de",
   "group": "reference",
   "remarks": "Art. 32 DS-GVO"
 }
@@ -286,7 +285,6 @@ Jedes Control enthält folgende Properties mit erweiterter Taxonomie:
 |----------|--------------|----------|
 | `value` | Strukturierte Rechtsreferenz | `EU:REG:GDPR:ART-32_ABS-1_LIT-a` |
 | `class` | Art der Referenz | `proof` |
-| `ns` | Namespace/Sprache | `de`, `en` |
 | `group` | Gruppierung | `reference` |
 | `remarks` | Lesbare Bezeichnung | `Art. 32 DS-GVO` |
 
@@ -299,7 +297,6 @@ Jedes Control enthält folgende Properties mit erweiterter Taxonomie:
   "name": "assurance_goal",
   "value": "confidentiality",
   "class": "teleological_interpretation",
-  "ns": "de",
   "group": "aim_of_measure",
   "remarks": "Vertraulichkeit"
 }
@@ -409,32 +406,28 @@ Zusammenfassende Einordnung wann welche Risikobetrachtung erforderlich ist.
       "name": "legal",
       "value": "EU:REG:GDPR:ART-32",
       "class": "proof",
-      "ns": "de",
-      "group": "reference",
+          "group": "reference",
       "remarks": "Art. 32 DS-GVO"
     },
     {
       "name": "legal",
       "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-f",
       "class": "proof",
-      "ns": "de",
-      "group": "reference",
+          "group": "reference",
       "remarks": "Art. 5 Abs. 1 lit. f DS-GVO"
     },
     {
       "name": "assurance_goal",
       "value": "confidentiality",
       "class": "teleological_interpretation",
-      "ns": "de",
-      "group": "aim_of_measure",
+          "group": "aim_of_measure",
       "remarks": "Vertraulichkeit"
     },
     {
       "name": "assurance_goal",
       "value": "integrity",
       "class": "teleological_interpretation",
-      "ns": "de",
-      "group": "aim_of_measure",
+          "group": "aim_of_measure",
       "remarks": "Integrität"
     },
     { "name": "maturity-domain", "value": "access-control" },
@@ -646,7 +639,6 @@ Anstatt eines separaten SDM-Katalogs werden die **SDM-Gewährleistungsziele** di
   "name": "assurance_goal",
   "value": "confidentiality",
   "class": "teleological_interpretation",
-  "ns": "de",
   "group": "aim_of_measure",
   "remarks": "Vertraulichkeit"
 }
@@ -1371,6 +1363,13 @@ https://github.com/open-gov-group/opengov-privacy-oscal/profiles/buergerportal-s
 | 1.1.0 | 2026-02-04 | Aktualisierung basierend auf implementiertem Katalog (open_privacy_catalog_risk.json) |
 | 1.2.0 | 2026-02-05 | Vollständige 10-Gruppen-Struktur dokumentiert |
 | 1.2.1 | 2026-02-05 | BSI Grundschutz++ Mapping-Dokumentation referenziert |
+| 1.3.0 | 2026-02-05 | **Namespace-Attribut `ns` entfernt** – Lokalisierung wird als Service in pyprivacy implementiert |
+
+**Wichtigste Änderungen in 1.3.0:**
+- `ns` (Namespace)-Attribut aus allen Property-Definitionen entfernt
+- Lokalisierung wird nicht mehr im Katalog gespeichert, sondern als Service in pyprivacy bereitgestellt
+- Bugfixes in OPC v0.6.0 und v0.7.0 Katalogen
+- **Offene Aufgabe für Core Team**: Localization Service in pyprivacy implementieren
 
 **Wichtigste Änderungen in 1.2.1:**
 - Referenzen zu BSI Grundschutz++ Mapping-Dokumentation hinzugefügt

@@ -242,7 +242,6 @@ Die Werte sind **internationalisiert** (MoSCoW: Must/Should/Could/Would), mit de
       "name": "legal",
       "value": "EU:REG:GDPR:ART-32",
       "class": "proof",
-      "ns": "de",
       "group": "reference",
       "remarks": "Art. 32 DS-GVO"
     },
@@ -250,7 +249,6 @@ Die Werte sind **internationalisiert** (MoSCoW: Must/Should/Could/Would), mit de
       "name": "legal",
       "value": "EU:REG:GDPR:ART-5_ABS-1_LIT-f",
       "class": "proof",
-      "ns": "de",
       "group": "reference",
       "remarks": "Art. 5 Abs. 1 lit. f DS-GVO"
     },
@@ -258,7 +256,6 @@ Die Werte sind **internationalisiert** (MoSCoW: Must/Should/Could/Would), mit de
       "name": "assurance_goal",
       "value": "confidentiality",
       "class": "teleological_interpretation",
-      "ns": "de",
       "group": "aim_of_measure",
       "remarks": "Vertraulichkeit"
     },
@@ -266,7 +263,6 @@ Die Werte sind **internationalisiert** (MoSCoW: Must/Should/Could/Would), mit de
       "name": "assurance_goal",
       "value": "integrity",
       "class": "teleological_interpretation",
-      "ns": "de",
       "group": "aim_of_measure",
       "remarks": "Integrität"
     },
