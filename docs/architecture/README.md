@@ -37,6 +37,7 @@ Zentrale Architektur-Dokumentation für das OpenGov OSCAL Privacy Ecosystem.
 
 | Dokument | Beschreibung |
 |----------|--------------|
+| **[OSCAL_VIEWER_TEAM.md](OSCAL_VIEWER_TEAM.md)** | **NEU: Viewer Team – OSCAL 1.1.2 Viewer (Ersatz für viewer.oscal.io)** |
 | [CORE_TEAM_LIBRARIES.md](CORE_TEAM_LIBRARIES.md) | Python Core Libraries (pyprivacy, pylegal-utils) |
 | [MVP_ROPA_ARCHITECTURE.md](MVP_ROPA_ARCHITECTURE.md) | RoPa MVP Architektur |
 
@@ -133,4 +134,4 @@ Diese Dokumentation wird gepflegt vom **Architecture Team**.
 
 ---
 
-**Letzte Aktualisierung**: 2026-02-05
+**Letzte Aktualisierung**: 2026-02-06

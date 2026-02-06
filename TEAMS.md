@@ -1,7 +1,7 @@
 # Teams & Verantwortlichkeiten
 
-**Version**: 1.1.0
-**Stand**: 2026-02-03
+**Version**: 1.2.0
+**Stand**: 2026-02-06
 **Phase**: 🚀 Startphase (User-Account)
 
 ---
@@ -164,11 +164,47 @@ Architektur-Entscheidungen werden weiterhin als ADRs dokumentiert:
 
 ---
 
-## 6. Geplante Professionalisierung (Q2/Q3 2026)
+## 6. Spezialisierte Teams
+
+### 6.1 Viewer Team (NEU)
+
+> **Mission**: Entwicklung eines OSCAL 1.1.2-kompatiblen Viewers als Ersatz für viewer.oscal.io (nur bis 1.0.4)
+
+| Attribut | Beschreibung |
+|----------|--------------|
+| **Status** | Neu gegründet (2026-02-06) |
+| **Repository** | opengov-oscal-privacy-viewer |
+| **Deployment** | GitHub Pages |
+| **Spezifikation** | [OSCAL_VIEWER_TEAM.md](docs/architecture/OSCAL_VIEWER_TEAM.md) |
+
+**Kernaufgaben:**
+
+| Phase | Aufgaben | Timeline |
+|-------|----------|----------|
+| **Phase 1** | OSCAL Parser, Catalog Renderer | KW 6-9 |
+| **Phase 2** | Profile, Component, SSP Renderer | KW 10-12 |
+| **Phase 3** | GitHub Pages Deploy, PWA, Docs | KW 13-14 |
+
+**Technologie-Stack:**
+- TypeScript + Preact/Lit (< 10KB Bundle)
+- Vite Build
+- Client-Side Only (Zero-Backend)
+- PWA-fähig
+
+**Warum eigenes Team?**
+
+Der bestehende viewer.oscal.io unterstützt nur OSCAL bis Version 1.0.4. Da das OpenGov Ecosystem OSCAL 1.1.2 verwendet, benötigen wir einen eigenen Viewer, der:
+- Alle Custom Properties (assurance_goal, legal, etc.) anzeigt
+- Offline-fähig ist (für Air-gapped Behördennetze)
+- Als Open Source für die Community verfügbar ist
+
+---
+
+## 7. Geplante Professionalisierung (Q2/Q3 2026)
 
 Nach erfolgreicher Stakeholder-Abstimmung:
 
-### 6.1 Migration zu GitHub Organisation
+### 7.1 Migration zu GitHub Organisation
 
 - [ ] Custom Domain einrichten (vor Migration)
 - [ ] Neue Organisation erstellen
@@ -176,7 +212,7 @@ Nach erfolgreicher Stakeholder-Abstimmung:
 - [ ] GitHub Teams einrichten
 - [ ] Organization Project Board erstellen
 
-### 6.2 Zukünftige Team-Struktur
+### 7.2 Zukünftige Team-Struktur
 
 | Team | Repositories |
 |------|--------------|
@@ -186,7 +222,7 @@ Nach erfolgreicher Stakeholder-Abstimmung:
 | `@org/compliance-team` | privacy-oscal, security-oscal, privacy-mappings |
 | `@org/operations-team` | privacy-data, deployment |
 
-### 6.3 Vorbereitete Ressourcen
+### 7.3 Vorbereitete Ressourcen
 
 Die folgenden Dateien sind bereits vorbereitet:
 - `scripts/setup-github-org.ps1` - Automatisches Setup-Script
@@ -196,10 +232,11 @@ Die folgenden Dateien sind bereits vorbereitet:
 
 ---
 
-## 7. Änderungshistorie
+## 8. Änderungshistorie
 
 | Version | Datum | Änderung |
 |---------|-------|----------|
+| 1.2.0 | 2026-02-06 | **Viewer Team** hinzugefügt – OSCAL 1.1.2 Viewer als Ersatz für viewer.oscal.io |
 | 1.1.0 | 2026-02-03 | Anpassung für Startphase (User-Account) |
 | 1.0.0 | 2026-02-03 | Initiale Version (Organisation geplant) |
 

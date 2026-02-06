@@ -144,26 +144,40 @@
 
 ---
 
-### 5. opengov-oscal-privacy-viewer (Katalog-Viewer)
+### 5. opengov-oscal-privacy-viewer (OSCAL 1.1.2 Viewer)
 
 | Attribut | Wert |
 |----------|------|
-| **Status** | 🟡 In Entwicklung |
-| **Beschreibung** | Web-Viewer für OSCAL Privacy Kataloge |
+| **Status** | 🟡 In Entwicklung (Viewer Team gegründet) |
+| **Beschreibung** | Universeller OSCAL 1.1.2 Viewer (Ersatz für viewer.oscal.io) |
 | **Sprache** | TypeScript |
 | **Letzter Push** | 2026-02-04 |
 | **Issues** | 0 offen |
 | **URL** | https://github.com/open-gov-group/opengov-oscal-privacy-viewer |
+| **Team-Spec** | [OSCAL_VIEWER_TEAM.md](architecture/OSCAL_VIEWER_TEAM.md) |
 
-**Geplante Features:**
-- Bürgeransicht (einfache Sprache)
-- DPO-Ansicht (professionell)
-- Mehrsprachig (DE, EN, FR)
+**Viewer Team (NEU 2026-02-06):**
+
+> Der bestehende viewer.oscal.io unterstützt nur OSCAL bis 1.0.4. Das Viewer Team entwickelt einen leichtgewichtigen, Client-Side-Only Viewer für OSCAL 1.1.2.
+
+**Technologie-Stack:**
+- TypeScript + Preact/Lit (< 10KB Bundle)
+- Vite Build, Zero-Backend
+- GitHub Pages Deployment
+- PWA-fähig (Offline)
+
+**Roadmap:**
+| Phase | Aufgaben | Timeline |
+|-------|----------|----------|
+| Phase 1 | OSCAL Parser, Catalog Renderer | KW 6-9 |
+| Phase 2 | Profile, Component, SSP Renderer | KW 10-12 |
+| Phase 3 | GitHub Pages Deploy, PWA, Docs | KW 13-14 |
 
 **Nächste Schritte:**
-- [ ] Client-Side OSCAL Rendering
-- [ ] Citizen-Title Anzeige
-- [ ] Filter und Suche
+- [ ] Architektur-Design (ADR)
+- [ ] OSCAL 1.1.2 Parser implementieren
+- [ ] Catalog Renderer entwickeln
+- [ ] GitHub Pages Deployment
 
 ---
 
@@ -331,6 +345,7 @@
 | 2026-02-05 | **ISO 27701:2025 Mapping abgeschlossen** - 89% Coverage, 1546 Zeilen OSCAL-Mapping |
 | 2026-02-05 | **SDM Privacy Catalog v2.0** - 31 Controls durch Reverse Engineering (ISO/BSI) |
 | 2026-02-06 | **OSCAL Catalog Bugfix** - `ns`-Attribut aus OPC v0.6.0/v0.7.0 entfernt; Lokalisierung wird als Service in pyprivacy implementiert |
+| 2026-02-06 | **Viewer Team gegründet** - OSCAL 1.1.2 Viewer als Ersatz für viewer.oscal.io (nur 1.0.4); Team-Spezifikation erstellt |
 
 ---
 

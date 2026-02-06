@@ -1,8 +1,8 @@
 # OpenGov OSCAL Privacy Ecosystem - Roadmap
 
-**Version**: 1.2.0
-**Stand**: 2026-02-05
-**Status**: Aktiv – Phase 1 bei 70%, Phase 2 Mappings vorgezogen
+**Version**: 1.3.0
+**Stand**: 2026-02-06
+**Status**: Aktiv – Phase 1 bei 70%, Phase 2 Mappings vorgezogen, Viewer Team gegründet
 
 ---
 
@@ -51,22 +51,54 @@ Q1          Q2          Q3          Q4          Q1          Q2
 - [ ] Validierung gegen OSCAL-Schema bestanden
 - [ ] Profile-Resolution funktioniert
 
-### Meilenstein 1.2: Privacy Viewer Beta
-**Deadline**: Ende März 2026
+### Meilenstein 1.2: OSCAL Viewer v1.0 (Viewer Team)
+**Deadline**: Ende April 2026
+**Status**: NEU – Viewer Team gegründet (2026-02-06)
+
+> **Hintergrund**: Der bestehende viewer.oscal.io unterstützt nur OSCAL bis Version 1.0.4. Da das OpenGov Ecosystem OSCAL 1.1.2 verwendet, entwickelt das Viewer Team einen eigenen, leichtgewichtigen Viewer.
+
+**Phase 1 – Foundation (KW 6-9):**
 
 | Aufgabe | Repository | Status | Priorität |
 |---------|------------|--------|-----------|
-| Katalog-Browser fertigstellen | privacy-viewer | In Arbeit | Kritisch |
-| Bürger-/DPO-Ansicht implementieren | privacy-viewer | In Arbeit | Kritisch |
-| Mehrsprachigkeit (DE/EN) | privacy-viewer | Offen | Hoch |
-| PDF-Export | privacy-viewer | Offen | Mittel |
-| Filter nach DSGVO-Artikel | privacy-viewer | Offen | Mittel |
+| Architektur-Design (ADR) | privacy-viewer | Offen | Kritisch |
+| OSCAL 1.1.2 Parser | privacy-viewer | Offen | Kritisch |
+| Catalog Renderer | privacy-viewer | Offen | Kritisch |
+| Schema-Erkennung (1.0.x → 1.1.x) | privacy-viewer | Offen | Hoch |
+
+**Phase 2 – Erweiterung (KW 10-12):**
+
+| Aufgabe | Repository | Status | Priorität |
+|---------|------------|--------|-----------|
+| Profile Renderer | privacy-viewer | Offen | Hoch |
+| Component-Definition Renderer | privacy-viewer | Offen | Hoch |
+| SSP Renderer | privacy-viewer | Offen | Hoch |
+| Suchfunktion & Filter | privacy-viewer | Offen | Mittel |
+
+**Phase 3 – Deploy (KW 13-14):**
+
+| Aufgabe | Repository | Status | Priorität |
+|---------|------------|--------|-----------|
+| GitHub Pages Deployment | privacy-viewer | Offen | Kritisch |
+| PWA-Unterstützung (Offline) | privacy-viewer | Offen | Mittel |
+| Dokumentation | privacy-viewer | Offen | Hoch |
+| Shared Components Export | privacy-viewer | Offen | Mittel |
+
+**Technologie-Stack:**
+- TypeScript + Preact/Lit (< 10KB Bundle)
+- Vite Build
+- Client-Side Only (Zero-Backend)
+- PWA-fähig für Offline-Betrieb
 
 **Erfolgskriterien**:
-- [ ] Bürger können Rechte in einfacher Sprache lesen
-- [ ] DPOs sehen vollständige Control-Details
-- [ ] Export nach PDF funktioniert
+- [ ] Alle OSCAL 1.1.2 Artefakttypen anzeigbar (Catalog, Profile, Component, SSP)
+- [ ] Custom Properties (assurance_goal, legal, etc.) werden dargestellt
 - [ ] Deployment auf GitHub Pages
+- [ ] Bundle Size < 100KB gzipped
+- [ ] WCAG 2.1 AA Accessibility
+- [ ] PWA Offline-Modus funktioniert
+
+**Team-Spezifikation**: [OSCAL_VIEWER_TEAM.md](OSCAL_VIEWER_TEAM.md)
 
 ### Meilenstein 1.3: Privacy App MVP
 **Deadline**: Ende April 2026
@@ -318,6 +350,7 @@ M1.4 (pyprivacy)      M1.2 (Viewer)       M1.3 (App)
 | 1.0.0 | 2026-02-02 | Initiale Roadmap |
 | 1.1.0 | 2026-02-05 | Status-Update: M1.1 90%, M2.1 BSI-Mapping vorgezogen und abgeschlossen |
 | 1.2.0 | 2026-02-05 | **ISO 27701:2025 Mapping abgeschlossen** (89% Coverage, 1546 Zeilen), Referenzierungsarchitektur dokumentiert |
+| 1.3.0 | 2026-02-06 | **Viewer Team gegründet** – OSCAL 1.1.2 Viewer als Ersatz für viewer.oscal.io (nur 1.0.4), M1.2 neu strukturiert |
 
 ---
 
