@@ -31,7 +31,7 @@ Entwicklung eines **leichtgewichtigen OSCAL Viewers** als:
 
 ## 2. Team-Mission
 
-> **Mission**: Einen universellen, OSCAL 1.1.2-kompatiblen Viewer entwickeln, der alle OSCAL-Artefakttypen im Browser anzeigt – ohne Backend, ohne Login, ohne Komplexität.
+> **Mission**: Einen universellen, OSCAL-kompatiblen Viewer entwickeln, der alle OSCAL-Artefakttypen im Browser anzeigt – von Version 1.0.x bis zur aktuell veröffentlichten Version – ohne Backend, ohne Login, ohne Komplexität.
 
 ### 2.1 Kernprinzipien
 
@@ -104,10 +104,12 @@ VIEWER ARCHITEKTUR
 
 | Anforderung | Beschreibung |
 |-------------|--------------|
-| Schema-Erkennung | Automatische Erkennung von OSCAL 1.0.x vs 1.1.x |
+| Schema-Erkennung | Automatische Erkennung aller OSCAL-Versionen (1.0.x bis aktuell) |
+| Version-Support | Unterstützung von OSCAL 1.0.0 bis zur aktuell veröffentlichten Version |
 | Artefakt-Typen | catalog, profile, component-definition, system-security-plan |
 | Fehlerbehandlung | Graceful degradation bei ungültigen Dateien |
 | Performance | Streaming-Parsing für große Dateien (>10MB) |
+| Erweiterbarkeit | Modularer Aufbau für einfache Integration neuer OSCAL-Versionen |
 
 **Deliverables:**
 - [ ] `oscal-parser.ts` – Universeller OSCAL JSON Parser
@@ -315,6 +317,7 @@ export { PropertyBadge } from './components/property-badge';
 
 | Kriterium | Beschreibung | Test |
 |-----------|--------------|------|
+| **OSCAL-Versionen** | Alle Versionen von 1.0.0 bis aktuell unterstützt | Dateien verschiedener Versionen laden |
 | **Catalog-Anzeige** | Alle 10 OPC-Gruppen korrekt dargestellt | open_privacy_catalog_risk_v0.7.0.json laden |
 | **Profile-Anzeige** | Import/Modify/Exclude visualisiert | profile_integrated_privacy_security.json laden |
 | **SSP-Anzeige** | Compliance-Status pro Control | Test-SSP erstellen und laden |
@@ -402,9 +405,10 @@ Februar 2026                    März 2026                      April 2026
 | Risiko | Wahrscheinlichkeit | Auswirkung | Mitigation |
 |--------|-------------------|------------|------------|
 | Große OSCAL-Dateien verlangsamen Browser | Mittel | Hoch | Web Workers, virtualisiertes Scrolling |
-| OSCAL 1.2 kommt mit Breaking Changes | Niedrig | Mittel | Modularer Parser, Schema-Abstraktion |
+| Neue OSCAL-Version mit Breaking Changes | Mittel | Mittel | Modularer Parser, Schema-Abstraktion, Version-Adapter-Pattern |
 | Cross-Origin-Einschränkungen bei URL-Import | Hoch | Mittel | Proxy-Option dokumentieren, lokaler Upload |
 | Browser-Inkompatibilitäten | Niedrig | Mittel | Polyfills, Feature Detection |
+| Rückwärtskompatibilität bei Version-Updates | Mittel | Niedrig | Alle unterstützten Versionen in CI/CD testen |
 
 ---
 
